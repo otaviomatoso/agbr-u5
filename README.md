@@ -37,7 +37,7 @@ The steps above are manually performed by a user. The *AGBR/U5 application* aims
   ```
   go back to the root directory and run the application
   $ cd ..
-  $ docker-compose -f docker-compose.yml -p agbr up
+  $ docker-compose up
   ```
 
 With JaCaMo and Node-RED running, just copy a marlim file (MR2 file) to the directory named ***marlim***. This action simulates the *step 2* of the optimization process previously described, triggering the AGBR/U5 application. At the end of the execution, the GLN file (located in the marlim directory) is updated with data from the marlim file. The available marlim files are in the *marlim-files* directory.
