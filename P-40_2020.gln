@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<optimization inconsistentoutput="TRUE" name="P-40_2020" type="GASLIFTNEW">
+  <tabdir/>
+  <unit>P-40</unit>
+  <wells>
+  </wells>
+  <outputs outputsSa="NONE">
+  </outputs>
+</optimization>

@@ -1,0 +1,2764 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE optimization SYSTEM "tables-v1.dtd">
+
+<optimization name="P-40_2020" type="TABLES" inconsistentoutput="TRUE">
+  <tabdir>Tabelas_20200428</tabdir>
+  <unit>P-40</unit>
+  <wells>
+    <well type="gaslift" name="MLS-10">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-10_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">24000.0</step>
+        <step id="1">48000.0</step>
+        <step id="2">72000.0</step>
+        <step id="3">96000.0</step>
+        <step id="4">120000.0</step>
+        <step id="5">132000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">200000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">24000.0</step>
+        <step id="1">48000.0</step>
+        <step id="2">72000.0</step>
+        <step id="3">96000.0</step>
+        <step id="4">120000.0</step>
+        <step id="5">132000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">200000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>24000.0</QglRatesMin>
+      <QglRatesMax>200000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">17.04</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">17.04</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>17.04</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">336.264984130859</step>
+          <step id="1">326.595367431641</step>
+          <step id="2">308.461639404297</step>
+          <step id="3">283.43505859375</step>
+          <step id="4">259.085510253906</step>
+          <step id="5">231.164093017578</step>
+          <step id="6">202.449508666992</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">366.22216796875</step>
+          <step id="1">357.090393066406</step>
+          <step id="2">339.968536376953</step>
+          <step id="3">317.711730957031</step>
+          <step id="4">294.948059082031</step>
+          <step id="5">272.291900634766</step>
+          <step id="6">249.149002075195</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">387.342803955078</step>
+          <step id="1">378.331176757812</step>
+          <step id="2">359.124237060547</step>
+          <step id="3">338.858459472656</step>
+          <step id="4">317.753967285156</step>
+          <step id="5">295.859313964844</step>
+          <step id="6">274.895690917969</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">399.279052734375</step>
+          <step id="1">389.394317626953</step>
+          <step id="2">371.429840087891</step>
+          <step id="3">352.384826660156</step>
+          <step id="4">332.54443359375</step>
+          <step id="5">312.413208007812</step>
+          <step id="6">292.001983642578</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">404.165740966797</step>
+          <step id="1">395.149627685547</step>
+          <step id="2">378.467010498047</step>
+          <step id="3">361.847808837891</step>
+          <step id="4">343.177978515625</step>
+          <step id="5">323.643951416016</step>
+          <step id="6">303.659423828125</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">406.370422363281</step>
+          <step id="1">397.514465332031</step>
+          <step id="2">381.505737304687</step>
+          <step id="3">364.348388671875</step>
+          <step id="4">347.243255615234</step>
+          <step id="5">328.014892578125</step>
+          <step id="6">308.337432861328</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">408.080993652344</step>
+          <step id="1">399.313140869141</step>
+          <step id="2">384.012451171875</step>
+          <step id="3">367.227661132812</step>
+          <step id="4">349.458374023438</step>
+          <step id="5">331.578277587891</step>
+          <step id="6">312.144226074219</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">409.037567138672</step>
+          <step id="1">401.024108886719</step>
+          <step id="2">386.627410888672</step>
+          <step id="3">371.068359375</step>
+          <step id="4">354.023040771484</step>
+          <step id="5">335.755035400391</step>
+          <step id="6">316.909393310547</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">408.452423095703</step>
+          <step id="1">400.750701904297</step>
+          <step id="2">387.560577392578</step>
+          <step id="3">372.608032226562</step>
+          <step id="4">356.733734130859</step>
+          <step id="5">339.210601806641</step>
+          <step id="6">321.363098144531</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>117.6</RGOASMR2>
+      <RGO>117.6</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>81.88</BSWASMR2>
+      <BSW>81.88</BSW>
+      <PR>294.55</PR>
+      <Qmax>18164.94</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>100.0</IP>
+      <PWHMin>17.04</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>24000.0</QGLMin>
+      <QGLMax>200000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-21">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-21_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">270000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">270000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>270000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">8.5</step>
+        <step id="1">12.5</step>
+        <step id="2">16.65</step>
+        <step id="3">20.0</step>
+        <step id="4">25.0</step>
+        <step id="5">30.0</step>
+        <step id="6">35.0</step>
+        <step id="7">40.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">8.5</step>
+        <step id="1">12.5</step>
+        <step id="2">16.65</step>
+        <step id="3">20.0</step>
+        <step id="4">25.0</step>
+        <step id="5">30.0</step>
+        <step id="6">35.0</step>
+        <step id="7">40.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>8.5</QglWhpRatesMin>
+      <QglWhpRatesMax>40.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">0.0</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+          <step id="7">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">231.662734985352</step>
+          <step id="1">208.8798828125</step>
+          <step id="2">191.089004516602</step>
+          <step id="3">179.720336914062</step>
+          <step id="4">156.021133422852</step>
+          <step id="5">132.577987670898</step>
+          <step id="6">109.305084228516</step>
+          <step id="7">2.42853665351868</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">284.354766845703</step>
+          <step id="1">264.772674560547</step>
+          <step id="2">245.660614013672</step>
+          <step id="3">232.217056274414</step>
+          <step id="4">214.18928527832</step>
+          <step id="5">194.105010986328</step>
+          <step id="6">171.880111694336</step>
+          <step id="7">149.684219360352</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">310.760498046875</step>
+          <step id="1">293.732269287109</step>
+          <step id="2">277.565948486328</step>
+          <step id="3">264.765625</step>
+          <step id="4">247.556930541992</step>
+          <step id="5">229.776168823242</step>
+          <step id="6">208.348434448242</step>
+          <step id="7">186.492691040039</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">325.846893310547</step>
+          <step id="1">311.912414550781</step>
+          <step id="2">298.101043701172</step>
+          <step id="3">286.844024658203</step>
+          <step id="4">270.857788085937</step>
+          <step id="5">251.880386352539</step>
+          <step id="6">231.237838745117</step>
+          <step id="7">210.181137084961</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">335.149230957031</step>
+          <step id="1">323.650054931641</step>
+          <step id="2">311.443878173828</step>
+          <step id="3">301.714691162109</step>
+          <step id="4">284.768951416016</step>
+          <step id="5">265.695922851563</step>
+          <step id="6">246.05012512207</step>
+          <step id="7">225.839248657227</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">340.113647460938</step>
+          <step id="1">331.007049560547</step>
+          <step id="2">320.274658203125</step>
+          <step id="3">309.332794189453</step>
+          <step id="4">292.154388427734</step>
+          <step id="5">274.161865234375</step>
+          <step id="6">255.398056030273</step>
+          <step id="7">235.93098449707</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">342.430328369141</step>
+          <step id="1">333.110870361328</step>
+          <step id="2">321.851654052734</step>
+          <step id="3">311.844024658203</step>
+          <step id="4">295.817230224609</step>
+          <step id="5">278.802825927734</step>
+          <step id="6">261.107788085938</step>
+          <step id="7">242.778625488281</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">339.387420654297</step>
+          <step id="1">331.052551269531</step>
+          <step id="2">320.882843017578</step>
+          <step id="3">311.759246826172</step>
+          <step id="4">296.982574462891</step>
+          <step id="5">281.183258056641</step>
+          <step id="6">264.612640380859</step>
+          <step id="7">247.380096435547</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">334.979614257812</step>
+          <step id="1">327.615051269531</step>
+          <step id="2">318.506866455078</step>
+          <step id="3">310.268402099609</step>
+          <step id="4">296.703033447266</step>
+          <step id="5">282.017333984375</step>
+          <step id="6">266.5</step>
+          <step id="7">250.269668579102</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">330.204406738281</step>
+          <step id="1">323.553955078125</step>
+          <step id="2">315.309417724609</step>
+          <step id="3">307.798614501953</step>
+          <step id="4">295.367828369141</step>
+          <step id="5">281.698272705078</step>
+          <step id="6">267.138519287109</step>
+          <step id="7">251.823608398438</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">323.596343994141</step>
+          <step id="1">317.869812011719</step>
+          <step id="2">310.518463134766</step>
+          <step id="3">303.779388427734</step>
+          <step id="4">292.562377929687</step>
+          <step id="5">280.0595703125</step>
+          <step id="6">266.578369140625</step>
+          <step id="7">252.302017211914</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>51.97</RGOASMR2>
+      <RGO>51.97</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>81.34</BSWASMR2>
+      <BSW>81.34</BSW>
+      <PR>293.9</PR>
+      <Qmax>9539.44</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>50.0</IP>
+      <PWHMin>8.5</PWHMin>
+      <PWHMax>40.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>270000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-30">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-30_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">270000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">270000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>270000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">15.4</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">15.4</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>15.4</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">337.062347412109</step>
+          <step id="1">297.927673339844</step>
+          <step id="2">254.175872802734</step>
+          <step id="3">200.245742797852</step>
+          <step id="4">107.306312561035</step>
+          <step id="5">61.188304901123</step>
+          <step id="6">29.0015468597412</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">404.54052734375</step>
+          <step id="1">372.280731201172</step>
+          <step id="2">341.625610351562</step>
+          <step id="3">309.735626220703</step>
+          <step id="4">276.182189941406</step>
+          <step id="5">243.286590576172</step>
+          <step id="6">211.219268798828</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">440.854766845703</step>
+          <step id="1">411.412048339844</step>
+          <step id="2">380.091217041016</step>
+          <step id="3">351.986114501953</step>
+          <step id="4">323.516082763672</step>
+          <step id="5">293.083374023438</step>
+          <step id="6">262.104736328125</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">460.927917480469</step>
+          <step id="1">434.184997558594</step>
+          <step id="2">404.794677734375</step>
+          <step id="3">375.587615966797</step>
+          <step id="4">349.034301757812</step>
+          <step id="5">321.875366210937</step>
+          <step id="6">292.382263183594</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">472.841491699219</step>
+          <step id="1">448.560302734375</step>
+          <step id="2">421.199920654297</step>
+          <step id="3">393.524505615234</step>
+          <step id="4">366.281402587891</step>
+          <step id="5">341.406402587891</step>
+          <step id="6">314.523468017578</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">480.263275146484</step>
+          <step id="1">458.188385009766</step>
+          <step id="2">432.790557861328</step>
+          <step id="3">406.626434326172</step>
+          <step id="4">380.173187255859</step>
+          <step id="5">355.645904541016</step>
+          <step id="6">330.601837158203</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">484.580871582031</step>
+          <step id="1">464.454071044922</step>
+          <step id="2">440.883514404297</step>
+          <step id="3">416.209991455078</step>
+          <step id="4">390.962951660156</step>
+          <step id="5">365.811065673828</step>
+          <step id="6">342.401519775391</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">486.684875488281</step>
+          <step id="1">468.265167236328</step>
+          <step id="2">446.37109375</step>
+          <step id="3">423.119476318359</step>
+          <step id="4">399.044921875</step>
+          <step id="5">374.462768554687</step>
+          <step id="6">351.792907714844</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">487.156341552734</step>
+          <step id="1">470.248382568359</step>
+          <step id="2">449.864990234375</step>
+          <step id="3">427.949859619141</step>
+          <step id="4">405.012817382813</step>
+          <step id="5">381.436065673828</step>
+          <step id="6">358.751678466797</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">486.406402587891</step>
+          <step id="1">470.835632324219</step>
+          <step id="2">451.812652587891</step>
+          <step id="3">431.141143798828</step>
+          <step id="4">409.293212890625</step>
+          <step id="5">386.661712646484</step>
+          <step id="6">364.539306640625</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">484.724914550781</step>
+          <step id="1">470.33837890625</step>
+          <step id="2">452.541961669922</step>
+          <step id="3">433.013031005859</step>
+          <step id="4">412.202117919922</step>
+          <step id="5">390.479278564453</step>
+          <step id="6">368.494323730469</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">481.633850097656</step>
+          <step id="1">468.532257080078</step>
+          <step id="2">452.10693359375</step>
+          <step id="3">433.883514404297</step>
+          <step id="4">414.280242919922</step>
+          <step id="5">393.641571044922</step>
+          <step id="6">372.423126220703</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>109.5</RGOASMR2>
+      <RGO>109.5</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>60.6</BSWASMR2>
+      <BSW>60.6</BSW>
+      <PR>270.95</PR>
+      <Qmax>2302.92</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>15.3</IP>
+      <PWHMin>15.4</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>270000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-42">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-42_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">264000.0</step>
+        <step id="12">280000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">264000.0</step>
+        <step id="12">280000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>280000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">16.83</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">16.83</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>16.83</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">0.0</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">2.14572858810425</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">276.199981689453</step>
+          <step id="1">230.03840637207</step>
+          <step id="2">3.16684889793396</step>
+          <step id="3">2.50657367706299</step>
+          <step id="4">2.03068900108337</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">342.845092773438</step>
+          <step id="1">299.244049072266</step>
+          <step id="2">240.169723510742</step>
+          <step id="3">4.1564621925354</step>
+          <step id="4">3.36727929115295</step>
+          <step id="5">2.72774767875671</step>
+          <step id="6">2.21488976478577</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">392.563323974609</step>
+          <step id="1">351.834045410156</step>
+          <step id="2">290.616546630859</step>
+          <step id="3">231.147186279297</step>
+          <step id="4">4.8268575668335</step>
+          <step id="5">3.90760326385498</step>
+          <step id="6">3.16977262496948</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">428.200714111328</step>
+          <step id="1">389.841522216797</step>
+          <step id="2">329.183166503906</step>
+          <step id="3">274.303771972656</step>
+          <step id="4">214.511047363281</step>
+          <step id="5">5.1698112487793</step>
+          <step id="6">4.19001960754395</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">454.596130371094</step>
+          <step id="1">418.365478515625</step>
+          <step id="2">360.206481933594</step>
+          <step id="3">300.893371582031</step>
+          <step id="4">249.748886108398</step>
+          <step id="5">195.410736083984</step>
+          <step id="6">5.26188182830811</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">474.538116455078</step>
+          <step id="1">440.132629394531</step>
+          <step id="2">384.510772705078</step>
+          <step id="3">327.942626953125</step>
+          <step id="4">278.600280761719</step>
+          <step id="5">224.425903320313</step>
+          <step id="6">174.790725708008</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">489.629699707031</step>
+          <step id="1">456.912322998047</step>
+          <step id="2">404.068634033203</step>
+          <step id="3">349.942474365234</step>
+          <step id="4">295.883544921875</step>
+          <step id="5">249.247146606445</step>
+          <step id="6">199.091934204102</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">500.709716796875</step>
+          <step id="1">470.442749023438</step>
+          <step id="2">419.980010986328</step>
+          <step id="3">368.105834960937</step>
+          <step id="4">315.891876220703</step>
+          <step id="5">270.430938720703</step>
+          <step id="6">220.301483154297</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">509.15283203125</step>
+          <step id="1">480.847412109375</step>
+          <step id="2">433.001220703125</step>
+          <step id="3">383.230712890625</step>
+          <step id="4">332.721069335937</step>
+          <step id="5">286.654449462891</step>
+          <step id="6">238.99967956543</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">515.811462402344</step>
+          <step id="1">488.862609863281</step>
+          <step id="2">443.687347412109</step>
+          <step id="3">395.873779296875</step>
+          <step id="4">346.995208740234</step>
+          <step id="5">297.887756347656</step>
+          <step id="6">255.341796875</step>
+        </matrix>
+        <matrix id="12">
+          <step id="0">519.214416503906</step>
+          <step id="1">493.204711914063</step>
+          <step id="2">449.667541503906</step>
+          <step id="3">403.141906738281</step>
+          <step id="4">355.316101074219</step>
+          <step id="5">307.053497314453</step>
+          <step id="6">265.09765625</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>105.9</RGOASMR2>
+      <RGO>105.9</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>81.9</BSWASMR2>
+      <BSW>81.9</BSW>
+      <PR>223.45</PR>
+      <Qmax>17503.58</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>141.0</IP>
+      <PWHMin>16.83</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>280000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-45">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-45_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">264000.0</step>
+        <step id="12">280000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">264000.0</step>
+        <step id="12">280000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>280000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">18.56</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">18.56</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>18.56</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">0.0</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">522.932922363281</step>
+          <step id="1">499.021820068359</step>
+          <step id="2">424.503662109375</step>
+          <step id="3">358.158660888672</step>
+          <step id="4">300.790649414063</step>
+          <step id="5">216.35595703125</step>
+          <step id="6">129.325347900391</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">670.600708007812</step>
+          <step id="1">646.365234375</step>
+          <step id="2">567.68310546875</step>
+          <step id="3">496.721435546875</step>
+          <step id="4">432.682647705078</step>
+          <step id="5">375.108489990234</step>
+          <step id="6">323.455932617187</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">766.900146484375</step>
+          <step id="1">743.746765136719</step>
+          <step id="2">666.031921386719</step>
+          <step id="3">592.671020507812</step>
+          <step id="4">524.633911132813</step>
+          <step id="5">462.432464599609</step>
+          <step id="6">404.610809326172</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">834.234497070313</step>
+          <step id="1">811.743041992188</step>
+          <step id="2">735.940063476562</step>
+          <step id="3">663.591552734375</step>
+          <step id="4">594.75048828125</step>
+          <step id="5">529.817321777344</step>
+          <step id="6">468.829864501953</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">883.48681640625</step>
+          <step id="1">861.712097167969</step>
+          <step id="2">787.707336425781</step>
+          <step id="3">716.192993164062</step>
+          <step id="4">647.476684570312</step>
+          <step id="5">581.669677734375</step>
+          <step id="6">518.970397949219</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">919.489074707031</step>
+          <step id="1">898.461364746094</step>
+          <step id="2">826.665222167969</step>
+          <step id="3">756.360778808594</step>
+          <step id="4">687.922546386719</step>
+          <step id="5">621.913757324219</step>
+          <step id="6">558.085021972656</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">946.407653808594</step>
+          <step id="1">925.858764648438</step>
+          <step id="2">855.516662597656</step>
+          <step id="3">786.944885253906</step>
+          <step id="4">719.321838378906</step>
+          <step id="5">653.264892578125</step>
+          <step id="6">588.814270019531</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">966.865478515625</step>
+          <step id="1">946.945556640625</step>
+          <step id="2">878.031311035156</step>
+          <step id="3">809.813720703125</step>
+          <step id="4">742.818237304687</step>
+          <step id="5">676.959045410156</step>
+          <step id="6">612.794494628906</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">983.776977539062</step>
+          <step id="1">963.965515136719</step>
+          <step id="2">895.959533691406</step>
+          <step id="3">828.618225097656</step>
+          <step id="4">761.731506347656</step>
+          <step id="5">696.05419921875</step>
+          <step id="6">631.202026367187</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">997.817504882813</step>
+          <step id="1">978.323669433594</step>
+          <step id="2">911.029235839844</step>
+          <step id="3">844.148071289063</step>
+          <step id="4">778.098449707031</step>
+          <step id="5">712.243713378906</step>
+          <step id="6">647.211853027344</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">1008.25067138672</step>
+          <step id="1">989.417663574219</step>
+          <step id="2">923.742797851562</step>
+          <step id="3">857.35791015625</step>
+          <step id="4">791.616394042969</step>
+          <step id="5">726.157653808594</step>
+          <step id="6">661.2607421875</step>
+        </matrix>
+        <matrix id="12">
+          <step id="0">1013.27825927734</step>
+          <step id="1">994.576354980469</step>
+          <step id="2">929.890747070312</step>
+          <step id="3">865.335571289062</step>
+          <step id="4">799.580993652344</step>
+          <step id="5">734.357116699219</step>
+          <step id="6">669.350158691406</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>57.3</RGOASMR2>
+      <RGO>57.3</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>39.23</BSWASMR2>
+      <BSW>39.23</BSW>
+      <PR>224.32</PR>
+      <Qmax>4411.63</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>35.4</IP>
+      <PWHMin>18.56</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>280000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-113">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-113_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">270000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">270000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>270000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">15.0</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">15.0</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>15.0</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">0.0</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">268.7568359375</step>
+          <step id="1">235.040634155273</step>
+          <step id="2">193.922805786133</step>
+          <step id="3">148.418395996094</step>
+          <step id="4">2.10477447509766</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">308.082763671875</step>
+          <step id="1">277.225494384766</step>
+          <step id="2">245.369522094727</step>
+          <step id="3">217.184417724609</step>
+          <step id="4">183.286285400391</step>
+          <step id="5">145.220550537109</step>
+          <step id="6">3.27314162254334</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">327.804718017578</step>
+          <step id="1">301.637908935547</step>
+          <step id="2">273.876495361328</step>
+          <step id="3">245.266403198242</step>
+          <step id="4">218.646545410156</step>
+          <step id="5">189.390426635742</step>
+          <step id="6">151.211776733398</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">339.145812988281</step>
+          <step id="1">316.084411621094</step>
+          <step id="2">291.092559814453</step>
+          <step id="3">264.353393554688</step>
+          <step id="4">238.696319580078</step>
+          <step id="5">211.469482421875</step>
+          <step id="6">181.227828979492</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">344.815185546875</step>
+          <step id="1">323.986419677734</step>
+          <step id="2">301.134063720703</step>
+          <step id="3">276.688537597656</step>
+          <step id="4">250.739120483398</step>
+          <step id="5">227.149429321289</step>
+          <step id="6">198.724166870117</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">346.650146484375</step>
+          <step id="1">327.694183349609</step>
+          <step id="2">306.764953613281</step>
+          <step id="3">284.086883544922</step>
+          <step id="4">260.136413574219</step>
+          <step id="5">236.724075317383</step>
+          <step id="6">210.846389770508</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">345.763031005859</step>
+          <step id="1">328.613067626953</step>
+          <step id="2">309.17919921875</step>
+          <step id="3">288.295684814453</step>
+          <step id="4">265.992248535156</step>
+          <step id="5">242.875839233398</step>
+          <step id="6">220.2109375</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">343.437042236328</step>
+          <step id="1">328.031219482422</step>
+          <step id="2">310.131866455078</step>
+          <step id="3">290.849212646484</step>
+          <step id="4">269.66015625</step>
+          <step id="5">247.044357299805</step>
+          <step id="6">226.731079101563</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">340.446899414063</step>
+          <step id="1">326.099212646484</step>
+          <step id="2">309.813140869141</step>
+          <step id="3">291.545349121094</step>
+          <step id="4">271.697021484375</step>
+          <step id="5">250.426422119141</step>
+          <step id="6">231.121627807617</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">336.531463623047</step>
+          <step id="1">323.414337158203</step>
+          <step id="2">308.180725097656</step>
+          <step id="3">291.059692382812</step>
+          <step id="4">272.477783203125</step>
+          <step id="5">252.407196044922</step>
+          <step id="6">233.860855102539</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">331.033508300781</step>
+          <step id="1">319.050750732422</step>
+          <step id="2">305.112060546875</step>
+          <step id="3">289.344543457031</step>
+          <step id="4">272.084350585938</step>
+          <step id="5">253.339080810547</step>
+          <step id="6">235.8173828125</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>111.5</RGOASMR2>
+      <RGO>111.5</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>82.1</BSWASMR2>
+      <BSW>82.1</BSW>
+      <PR>269.1</PR>
+      <Qmax>18388.5</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>123.0</IP>
+      <PWHMin>15.0</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>270000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-126">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-126_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">135000.0</step>
+        <step id="7">144000.0</step>
+        <step id="8">150000.0</step>
+        <step id="9">168000.0</step>
+        <step id="10">192000.0</step>
+        <step id="11">200000.0</step>
+        <step id="12">240000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">135000.0</step>
+        <step id="7">144000.0</step>
+        <step id="8">150000.0</step>
+        <step id="9">168000.0</step>
+        <step id="10">192000.0</step>
+        <step id="11">200000.0</step>
+        <step id="12">240000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>240000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">10.0</step>
+        <step id="1">12.0</step>
+        <step id="2">14.0</step>
+        <step id="3">16.0</step>
+        <step id="4">18.0</step>
+        <step id="5">20.0</step>
+        <step id="6">22.0</step>
+        <step id="7">24.0</step>
+        <step id="8">26.0</step>
+        <step id="9">28.0</step>
+        <step id="10">30.0</step>
+        <step id="11">35.0</step>
+        <step id="12">40.0</step>
+        <step id="13">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">10.0</step>
+        <step id="1">12.0</step>
+        <step id="2">14.0</step>
+        <step id="3">16.0</step>
+        <step id="4">18.0</step>
+        <step id="5">20.0</step>
+        <step id="6">22.0</step>
+        <step id="7">24.0</step>
+        <step id="8">26.0</step>
+        <step id="9">28.0</step>
+        <step id="10">30.0</step>
+        <step id="11">35.0</step>
+        <step id="12">40.0</step>
+        <step id="13">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>10.0</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">619.42529296875</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+          <step id="7">0.0</step>
+          <step id="8">0.0</step>
+          <step id="9">0.0</step>
+          <step id="10">0.0</step>
+          <step id="11">0.0</step>
+          <step id="12">0.0</step>
+          <step id="13">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">852.280700683594</step>
+          <step id="1">801.788757324219</step>
+          <step id="2">744.388610839844</step>
+          <step id="3">681.751159667969</step>
+          <step id="4">613.552001953125</step>
+          <step id="5">543.423645019531</step>
+          <step id="6">472.252960205078</step>
+          <step id="7">407.047637939453</step>
+          <step id="8">0.0</step>
+          <step id="9">0.0</step>
+          <step id="10">0.0</step>
+          <step id="11">0.0</step>
+          <step id="12">0.0</step>
+          <step id="13">0.0</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">920.061279296875</step>
+          <step id="1">882.345642089844</step>
+          <step id="2">843.605773925781</step>
+          <step id="3">800.380249023437</step>
+          <step id="4">35.3129119873047</step>
+          <step id="5">706.513977050781</step>
+          <step id="6">655.385681152344</step>
+          <step id="7">605.042846679688</step>
+          <step id="8">551.015625</step>
+          <step id="9">500.979522705078</step>
+          <step id="10">452.074523925781</step>
+          <step id="11">0.0</step>
+          <step id="12">0.0</step>
+          <step id="13">0.0</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">949.233581542969</step>
+          <step id="1">921.284606933594</step>
+          <step id="2">888.475280761719</step>
+          <step id="3">854.394836425781</step>
+          <step id="4">821.039428710937</step>
+          <step id="5">781.642028808594</step>
+          <step id="6">741.661804199219</step>
+          <step id="7">700.750427246094</step>
+          <step id="8">657.378845214844</step>
+          <step id="9">36.4695243835449</step>
+          <step id="10">569.283203125</step>
+          <step id="11">463.759948730469</step>
+          <step id="12">0.0</step>
+          <step id="13">0.0</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">963.597351074219</step>
+          <step id="1">940.654907226562</step>
+          <step id="2">913.383666992188</step>
+          <step id="3">884.305969238281</step>
+          <step id="4">853.80126953125</step>
+          <step id="5">824.323486328125</step>
+          <step id="6">790.454528808594</step>
+          <step id="7">756.133239746094</step>
+          <step id="8">719.38330078125</step>
+          <step id="9">681.680969238281</step>
+          <step id="10">642.702819824219</step>
+          <step id="11">38.2013092041016</step>
+          <step id="12">452.158172607422</step>
+          <step id="13">366.129150390625</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">968.505615234375</step>
+          <step id="1">948.162719726563</step>
+          <step id="2">926.428466796875</step>
+          <step id="3">900.226135253906</step>
+          <step id="4">873.859313964844</step>
+          <step id="5">847.524719238281</step>
+          <step id="6">819.040710449219</step>
+          <step id="7">787.940612792969</step>
+          <step id="8">757.137451171875</step>
+          <step id="9">723.94775390625</step>
+          <step id="10">690.748657226562</step>
+          <step id="11">602.937194824219</step>
+          <step id="12">512.808227539063</step>
+          <step id="13">427.443359375</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">968.494140625</step>
+          <step id="1">949.76416015625</step>
+          <step id="2">929.934387207031</step>
+          <step id="3">905.75439453125</step>
+          <step id="4">881.547058105469</step>
+          <step id="5">855.616149902344</step>
+          <step id="6">829.400817871094</step>
+          <step id="7">801.835693359375</step>
+          <step id="8">771.729797363281</step>
+          <step id="9">741.936157226563</step>
+          <step id="10">710.948303222656</step>
+          <step id="11">627.495178222656</step>
+          <step id="12">541.528686523438</step>
+          <step id="13">37.4300193786621</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">967.516723632813</step>
+          <step id="1">949.670043945313</step>
+          <step id="2">930.844970703125</step>
+          <step id="3">907.751708984375</step>
+          <step id="4">884.675109863281</step>
+          <step id="5">859.868713378906</step>
+          <step id="6">836.430297851562</step>
+          <step id="7">808.262145996094</step>
+          <step id="8">779.250793457031</step>
+          <step id="9">750.5498046875</step>
+          <step id="10">720.5185546875</step>
+          <step id="11">640.540954589844</step>
+          <step id="12">556.524658203125</step>
+          <step id="13">473.135284423828</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">966.547302246094</step>
+          <step id="1">949.248901367187</step>
+          <step id="2">931.027038574219</step>
+          <step id="3">908.608825683594</step>
+          <step id="4">886.229248046875</step>
+          <step id="5">861.610595703125</step>
+          <step id="6">837.744750976563</step>
+          <step id="7">811.877990722656</step>
+          <step id="8">783.562194824219</step>
+          <step id="9">755.595031738281</step>
+          <step id="10">725.476135253906</step>
+          <step id="11">648.493957519531</step>
+          <step id="12">565.591552734375</step>
+          <step id="13">485.375274658203</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">962.684936523437</step>
+          <step id="1">947.088256835938</step>
+          <step id="2">929.847900390625</step>
+          <step id="3">909.222106933594</step>
+          <step id="4">888.724609375</step>
+          <step id="5">866.01806640625</step>
+          <step id="6">844.0419921875</step>
+          <step id="7">820.044494628906</step>
+          <step id="8">793.699157714844</step>
+          <step id="9">766.892150878906</step>
+          <step id="10">739.188903808594</step>
+          <step id="11">667.270202636719</step>
+          <step id="12">588.021423339844</step>
+          <step id="13">510.393463134766</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">954.714294433594</step>
+          <step id="1">941.073425292969</step>
+          <step id="2">925.11669921875</step>
+          <step id="3">906.383239746094</step>
+          <step id="4">887.960327148438</step>
+          <step id="5">867.433227539063</step>
+          <step id="6">847.637451171875</step>
+          <step id="7">824.617065429688</step>
+          <step id="8">801.604858398438</step>
+          <step id="9">776.325256347656</step>
+          <step id="10">751.347900390625</step>
+          <step id="11">684.769714355469</step>
+          <step id="12">612.238342285156</step>
+          <step id="13">536.819519042969</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">951.457336425781</step>
+          <step id="1">938.570617675781</step>
+          <step id="2">922.892517089844</step>
+          <step id="3">904.7099609375</step>
+          <step id="4">886.864318847656</step>
+          <step id="5">866.987731933594</step>
+          <step id="6">847.839782714844</step>
+          <step id="7">825.369384765625</step>
+          <step id="8">803.116455078125</step>
+          <step id="9">778.471740722656</step>
+          <step id="10">754.820739746094</step>
+          <step id="11">688.45556640625</step>
+          <step id="12">618.003112792969</step>
+          <step id="13">544.1953125</step>
+        </matrix>
+        <matrix id="12">
+          <step id="0">933.524475097656</step>
+          <step id="1">921.822631835938</step>
+          <step id="2">907.001220703125</step>
+          <step id="3">892.844604492188</step>
+          <step id="4">876.776306152344</step>
+          <step id="5">860.068481445313</step>
+          <step id="6">843.208435058594</step>
+          <step id="7">824.616394042969</step>
+          <step id="8">804.208129882812</step>
+          <step id="9">782.357421875</step>
+          <step id="10">760.8203125</step>
+          <step id="11">701.87939453125</step>
+          <step id="12">637.764526367187</step>
+          <step id="13">570.881225585937</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>107.9</RGOASMR2>
+      <RGO>107.9</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>0.78</BSWASMR2>
+      <BSW>0.78</BSW>
+      <PR>245.91</PR>
+      <Qmax>3509.52</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>22.0</IP>
+      <PWHMin>10.0</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>240000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-167">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-167_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">264000.0</step>
+        <step id="12">280000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">264000.0</step>
+        <step id="12">280000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>280000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">20.0</step>
+        <step id="1">25.0</step>
+        <step id="2">30.0</step>
+        <step id="3">35.0</step>
+        <step id="4">40.0</step>
+        <step id="5">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">20.0</step>
+        <step id="1">25.0</step>
+        <step id="2">30.0</step>
+        <step id="3">35.0</step>
+        <step id="4">40.0</step>
+        <step id="5">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>20.0</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">441.703704833984</step>
+          <step id="1">381.835296630859</step>
+          <step id="2">308.887084960937</step>
+          <step id="3">196.13249206543</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">477.624755859375</step>
+          <step id="1">431.506195068359</step>
+          <step id="2">381.577178955078</step>
+          <step id="3">326.255798339844</step>
+          <step id="4">262.041625976562</step>
+          <step id="5">185.008560180664</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">497.914215087891</step>
+          <step id="1">459.049346923828</step>
+          <step id="2">415.802154541016</step>
+          <step id="3">371.513488769531</step>
+          <step id="4">319.944671630859</step>
+          <step id="5">262.343627929687</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">509.599853515625</step>
+          <step id="1">475.306884765625</step>
+          <step id="2">436.932830810547</step>
+          <step id="3">394.520782470703</step>
+          <step id="4">351.759918212891</step>
+          <step id="5">300.810241699219</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">515.833618164062</step>
+          <step id="1">484.698211669922</step>
+          <step id="2">449.758178710938</step>
+          <step id="3">411.053405761719</step>
+          <step id="4">371.246490478516</step>
+          <step id="5">325.18212890625</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">518.369995117188</step>
+          <step id="1">489.802520751953</step>
+          <step id="2">457.332489013672</step>
+          <step id="3">420.979125976562</step>
+          <step id="4">382.522216796875</step>
+          <step id="5">341.721740722656</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">518.226440429687</step>
+          <step id="1">491.474029541016</step>
+          <step id="2">461.031707763672</step>
+          <step id="3">427.290893554687</step>
+          <step id="4">390.216278076172</step>
+          <step id="5">353.448974609375</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">515.877014160156</step>
+          <step id="1">491.052947998047</step>
+          <step id="2">462.701599121094</step>
+          <step id="3">431.018432617187</step>
+          <step id="4">396.298919677734</step>
+          <step id="5">361.824493408203</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">512.526123046875</step>
+          <step id="1">489.338165283203</step>
+          <step id="2">462.674011230469</step>
+          <step id="3">432.908050537109</step>
+          <step id="4">400.236511230469</step>
+          <step id="5">367.732391357422</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">508.282531738281</step>
+          <step id="1">486.552215576172</step>
+          <step id="2">461.487030029297</step>
+          <step id="3">433.408782958984</step>
+          <step id="4">402.525695800781</step>
+          <step id="5">371.754119873047</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">503.445953369141</step>
+          <step id="1">483.036468505859</step>
+          <step id="2">459.391510009766</step>
+          <step id="3">432.815368652344</step>
+          <step id="4">403.512847900391</step>
+          <step id="5">374.292694091797</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">498.173004150391</step>
+          <step id="1">478.939270019531</step>
+          <step id="2">456.568389892578</step>
+          <step id="3">431.339447021484</step>
+          <step id="4">403.456237792969</step>
+          <step id="5">375.644256591797</step>
+        </matrix>
+        <matrix id="12">
+          <step id="0">494.463989257812</step>
+          <step id="1">475.943817138672</step>
+          <step id="2">454.352325439453</step>
+          <step id="3">429.950561523438</step>
+          <step id="4">402.934814453125</step>
+          <step id="5">375.990295410156</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>234.5</RGOASMR2>
+      <RGO>234.5</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>76.24</BSWASMR2>
+      <BSW>76.24</BSW>
+      <PR>232.8</PR>
+      <Qmax>12933.33</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>100.0</IP>
+      <PWHMin>20.0</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>280000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-169">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-169_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">174000.0</step>
+        <step id="9">180000.0</step>
+        <step id="10">185000.0</step>
+        <step id="11">192000.0</step>
+        <step id="12">204000.0</step>
+        <step id="13">220000.0</step>
+        <step id="14">240000.0</step>
+        <step id="15">260000.0</step>
+        <step id="16">280000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">174000.0</step>
+        <step id="9">180000.0</step>
+        <step id="10">185000.0</step>
+        <step id="11">192000.0</step>
+        <step id="12">204000.0</step>
+        <step id="13">220000.0</step>
+        <step id="14">240000.0</step>
+        <step id="15">260000.0</step>
+        <step id="16">280000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>280000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">19.0</step>
+        <step id="1">25.0</step>
+        <step id="2">30.0</step>
+        <step id="3">35.0</step>
+        <step id="4">40.0</step>
+        <step id="5">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">19.0</step>
+        <step id="1">25.0</step>
+        <step id="2">30.0</step>
+        <step id="3">35.0</step>
+        <step id="4">40.0</step>
+        <step id="5">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>19.0</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">6.05949020385742</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">156.211166381836</step>
+          <step id="1">135.750503540039</step>
+          <step id="2">118.12084197998</step>
+          <step id="3">101.617538452148</step>
+          <step id="4">85.3442153930664</step>
+          <step id="5">69.7936935424805</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">180.282836914062</step>
+          <step id="1">162.005813598633</step>
+          <step id="2">146.331787109375</step>
+          <step id="3">5.35475587844849</step>
+          <step id="4">115.889190673828</step>
+          <step id="5">100.435165405273</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">193.444488525391</step>
+          <step id="1">177.314392089844</step>
+          <step id="2">162.817657470703</step>
+          <step id="3">148.646911621094</step>
+          <step id="4">134.056274414062</step>
+          <step id="5">119.04084777832</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">200.739151000977</step>
+          <step id="1">186.296142578125</step>
+          <step id="2">174.121170043945</step>
+          <step id="3">160.169494628906</step>
+          <step id="4">146.188339233398</step>
+          <step id="5">131.971466064453</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">206.489120483398</step>
+          <step id="1">193.26725769043</step>
+          <step id="2">180.85546875</step>
+          <step id="3">168.558258056641</step>
+          <step id="4">155.179473876953</step>
+          <step id="5">141.661697387695</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">210.147201538086</step>
+          <step id="1">197.452697753906</step>
+          <step id="2">186.171737670898</step>
+          <step id="3">174.784072875977</step>
+          <step id="4">162.089828491211</step>
+          <step id="5">149.164413452148</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">212.600616455078</step>
+          <step id="1">200.481338500977</step>
+          <step id="2">190.275360107422</step>
+          <step id="3">179.18212890625</step>
+          <step id="4">167.457489013672</step>
+          <step id="5">155.083129882813</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">213.155685424805</step>
+          <step id="1">200.885986328125</step>
+          <step id="2">191.127029418945</step>
+          <step id="3">180.045623779297</step>
+          <step id="4">168.604217529297</step>
+          <step id="5">156.36408996582</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">213.565292358398</step>
+          <step id="1">201.519622802734</step>
+          <step id="2">191.918609619141</step>
+          <step id="3">180.85090637207</step>
+          <step id="4">169.682922363281</step>
+          <step id="5">157.573272705078</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">213.869873046875</step>
+          <step id="1">201.933242797852</step>
+          <step id="2">192.533493041992</step>
+          <step id="3">181.455230712891</step>
+          <step id="4">170.536834716797</step>
+          <step id="5">158.530944824219</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">214.242248535156</step>
+          <step id="1">202.554016113281</step>
+          <step id="2">193.330932617187</step>
+          <step id="3">182.255325317383</step>
+          <step id="4">171.656051635742</step>
+          <step id="5">159.796096801758</step>
+        </matrix>
+        <matrix id="12">
+          <step id="0">214.750289916992</step>
+          <step id="1">203.467468261719</step>
+          <step id="2">194.539627075195</step>
+          <step id="3">183.741104125977</step>
+          <step id="4">173.398086547852</step>
+          <step id="5">161.777847290039</step>
+        </matrix>
+        <matrix id="13">
+          <step id="0">215.198791503906</step>
+          <step id="1">204.42041015625</step>
+          <step id="2">195.832168579102</step>
+          <step id="3">185.423553466797</step>
+          <step id="4">175.40657043457</step>
+          <step id="5">164.091491699219</step>
+        </matrix>
+        <matrix id="14">
+          <step id="0">215.445938110352</step>
+          <step id="1">205.247695922852</step>
+          <step id="2">196.863159179688</step>
+          <step id="3">187.112014770508</step>
+          <step id="4">177.434753417969</step>
+          <step id="5">166.524475097656</step>
+        </matrix>
+        <matrix id="15">
+          <step id="0">215.403030395508</step>
+          <step id="1">205.734146118164</step>
+          <step id="2">197.56379699707</step>
+          <step id="3">188.404586791992</step>
+          <step id="4">178.859497070313</step>
+          <step id="5">168.520538330078</step>
+        </matrix>
+        <matrix id="16">
+          <step id="0">215.119277954102</step>
+          <step id="1">205.935317993164</step>
+          <step id="2">198.0712890625</step>
+          <step id="3">189.359161376953</step>
+          <step id="4">179.963165283203</step>
+          <step id="5">170.143661499023</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>212.7</RGOASMR2>
+      <RGO>212.7</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>87.65</BSWASMR2>
+      <BSW>87.65</BSW>
+      <PR>279.52</PR>
+      <Qmax>4434.41</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>26.6</IP>
+      <PWHMin>19.0</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>280000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-175">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-175_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">260000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">260000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>260000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">16.43</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">16.43</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>16.43</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">0.0</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">0.0</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">763.4755859375</step>
+          <step id="1">590.098999023438</step>
+          <step id="2">14.6347017288208</step>
+          <step id="3">11.0893878936768</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">924.432861328125</step>
+          <step id="1">784.366455078125</step>
+          <step id="2">588.071533203125</step>
+          <step id="3">415.851379394531</step>
+          <step id="4">14.1182994842529</step>
+          <step id="5">10.5953235626221</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">1007.54602050781</step>
+          <step id="1">890.513122558594</step>
+          <step id="2">720.02783203125</step>
+          <step id="3">554.235961914063</step>
+          <step id="4">403.886169433594</step>
+          <step id="5">15.3697280883789</step>
+          <step id="6">11.3939800262451</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">1057.08654785156</step>
+          <step id="1">955.902221679687</step>
+          <step id="2">805.824951171875</step>
+          <step id="3">649.72119140625</step>
+          <step id="4">501.887115478516</step>
+          <step id="5">20.612096786499</step>
+          <step id="6">15.226824760437</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">1081.12243652344</step>
+          <step id="1">994.437805175781</step>
+          <step id="2">860.04052734375</step>
+          <step id="3">718.957214355469</step>
+          <step id="4">578.254638671875</step>
+          <step id="5">444.297058105469</step>
+          <step id="6">19.3768100738525</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">1091.42333984375</step>
+          <step id="1">1016.24230957031</step>
+          <step id="2">895.731628417969</step>
+          <step id="3">766.197387695313</step>
+          <step id="4">632.638061523437</step>
+          <step id="5">501.913970947266</step>
+          <step id="6">381.681854248047</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">1093.11450195312</step>
+          <step id="1">1028.20483398438</step>
+          <step id="2">919.7421875</step>
+          <step id="3">799.95751953125</step>
+          <step id="4">674.813842773437</step>
+          <step id="5">547.919555664063</step>
+          <step id="6">426.161041259766</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">1089.01257324219</step>
+          <step id="1">1029.83447265625</step>
+          <step id="2">932.15185546875</step>
+          <step id="3">821.418090820313</step>
+          <step id="4">703.812438964844</step>
+          <step id="5">583.918579101562</step>
+          <step id="6">465.007720947266</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">1081.3388671875</step>
+          <step id="1">1024.67224121094</step>
+          <step id="2">937.118774414063</step>
+          <step id="3">833.969604492187</step>
+          <step id="4">723.6181640625</step>
+          <step id="5">609.548034667969</step>
+          <step id="6">493.761322021484</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">1072.08569335938</step>
+          <step id="1">1018.57257080078</step>
+          <step id="2">936.544494628906</step>
+          <step id="3">840.024658203125</step>
+          <step id="4">734.982727050781</step>
+          <step id="5">624.68115234375</step>
+          <step id="6">512.278991699219</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>74.2</RGOASMR2>
+      <RGO>74.2</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>0.9</BSWASMR2>
+      <BSW>0.9</BSW>
+      <PR>229.6</PR>
+      <Qmax>8320.18</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>56.0</IP>
+      <PWHMin>16.43</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>260000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-200">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-200_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>240000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">17.77</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">17.77</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>17.77</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">0.0</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">138.002899169922</step>
+          <step id="1">100.847320556641</step>
+          <step id="2">56.3336410522461</step>
+          <step id="3">34.5748481750488</step>
+          <step id="4">22.3630428314209</step>
+          <step id="5">14.6855993270874</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">660.79638671875</step>
+          <step id="1">464.4287109375</step>
+          <step id="2">207.97607421875</step>
+          <step id="3">119.168685913086</step>
+          <step id="4">73.0400848388672</step>
+          <step id="5">46.6426544189453</step>
+          <step id="6">30.8155841827393</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">1007.43426513672</step>
+          <step id="1">825.015380859375</step>
+          <step id="2">475.745025634766</step>
+          <step id="3">268.452697753906</step>
+          <step id="4">150.964096069336</step>
+          <step id="5">95.028450012207</step>
+          <step id="6">61.3746719360351</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">1159.04406738281</step>
+          <step id="1">1027.013671875</step>
+          <step id="2">702.492614746094</step>
+          <step id="3">434.971862792969</step>
+          <step id="4">264.760040283203</step>
+          <step id="5">157.353469848633</step>
+          <step id="6">101.438102722168</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">1239.55688476563</step>
+          <step id="1">1132.69323730469</step>
+          <step id="2">855.669738769531</step>
+          <step id="3">590.277648925781</step>
+          <step id="4">379.432373046875</step>
+          <step id="5">241.501098632813</step>
+          <step id="6">148.948181152344</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">1284.71044921875</step>
+          <step id="1">1194.01318359375</step>
+          <step id="2">958.232238769531</step>
+          <step id="3">711.541564941406</step>
+          <step id="4">488.881591796875</step>
+          <step id="5">321.945190429687</step>
+          <step id="6">203.712951660156</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">1308.73962402344</step>
+          <step id="1">1229.65869140625</step>
+          <step id="2">1024.48217773438</step>
+          <step id="3">796.968078613281</step>
+          <step id="4">582.783935546875</step>
+          <step id="5">400.224761962891</step>
+          <step id="6">267.707977294922</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">1318.72375488281</step>
+          <step id="1">1248.55285644531</step>
+          <step id="2">1066.39428710938</step>
+          <step id="3">860.235656738281</step>
+          <step id="4">657.678771972656</step>
+          <step id="5">471.122467041016</step>
+          <step id="6">324.211730957031</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">1318.79992675781</step>
+          <step id="1">1255.77075195312</step>
+          <step id="2">1091.89758300781</step>
+          <step id="3">904.58251953125</step>
+          <step id="4">715.208679199219</step>
+          <step id="5">531.872131347656</step>
+          <step id="6">377.172790527344</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">1311.64050292969</step>
+          <step id="1">1254.49768066406</step>
+          <step id="2">1105.66162109375</step>
+          <step id="3">934.691650390625</step>
+          <step id="4">758.47509765625</step>
+          <step id="5">581.946472167969</step>
+          <step id="6">424.694244384766</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>89.3</RGOASMR2>
+      <RGO>89.3</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>0.6</BSWASMR2>
+      <BSW>0.6</BSW>
+      <PR>187.73</PR>
+      <Qmax>29515.33</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>283.0</IP>
+      <PWHMin>17.77</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>240000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-222">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-222_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>240000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">15.0</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">15.0</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+        <step id="6">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>15.0</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">718.757934570313</step>
+          <step id="1">610.692138671875</step>
+          <step id="2">516.169921875</step>
+          <step id="3">432.311492919922</step>
+          <step id="4">297.770294189453</step>
+          <step id="5">0.0</step>
+          <step id="6">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">794.329345703125</step>
+          <step id="1">730.949157714844</step>
+          <step id="2">661.9033203125</step>
+          <step id="3">596.773620605469</step>
+          <step id="4">537.345886230469</step>
+          <step id="5">464.316040039062</step>
+          <step id="6">382.580352783203</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">844.764953613281</step>
+          <step id="1">789.429565429688</step>
+          <step id="2">732.413391113281</step>
+          <step id="3">679.533264160156</step>
+          <step id="4">626.589965820312</step>
+          <step id="5">561.984680175781</step>
+          <step id="6">492.162109375</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">870.630920410156</step>
+          <step id="1">825.544189453125</step>
+          <step id="2">778.379943847656</step>
+          <step id="3">730.36572265625</step>
+          <step id="4">677.883911132813</step>
+          <step id="5">617.281921386719</step>
+          <step id="6">554.94091796875</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">885.8125</step>
+          <step id="1">848.309326171875</step>
+          <step id="2">806.806213378906</step>
+          <step id="3">760.190490722656</step>
+          <step id="4">706.883728027344</step>
+          <step id="5">650.860656738281</step>
+          <step id="6">591.816589355469</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">896.63134765625</step>
+          <step id="1">861.459045410156</step>
+          <step id="2">818.949645996094</step>
+          <step id="3">773.15966796875</step>
+          <step id="4">723.279357910156</step>
+          <step id="5">670.333435058594</step>
+          <step id="6">613.533142089844</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">894.850402832031</step>
+          <step id="1">860.265625</step>
+          <step id="2">820.983520507812</step>
+          <step id="3">778.118835449219</step>
+          <step id="4">731.354736328125</step>
+          <step id="5">680.921508789062</step>
+          <step id="6">628.134399414062</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">886.472961425781</step>
+          <step id="1">854.632507324219</step>
+          <step id="2">818.180908203125</step>
+          <step id="3">778.152038574219</step>
+          <step id="4">734.424743652344</step>
+          <step id="5">687.392456054687</step>
+          <step id="6">637.109436035156</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">876.10546875</step>
+          <step id="1">846.826354980469</step>
+          <step id="2">813.032897949219</step>
+          <step id="3">775.639770507812</step>
+          <step id="4">734.48876953125</step>
+          <step id="5">690.26708984375</step>
+          <step id="6">642.506774902344</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">864.8173828125</step>
+          <step id="1">837.7607421875</step>
+          <step id="2">806.285949707031</step>
+          <step id="3">771.249450683594</step>
+          <step id="4">732.390869140625</step>
+          <step id="5">690.573120117187</step>
+          <step id="6">645.122802734375</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">852.872131347656</step>
+          <step id="1">827.772155761719</step>
+          <step id="2">798.334716796875</step>
+          <step id="3">765.375366210937</step>
+          <step id="4">728.595886230469</step>
+          <step id="5">688.794311523437</step>
+          <step id="6">645.54736328125</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>92.3</RGOASMR2>
+      <RGO>92.3</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>48.49</BSWASMR2>
+      <BSW>48.49</BSW>
+      <PR>244.0</PR>
+      <Qmax>6913.33</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>51.0</IP>
+      <PWHMin>15.0</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>240000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-223">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-223_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">108000.0</step>
+        <step id="6">120000.0</step>
+        <step id="7">144000.0</step>
+        <step id="8">156000.0</step>
+        <step id="9">168000.0</step>
+        <step id="10">192000.0</step>
+        <step id="11">216000.0</step>
+        <step id="12">240000.0</step>
+        <step id="13">260000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">108000.0</step>
+        <step id="6">120000.0</step>
+        <step id="7">144000.0</step>
+        <step id="8">156000.0</step>
+        <step id="9">168000.0</step>
+        <step id="10">192000.0</step>
+        <step id="11">216000.0</step>
+        <step id="12">240000.0</step>
+        <step id="13">260000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>260000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">15.0</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">15.0</step>
+        <step id="1">20.0</step>
+        <step id="2">25.0</step>
+        <step id="3">30.0</step>
+        <step id="4">35.0</step>
+        <step id="5">40.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>15.0</QglWhpRatesMin>
+      <QglWhpRatesMax>40.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">0.0</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">297.118377685547</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">365.103424072266</step>
+          <step id="1">339.369171142578</step>
+          <step id="2">299.322418212891</step>
+          <step id="3">247.113388061523</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">405.086151123047</step>
+          <step id="1">370.680114746094</step>
+          <step id="2">336.216491699219</step>
+          <step id="3">308.119079589844</step>
+          <step id="4">273.810638427734</step>
+          <step id="5">0.0</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">433.826904296875</step>
+          <step id="1">402.161987304687</step>
+          <step id="2">366.666137695313</step>
+          <step id="3">331.261138916016</step>
+          <step id="4">299.154754638672</step>
+          <step id="5">272.539031982422</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">443.980316162109</step>
+          <step id="1">412.875915527344</step>
+          <step id="2">379.822387695313</step>
+          <step id="3">344.908416748047</step>
+          <step id="4">308.148651123047</step>
+          <step id="5">278.504516601562</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">451.131561279297</step>
+          <step id="1">421.219848632813</step>
+          <step id="2">389.5712890625</step>
+          <step id="3">355.709899902344</step>
+          <step id="4">320.617736816406</step>
+          <step id="5">284.363494873047</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">460.181732177734</step>
+          <step id="1">432.859558105469</step>
+          <step id="2">403.434326171875</step>
+          <step id="3">371.942321777344</step>
+          <step id="4">339.192626953125</step>
+          <step id="5">305.253112792969</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">462.963592529297</step>
+          <step id="1">436.722747802734</step>
+          <step id="2">408.998504638672</step>
+          <step id="3">378.87646484375</step>
+          <step id="4">346.560028076172</step>
+          <step id="5">314.295593261719</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">464.796173095703</step>
+          <step id="1">439.5947265625</step>
+          <step id="2">412.983947753906</step>
+          <step id="3">383.986907958984</step>
+          <step id="4">352.696075439453</step>
+          <step id="5">321.4609375</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">466.178497314453</step>
+          <step id="1">444.317047119141</step>
+          <step id="2">418.849700927734</step>
+          <step id="3">391.777252197266</step>
+          <step id="4">362.450164794922</step>
+          <step id="5">332.900268554687</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">466.278045654297</step>
+          <step id="1">446.131927490234</step>
+          <step id="2">422.457641601563</step>
+          <step id="3">397.168487548828</step>
+          <step id="4">369.52099609375</step>
+          <step id="5">341.574462890625</step>
+        </matrix>
+        <matrix id="12">
+          <step id="0">466.374755859375</step>
+          <step id="1">446.023956298828</step>
+          <step id="2">424.252380371094</step>
+          <step id="3">400.613708496094</step>
+          <step id="4">374.890563964844</step>
+          <step id="5">347.965026855469</step>
+        </matrix>
+        <matrix id="13">
+          <step id="0">466.536346435547</step>
+          <step id="1">446.564697265625</step>
+          <step id="2">424.589324951172</step>
+          <step id="3">402.268096923828</step>
+          <step id="4">378.139038085938</step>
+          <step id="5">351.938323974609</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>107.1</RGOASMR2>
+      <RGO>107.1</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>70.1</BSWASMR2>
+      <BSW>70.1</BSW>
+      <PR>301.4</PR>
+      <Qmax>35565.2</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>118.0</IP>
+      <PWHMin>15.0</PWHMin>
+      <PWHMax>40.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>260000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+    <well type="gaslift" name="MLS-225">
+      <Status>ENABLED</Status>
+      <InputFile>.MLS-225_GL.mr2</InputFile>
+      <QglStepRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">260000.0</step>
+      </QglStepRatesArray>
+      <QglRatesArray>
+        <step id="0">0.0</step>
+        <step id="1">24000.0</step>
+        <step id="2">48000.0</step>
+        <step id="3">72000.0</step>
+        <step id="4">96000.0</step>
+        <step id="5">120000.0</step>
+        <step id="6">144000.0</step>
+        <step id="7">168000.0</step>
+        <step id="8">192000.0</step>
+        <step id="9">216000.0</step>
+        <step id="10">240000.0</step>
+        <step id="11">260000.0</step>
+      </QglRatesArray>
+      <QglRatesMin>0.0</QglRatesMin>
+      <QglRatesMax>260000.0</QglRatesMax>
+      <QglWhpStepRatesArray>
+        <step id="0">17.5</step>
+        <step id="1">22.98</step>
+        <step id="2">30.0</step>
+        <step id="3">35.0</step>
+        <step id="4">40.0</step>
+        <step id="5">45.0</step>
+      </QglWhpStepRatesArray>
+      <QglWhpRatesArray>
+        <step id="0">17.5</step>
+        <step id="1">22.98</step>
+        <step id="2">30.0</step>
+        <step id="3">35.0</step>
+        <step id="4">40.0</step>
+        <step id="5">45.0</step>
+      </QglWhpRatesArray>
+      <QglWhpRatesMin>17.5</QglWhpRatesMin>
+      <QglWhpRatesMax>45.0</QglWhpRatesMax>
+      <QglQoRatesMatrix>
+        <matrix id="0">
+          <step id="0">0.0</step>
+          <step id="1">0.0</step>
+          <step id="2">0.0</step>
+          <step id="3">0.0</step>
+          <step id="4">0.0</step>
+          <step id="5">0.0</step>
+        </matrix>
+        <matrix id="1">
+          <step id="0">85.0893096923828</step>
+          <step id="1">55.3358116149902</step>
+          <step id="2">30.9656715393066</step>
+          <step id="3">19.688304901123</step>
+          <step id="4">13.6600770950317</step>
+          <step id="5">8.19984912872314</step>
+        </matrix>
+        <matrix id="2">
+          <step id="0">187.768035888672</step>
+          <step id="1">128.901443481445</step>
+          <step id="2">75.9706268310547</step>
+          <step id="3">45.7725143432617</step>
+          <step id="4">24.3268775939941</step>
+          <step id="5">14.3625926971436</step>
+        </matrix>
+        <matrix id="3">
+          <step id="0">251.597259521484</step>
+          <step id="1">192.166198730469</step>
+          <step id="2">125.116104125977</step>
+          <step id="3">81.9834976196289</step>
+          <step id="4">36.9161834716797</step>
+          <step id="5">22.1693267822266</step>
+        </matrix>
+        <matrix id="4">
+          <step id="0">285.430084228516</step>
+          <step id="1">229.950439453125</step>
+          <step id="2">160.596786499023</step>
+          <step id="3">114.654998779297</step>
+          <step id="4">54.2154350280762</step>
+          <step id="5">30.4729557037354</step>
+        </matrix>
+        <matrix id="5">
+          <step id="0">301.773315429687</step>
+          <step id="1">251.607925415039</step>
+          <step id="2">186.232543945313</step>
+          <step id="3">137.927978515625</step>
+          <step id="4">77.0453109741211</step>
+          <step id="5">39.8662147521973</step>
+        </matrix>
+        <matrix id="6">
+          <step id="0">314.150604248047</step>
+          <step id="1">267.717041015625</step>
+          <step id="2">204.968322753906</step>
+          <step id="3">154.890167236328</step>
+          <step id="4">92.7727966308594</step>
+          <step id="5">48.7011108398437</step>
+        </matrix>
+        <matrix id="7">
+          <step id="0">330.193817138672</step>
+          <step id="1">277.138397216797</step>
+          <step id="2">216.000122070312</step>
+          <step id="3">165.240463256836</step>
+          <step id="4">104.472595214844</step>
+          <step id="5">55.7131462097168</step>
+        </matrix>
+        <matrix id="8">
+          <step id="0">343.132049560547</step>
+          <step id="1">287.579467773437</step>
+          <step id="2">220.023254394531</step>
+          <step id="3">171.191787719727</step>
+          <step id="4">112.153198242187</step>
+          <step id="5">61.812183380127</step>
+        </matrix>
+        <matrix id="9">
+          <step id="0">351.196472167969</step>
+          <step id="1">297.09130859375</step>
+          <step id="2">219.83349609375</step>
+          <step id="3">173.445861816406</step>
+          <step id="4">116.487030029297</step>
+          <step id="5">66.83837890625</step>
+        </matrix>
+        <matrix id="10">
+          <step id="0">349.905822753906</step>
+          <step id="1">304.507141113281</step>
+          <step id="2">222.736358642578</step>
+          <step id="3">172.569137573242</step>
+          <step id="4">118.198715209961</step>
+          <step id="5">70.4606552124023</step>
+        </matrix>
+        <matrix id="11">
+          <step id="0">340.24462890625</step>
+          <step id="1">299.220916748047</step>
+          <step id="2">228.892593383789</step>
+          <step id="3">169.853576660156</step>
+          <step id="4">118.091217041016</step>
+          <step id="5">72.8333282470703</step>
+        </matrix>
+      </QglQoRatesMatrix>
+      <RGOTAB></RGOTAB>
+      <RGOASMR2>88.7</RGOASMR2>
+      <RGO>88.7</RGO>
+      <BSWTAB></BSWTAB>
+      <BSWASMR2>62.5</BSWASMR2>
+      <BSW>62.5</BSW>
+      <PR>256.95</PR>
+      <Qmax>48380.14</Qmax>
+      <VCoef>0.2</VCoef>
+      <IP>275.0</IP>
+      <PWHMin>17.5</PWHMin>
+      <PWHMax>45.0</PWHMax>
+      <QGLMin>0.0</QGLMin>
+      <QGLMax>260000.0</QGLMax>
+      <WpcMinStep></WpcMinStep>
+      <WpcStepSize></WpcStepSize>
+      <WpcMaxStep></WpcMaxStep>
+      <WpcStepCount></WpcStepCount>
+      <WpcIsMaxStepSelected>false</WpcIsMaxStepSelected>
+      <WpcWhpMinStep></WpcWhpMinStep>
+      <WpcWhpStepSize></WpcWhpStepSize>
+      <WpcWhpMaxStep></WpcWhpMaxStep>
+      <WpcWhpStepCount></WpcWhpStepCount>
+      <WpcWhpIsMaxStepSelected>false</WpcWhpIsMaxStepSelected>
+    </well>
+  </wells>
+  <outputs outputsSa="NONE">
+  </outputs>
+</optimization>

@@ -1,0 +1,59 @@
+################################################################################
+# AGBR-U5
+################################################################################
+# docker-compose -f docker-compose.yml -p agbr up
+################################################################################
+version: "3.7"
+
+services:
+  node-red:
+    image: nodered/node-red:latest
+    hostname: node-red
+    environment:
+      - TZ=America/Sao_Paulo
+      - FLOWS=flows/otm.json
+    ports:
+      - "1880:1880"
+    networks:
+      - agbr-net
+    volumes:
+      - "./node-red:/data"
+      - "./marlim:/marlim"
+
+  jacamo-rest:
+    image: agbr/u5:0.1
+    hostname: jacamo-rest
+    environment:
+      - TZ=America/Sao_Paulo
+    ports:
+      - "8080:8080"
+      - "3271:3271"
+      - "3272:3272"
+      - "3273:3273"
+    networks:
+      - agbr-net
+    depends_on:
+      - node-red
+    volumes:
+      - "./jacamo/src:/app/src"
+      - "./marlim:/marlim"
+
+networks:
+  agbr-net: # Both services must be in this network
+
+################################################################################
+# A few comments...
+#
+# When launched, each container will receive a name in the network. Node-red is
+# going to be called agbr_node-red_1 and jacamo-rest will be called
+# agbr_jacamo-rest_1. The agbr part of this name comes from the docker-composer
+# command in which we are specifying agbr as the name of the projet
+# The number 1, refers to the first replica.
+#
+# However, these names are not by default added to /etc/hosts file. So, we are
+# specifying in the line `hostname:` of jacamo-rest a name to be placed at
+# /etc/hosts. In this sense, node-red routes should refer to the machine called
+# `jacamo-rest`. For instance, the endpoint http://jacamo-rest:8080/agents
+# should work from the perspective of node-red container.
+#
+################################################################################

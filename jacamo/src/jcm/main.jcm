@@ -1,0 +1,28 @@
+mas main {
+
+    agent ag_brsiop : brsiop.asl
+
+    workspace tools {
+        artifact dom : tools.DomArtifact() {
+          focused-by: ag_brsiop
+        }
+    }
+    workspace dummy {
+        artifact brsiop : jacamo.rest.util.DummyArt() {
+          focused-by: ag_brsiop
+        }
+    }
+
+    organisation sorg : otm.xml {
+        group sgrp : agbr {
+            players : ag_brsiop   brsiop
+            responsible-for : s1
+            //debug
+        }
+        scheme s1 : gasLiftSch {
+            //debug
+        }
+    }
+
+    platform: jacamo.rest.JCMRest("--main 2181 --restPort 8080")
+}

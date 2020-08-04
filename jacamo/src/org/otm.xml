@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://moise.sourceforge.net/xml/os.xsl" type="text/xsl" ?>
+<organisational-specification
+    id="agBrCaso2"
+    os-version="0.8"
+
+    xmlns='http://moise.sourceforge.net/os'
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:schemaLocation='http://moise.sourceforge.net/os
+                        http://moise.sourceforge.net/xml/os.xsd' >
+
+<structural-specification>
+  <group-specification id="agbr">
+    <roles>
+      <role id="brsiop"  min="1" max="1"/>
+    </roles>
+  </group-specification>
+</structural-specification>
+
+<functional-specification>
+  <scheme id="gasLiftSch">
+    <goal id="optimization">
+      <plan operator="sequence">
+        <goal id="sign_in" />
+        <goal id="wait_marlim" />
+        <goal id="update_table" />
+      </plan>
+    </goal>
+    <mission id="mBrsiop" min="1" max="1">
+      <goal id="sign_in" />
+      <goal id="wait_marlim" />
+      <goal id="update_table" />
+    </mission>
+  </scheme>
+</functional-specification>
+
+<normative-specification>
+  <norm id="n1"  type="obligation"   role="brsiop"   mission="mBrsiop" />
+</normative-specification>
+
+</organisational-specification>

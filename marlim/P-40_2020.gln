@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE optimization SYSTEM "gasliftnew-v1.dtd">
+
+<optimization name='P-40_2020' type='GASLIFTNEW' inconsistentoutput='true'>
+  <tabdir></tabdir>
+  <unit>P-40</unit>
+  <wells>
+  </wells>
+  <outputs/>
+  <MaxLiquidCapacityArray></MaxLiquidCapacityArray>
+  <MaxWaterTreatmentCapacityArray></MaxWaterTreatmentCapacityArray>
+  <CompressionCapacityArray></CompressionCapacityArray>
+  <MaxFlareGasArray></MaxFlareGasArray>
+  <FuelGasArray></FuelGasArray>
+  <MaxExportGasRateArray></MaxExportGasRateArray>
+  <MinExportGasRateArray></MinExportGasRateArray>
+  <FixedFlareGas></FixedFlareGas>
+  <TotalOilRateReference></TotalOilRateReference>
+  <ProducedGasReference></ProducedGasReference>
+  <ConsumedGasLiftReference></ConsumedGasLiftReference>
+  <TotalGasReference></TotalGasReference>
+  <ProducedWaterReference></ProducedWaterReference>
+  <ProducedLiquidReference></ProducedLiquidReference>
+  <TotalFlareReference></TotalFlareReference>
+  <FuelGasReference></FuelGasReference>
+  <ExportGasRateReference></ExportGasRateReference>
+  <ProductionLossReference></ProductionLossReference>
+  <EfficiencyReference></EfficiencyReference>
+  <IUGAReference></IUGAReference>
+</optimization>

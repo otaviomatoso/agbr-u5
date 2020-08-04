@@ -1,0 +1,2415 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE marlim SYSTEM "marlim-v22.dtd">
+
+<!-- ##INICIO_ENTRADA## -->
+<!-- Arquivo gravado em: Tue Apr 28 10:28:37 BRT 2020 -->
+<marlim>
+  <entrada>
+    <!-- Identificação da Simulação -->
+    <identificacao modulo="MC" versao="1.1">
+      <responsavel>Anna</responsavel>
+      <titulo></titulo>
+      <data>
+        <ano>2013</ano>
+        <mes>11</mes>
+        <dia>04</dia>
+      </data>
+      <comentario>Coordenadas de ANM: 388.534/7.504.772. LDA = 1065m, MR = 25m. Fluido do RJS-382. Emuls?o do MLS-63.</comentario>
+    </identificacao>
+    <!-- Opções de Cálculo -->
+    <opcoes_calculo contorno="VAZAO_EQUILIBRIO" subsistema="FALSE">
+      <jusante tipo="UNIDADE" seq="0" ul="0.0"></jusante>
+      <montante tipo="UNIDADE" seq="0" ul=""></montante>
+      <ptub>16.17</ptub>
+      <pmon>160.0</pmon>
+      <qlsc>1316.88957121578</qlsc>
+      <qgsc>120000.0</qgsc>
+      <tabela_simulacao>
+      </tabela_simulacao>
+      <vazao_fluido tipo="INTERVALO">
+        <lim_inf>10.0</lim_inf>
+        <lim_sup>3000.0</lim_sup>
+      </vazao_fluido>
+      <intervalo_pressao>
+        <lim_inf_pressao>10.0</lim_inf_pressao>
+        <lim_sup_pressao>500.0</lim_sup_pressao>
+      </intervalo_pressao>
+      <graficos superf="FALSE" sensib="FALSE" calcula_ipr="FALSE" calcula_tpr="FALSE" localizacao="MONTANTE">
+        <sensibilidade>
+          <faixa></faixa>
+          <incr></incr>
+        </sensibilidade>
+      </graficos>
+    </opcoes_calculo>
+    <analise_sensibilidade selecao_valores="COMBINACAO">
+      <as_var nome="qgi_valv" ativo="TRUE" grupo="GAS_LIFT" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_valvula>
+            <profm>2200.0</profm>
+          </param_valvula>
+        </parametros>
+        <valor>0.0</valor>
+        <valor>24000.0</valor>
+        <valor>48000.0</valor>
+        <valor>72000.0</valor>
+        <valor>96000.0</valor>
+        <valor>120000.0</valor>
+        <valor>144000.0</valor>
+        <valor>168000.0</valor>
+        <valor>192000.0</valor>
+        <valor>216000.0</valor>
+        <valor>240000.0</valor>
+      </as_var>
+      <as_var nome="correl_esc" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Riser 10</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 9</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 8</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 7</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 5</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 6</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 4</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 3</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 2</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 1</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Unidade_prod 17</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Unidade_prod 18</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Unidade_prod 19</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Unidade_prod 20</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Unidade_prod 22</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Unidade_prod 23</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Unidade_prod 24</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Unidade_prod 27</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Unidade_prod 26</param_sisprod_rotulo>
+        </parametros>
+        <correlacao>HAGEDORN_BROWN</correlacao>
+        <correlacao>DUNS_ROS</correlacao>
+        <correlacao>ORKISZEWSKI</correlacao>
+        <correlacao>BEGGS_BRILL</correlacao>
+        <correlacao>MUKHERJEE_BRILL</correlacao>
+        <correlacao>AZIZ_GOVIER_FOGARASI</correlacao>
+      </as_var>
+      <as_var nome="correl_esc" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Flow 1</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 2</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 3</param_sisprod_rotulo>
+        </parametros>
+        <correlacao>DUKLER</correlacao>
+        <correlacao>BEGGS_BRILL</correlacao>
+        <correlacao>MUKHERJEE_BRILL</correlacao>
+        <correlacao>DUKLER_EATON_FLANIGAN</correlacao>
+        <correlacao>DUKLER_MINAMI_I</correlacao>
+        <correlacao>BEGGS_BRILL_PALMER</correlacao>
+      </as_var>
+      <as_var nome="ptub" ativo="TRUE" grupo="CONDICOES_CONTORNO" tipo="COMBINACAO">
+        <valor>17.77</valor>
+        <valor>20.0</valor>
+        <valor>25.0</valor>
+        <valor>30.0</valor>
+        <valor>35.0</valor>
+        <valor>40.0</valor>
+        <valor>45.0</valor>
+      </as_var>
+    </analise_sensibilidade>
+    <simulador tipo="ECLIPSE" razao_gas="RGO" vazao="QL" modo_valv="QGI_VALV" ordenar_bhp="FALSE" localizacao="MONTANTE" cabecalho="FALSE">
+      <pwf>699.0</pwf>
+      <valvula_sim>2550.0</valvula_sim>
+      <variaveis_imex>
+        <rglt></rglt>
+        <rgli></rgli>
+        <qgi_valv></qgi_valv>
+        <prev></prev>
+      </variaveis_imex>
+      <variavel_sim nome="pwh">
+        <valor_sim ativo="TRUE">4.065353612089755</valor_sim>
+        <valor_sim ativo="TRUE">9.163934676979398</valor_sim>
+        <valor_sim ativo="TRUE">14.262515741869038</valor_sim>
+        <valor_sim ativo="TRUE">19.36109680675868</valor_sim>
+        <valor_sim ativo="TRUE">24.45967787164832</valor_sim>
+        <valor_sim ativo="TRUE">29.55825893653796</valor_sim>
+        <valor_sim ativo="TRUE">34.656840001427604</valor_sim>
+      </variavel_sim>
+      <variavel_sim nome="qgi_valv">
+        <valor_sim ativo="TRUE">0.0</valor_sim>
+        <valor_sim ativo="TRUE">200000.0</valor_sim>
+      </variavel_sim>
+      <variavel_sim nome="rgl">
+      </variavel_sim>
+      <variavel_sim nome="rgli">
+      </variavel_sim>
+      <variavel_sim nome="bsw">
+        <valor_sim ativo="TRUE">0.0</valor_sim>
+        <valor_sim ativo="TRUE">10.0</valor_sim>
+        <valor_sim ativo="TRUE">20.0</valor_sim>
+        <valor_sim ativo="TRUE">30.0</valor_sim>
+        <valor_sim ativo="TRUE">40.0</valor_sim>
+        <valor_sim ativo="TRUE">50.0</valor_sim>
+        <valor_sim ativo="TRUE">60.0</valor_sim>
+        <valor_sim ativo="TRUE">70.0</valor_sim>
+        <valor_sim ativo="TRUE">80.0</valor_sim>
+        <valor_sim ativo="TRUE">95.0</valor_sim>
+      </variavel_sim>
+      <variavel_sim nome="prev">
+      </variavel_sim>
+      <variavel_sim nome="rglt">
+      </variavel_sim>
+      <variavel_sim nome="ql">
+        <valor_sim ativo="TRUE">100.0</valor_sim>
+        <valor_sim ativo="TRUE">250.0</valor_sim>
+        <valor_sim ativo="TRUE">500.0</valor_sim>
+        <valor_sim ativo="TRUE">750.0</valor_sim>
+        <valor_sim ativo="TRUE">1000.0</valor_sim>
+        <valor_sim ativo="TRUE">2000.0</valor_sim>
+        <valor_sim ativo="TRUE">3000.0</valor_sim>
+        <valor_sim ativo="TRUE">4000.0</valor_sim>
+        <valor_sim ativo="TRUE">5000.0</valor_sim>
+      </variavel_sim>
+      <variavel_sim nome="rgo">
+        <valor_sim ativo="TRUE">65.0</valor_sim>
+        <valor_sim ativo="TRUE">100.0</valor_sim>
+        <valor_sim ativo="TRUE">150.0</valor_sim>
+        <valor_sim ativo="TRUE">200.0</valor_sim>
+        <valor_sim ativo="TRUE">300.0</valor_sim>
+        <valor_sim ativo="TRUE">500.0</valor_sim>
+        <valor_sim ativo="TRUE">700.0</valor_sim>
+        <valor_sim ativo="TRUE">1000.0</valor_sim>
+      </variavel_sim>
+      <variavel_sim nome="qo">
+      </variavel_sim>
+    </simulador>
+    <simulador_reo controle="AUTOMATICO" espec_ponto="FALSE">
+      <reo_nqginj>4</reo_nqginj>
+      <reo_rgli></reo_rgli>
+      <reo_qgi></reo_qgi>
+      <reo_pressao_max></reo_pressao_max>
+    </simulador_reo>
+    <simulador_gap tipo="SURGENTE" modo_valv="RGLI" pdg_ativo="TRUE" vsup_ativo="TRUE">
+      <ponto_pdg></ponto_pdg>
+      <vsup></vsup>
+      <trecho_maritmo>
+      </trecho_maritmo>
+      <variavel_gap nome="pwh">
+      </variavel_gap>
+      <variavel_gap nome="qgi_valv">
+      </variavel_gap>
+      <variavel_gap nome="rgli">
+      </variavel_gap>
+      <variavel_gap nome="bsw">
+      </variavel_gap>
+      <variavel_gap nome="rgof">
+      </variavel_gap>
+      <variavel_gap nome="ql">
+      </variavel_gap>
+      <variavel_gap nome="freq_motor">
+      </variavel_gap>
+    </simulador_gap>
+    <lgpi tipo="RGLI_C" usar_limites="TRUE">
+      <rgli_constante></rgli_constante>
+      <rgli_economica></rgli_economica>
+      <q_gas></q_gas>
+      <q_liq></q_liq>
+      <prof_lim></prof_lim>
+      <pressao_lim></pressao_lim>
+      <vazao_lim></vazao_lim>
+      <prev></prev>
+      <ptub></ptub>
+    </lgpi>
+    <!-- Fluidos -->
+    <fluidos>
+      <!-- Fluido -->
+      <fluido id="0" iemul="WATERCUT" tipo="OLEO">
+        <nome>Fluido_rjs382</nome>
+        <tiac>4.77</tiac>
+        <api>25.1</api>
+        <dom>0.9035759897828863</dom>
+        <sgw>1.03</sgw>
+        <sgfog>0.732</sgfog>
+        <yco2>0.00933</yco2>
+        <pvt tipo="ANALISE">
+          <!-- Análise PVT -->
+          <analise_pvt id="4">
+            <campo>Marlim Sul</campo>
+            <poco>4-RJS-0382</poco>
+            <teste>CT TR N? 001/2002</teste>
+            <data>
+              <ano>2002</ano>
+              <mes>01</mes>
+              <dia>01</dia>
+            </data>
+            <zona>Carapebus / MRL-100 / Oligoceno</zona>
+            <observacao>Bloco 4: RJS-382</observacao>
+            <api>25.7</api>
+            <tan>65.0</tan>
+            <sgw>1.03</sgw>
+            <sgpg>0.732</sgpg>
+            <correlacoes>
+              <razao_solubilidade>
+                <icode tipo="LASATER"/>
+              </razao_solubilidade>
+              <jcode tipo="VAZQUEZ_BEGGS"/>
+              <viscosidade>
+                <lcode tipo="GLASO"/>
+                <oleo_vivo subsat="VAZQUEZ_BEGGS" sat="BEGGS_ROBINSON"/>
+              </viscosidade>
+            </correlacoes>
+            <pb>280.5</pb>
+            <pontos_pvt>
+              <ponto_pvt>
+                <pp>360.0</pp>
+                <rs>116.95</rs>
+                <bo>1.2859</bo>
+                <vo>2.3</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>340.0</pp>
+                <rs>116.95</rs>
+                <bo>1.2887</bo>
+                <vo>2.25</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>320.0</pp>
+                <rs>116.95</rs>
+                <bo>1.2915</bo>
+                <vo>2.19</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>300.0</pp>
+                <rs>116.95</rs>
+                <bo>1.2946</bo>
+                <vo>2.13</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>280.5</pp>
+                <rs>116.95</rs>
+                <bo>1.2973</bo>
+                <vo>2.07</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>250.0</pp>
+                <rs>105.32</rs>
+                <bo>1.2754</bo>
+                <vo>2.18</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>220.0</pp>
+                <rs>93.93</rs>
+                <bo>1.252</bo>
+                <vo>2.33</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>190.0</pp>
+                <rs>82.41</rs>
+                <bo>1.2283</bo>
+                <vo>2.55</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>160.0</pp>
+                <rs>70.99</rs>
+                <bo>1.2037</bo>
+                <vo>2.76</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>130.0</pp>
+                <rs>59.52</rs>
+                <bo>1.1802</bo>
+                <vo>3.03</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>100.0</pp>
+                <rs>47.79</rs>
+                <bo>1.1559</bo>
+                <vo>3.45</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>70.0</pp>
+                <rs>36.15</rs>
+                <bo>1.1308</bo>
+                <vo>3.99</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>40.0</pp>
+                <rs>24.22</rs>
+                <bo>1.1051</bo>
+                <vo>4.77</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>20.0</pp>
+                <rs>15.81</rs>
+                <bo>1.0858</bo>
+                <vo>5.63</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>0.0</pp>
+                <rs>1.0E-5</rs>
+                <bo>1.0858</bo>
+                <vo>10.39</vo>
+              </ponto_pvt>
+            </pontos_pvt>
+          </analise_pvt>
+          <correlacoes>
+            <razao_solubilidade>
+              <icode tipo="LASATER"/>
+            </razao_solubilidade>
+            <jcode tipo="VAZQUEZ_BEGGS"/>
+            <viscosidade>
+              <lcode tipo="GLASO"/>
+              <oleo_vivo subsat="VAZQUEZ_BEGGS" sat="BEGGS_ROBINSON"/>
+            </viscosidade>
+          </correlacoes>
+        </pvt>
+        <emulsao tipo="EXPONENCIAL">
+          <fwre>0.9</fwre>
+          <coef_a></coef_a>
+          <coef_b></coef_b>
+          <emulsao_exponencial>
+            <te>50.0</te>
+            <linha_emulsao>
+              <fw>41.56</fw>
+              <mi>140.4</mi>
+              <ni>149.46791990168475</ni>
+              <n>5.7371505229822475</n>
+            </linha_emulsao>
+            <linha_emulsao>
+              <fw>58.98</fw>
+              <mi>250.6</mi>
+              <ni>261.74616481129</ni>
+              <n>10.0468190587214</n>
+            </linha_emulsao>
+          </emulsao_exponencial>
+        </emulsao>
+        <watercut>
+          <pressao_emulsao>0.0</pressao_emulsao>
+          <temperatura_emulsao>40.0</temperatura_emulsao>
+          <rgo_emulsao>5.0</rgo_emulsao>
+          <oleo_vis_emulsao>32.65492045932582</oleo_vis_emulsao>
+          <agua_vis_emulsao>0.7255778696689733</agua_vis_emulsao>
+          <wc_linha_emulsao fw="0.0" mix_vis="32.65492045932582" emul_vis="29.1" mult="0.8911367595044751"/>
+          <wc_linha_emulsao fw="10.0" mix_vis="29.461986200360137" emul_vis="32.5" mult="1.103116394766444"/>
+          <wc_linha_emulsao fw="30.0" mix_vis="23.076117682428766" emul_vis="79.5" mult="3.445120236171053"/>
+          <wc_linha_emulsao fw="50.0" mix_vis="16.6902491644974" emul_vis="208.5" mult="12.492323987799415"/>
+          <wc_linha_emulsao fw="70.0" mix_vis="10.30438064656603" emul_vis="600.0" mult="58.227662639767885"/>
+          <wc_linha_emulsao fw="71.0" mix_vis="9.98508722066946" emul_vis="600.0" mult="60.08961030986091"/>
+          <wc_linha_emulsao fw="100.0" mix_vis="0.7255778696689733" emul_vis="600.0" mult="826.9270950528507"/>
+        </watercut>
+      </fluido>
+      <fluido_composicional id="1" iemul="NENHUM" tabela="" usuario="" calculo="ANALITICO">
+        <nome>Fluido 1</nome>
+        <emulsao tipo="OLEO_VIVO">
+          <fwre>0.8</fwre>
+          <coef_a></coef_a>
+          <coef_b></coef_b>
+          <emulsao_exponencial>
+            <te></te>
+            <linha_emulsao>
+              <fw></fw>
+              <mi></mi>
+              <ni></ni>
+              <n></n>
+            </linha_emulsao>
+            <linha_emulsao>
+              <fw></fw>
+              <mi></mi>
+              <ni></ni>
+              <n></n>
+            </linha_emulsao>
+          </emulsao_exponencial>
+        </emulsao>
+      </fluido_composicional>
+    </fluidos>
+    <!-- Sistema de Produção -->
+    <sistema_producao termico="TRUE" uglobal="FALSE">
+      <dmrcp>1065.0</dmrcp>
+      <tempo>365.0</tempo>
+      <caracteristicas geometria="OFF_SHORE">
+        <equip_jus tipo="PLATAFORMA_SS"/>
+      </caracteristicas>
+      <!-- Unidades de Produção -->
+      <producao>
+        <temp_jusante>
+          <tsupa>25.0</tsupa>
+          <tsupf>16.4948863677469</tsupf>
+        </temp_jusante>
+        <!-- Fonte -->
+        <fonte id="0" id_fluido="0" modelo_fluido="BLACKOIL" bsw_pvtsim="FALSE" rgo_pvtsim="FALSE" tipo_fluido="OLEO" ativo="TRUE" tipo="RESERVATORIO" localizacao="MONTANTE">
+          <nome>Reservat?rio_rjs382</nome>
+          <razao_fluido tipo="RGOF">
+            <rglf>88.7642</rglf>
+            <rgof>89.3</rgof>
+            <rgl>88.7642</rgl>
+            <rgo>89.3</rgo>
+            <rlg></rlg>
+            <rlgf></rlgf>
+            <bsw>0.6</bsw>
+          </razao_fluido>
+          <pr>187.73</pr>
+          <tmonf>66.0</tmonf>
+          <vazao_max>29515.327777777777</vazao_max>
+          <modelo ipr="VOGEL">
+            <linear/>
+            <vogel>
+              <psat>280.5</psat>
+              <coeficiente_vogel>0.2</coeficiente_vogel>
+            </vogel>
+            <fetkovich/>
+          </modelo>
+          <dados_ipr tipo="IP">
+            <ip>283.0</ip>
+            <dados_teste>
+              <pt></pt>
+              <qt></qt>
+            </dados_teste>
+            <nfet></nfet>
+          </dados_ipr>
+        </fonte>
+        <!-- Linha Marítima -->
+        <linha_maritima id="0" seq="0" injgas="QGI">
+          <nome>Riser 10</nome>
+          <uglobal>12.215995242769</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>136.8</ul>
+            <ang>82.40543011049202</ang>
+            <uv>135.6</uv>
+            <ulm>136.8</ulm>
+            <ulv>135.6</ulv>
+            <ntrec>4</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>22.0</tmona>
+            <tmonf>18.5244169485395</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>4.33</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4439977968852615</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>6.2</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="1" seq="1" injgas="QGI">
+          <nome>Riser 9</nome>
+          <uglobal>12.2310419186077</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>137.1</ul>
+            <ang>81.51676898050809</ang>
+            <uv>135.6</uv>
+            <ulm>273.9</ulm>
+            <ulv>271.2</ulv>
+            <ntrec>3</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>15.0</tmona>
+            <tmonf>20.5417197931395</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>4.33</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.444</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>6.20003076436747</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="2" seq="2" injgas="QGI">
+          <nome>Riser 8</nome>
+          <uglobal>12.2420608887392</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>137.6</ul>
+            <ang>80.219279385665</ang>
+            <uv>135.6</uv>
+            <ulm>411.5</ulm>
+            <ulv>406.79999999999995</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>12.0</tmona>
+            <tmonf>22.6284887729822</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>4.33</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.444</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>6.20003076436747</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="3" seq="3" injgas="QGI">
+          <nome>Riser 7</nome>
+          <uglobal>12.2562128891958</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>138.4</ul>
+            <ang>78.45527681890542</ang>
+            <uv>135.6</uv>
+            <ulm>549.9</ulm>
+            <ulv>542.4</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>7.0</tmona>
+            <tmonf>24.7665768123042</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>4.33</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.444</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>6.20003076436747</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="4" seq="4" injgas="QGI">
+          <nome>Riser 6</nome>
+          <uglobal>12.2679204456106</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>139.8</ul>
+            <ang>75.92002064751435</ang>
+            <uv>135.6</uv>
+            <ulm>689.7</ulm>
+            <ulv>678.0</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>6.0</tmona>
+            <tmonf>26.9520288397912</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>4.33</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.444</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>6.20003076436747</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="5" seq="5" injgas="QGI">
+          <nome>Riser 5</nome>
+          <uglobal>12.2819470211444</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>142.6</ul>
+            <ang>71.97315757343897</ang>
+            <uv>135.6</uv>
+            <ulm>832.3000000000001</ulm>
+            <ulv>813.6</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>5.0</tmona>
+            <tmonf>29.1508153518305</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>4.33</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.444</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>6.20003076436747</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="6" seq="6" injgas="QGI">
+          <nome>Riser 4</nome>
+          <uglobal>12.2934285525896</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>150.6</ul>
+            <ang>64.21048549072637</ang>
+            <uv>135.6</uv>
+            <ulm>982.9000000000001</ulm>
+            <ulv>949.2</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>5.0</tmona>
+            <tmonf>31.4001293327559</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>4.33</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.444</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>6.20003076436747</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="7" seq="7" injgas="QGI">
+          <nome>Riser 3</nome>
+          <uglobal>12.3043747819688</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>232.9</ul>
+            <ang>35.607128661967856</ang>
+            <uv>135.6</uv>
+            <ulm>1215.8000000000002</ulm>
+            <ulv>1084.8</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>34.1619903898705</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>4.33</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.444</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>6.20003076436747</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="8" seq="8" injgas="QGI">
+          <nome>Riser 2</nome>
+          <uglobal>12.3183829083009</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>311.0</ul>
+            <ang>0.5527009786812833</ang>
+            <uv>3.0</uv>
+            <ulm>1526.8000000000002</ulm>
+            <ulv>1087.8</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>36.1978098940344</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>4.33</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4439977968852615</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>6.2</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="9" seq="9" injgas="QGI">
+          <nome>Riser 1</nome>
+          <uglobal>12.5399698550924</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>998.0</ul>
+            <ang>0.5167024100603789</ang>
+            <uv>9.0</uv>
+            <ulm>2524.8</ulm>
+            <ulv>1096.8</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>40.8335345859463</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>5.83</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.35359019199817415</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>3.91</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="10" seq="10" injgas="QGI">
+          <nome>Riser 0</nome>
+          <uglobal>8.01693237284046</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>808.0</ul>
+            <ang>-1.418357223708753</ang>
+            <uv>-20.0</uv>
+            <ulm>3332.8</ulm>
+            <ulv>1076.8</ulv>
+            <ntrec>5</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>44.7477154507983</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>5.83</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.35359019199817415</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>3.91</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="11" seq="11" injgas="QGI">
+          <nome>Flow 4</nome>
+          <uglobal>8.0304027968794</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>537.0</ul>
+            <ang>-1.0670221883628905</ang>
+            <uv>-10.0</uv>
+            <ulm>3869.8</ulm>
+            <ulv>1066.8</ulv>
+            <ntrec>10</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.14</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>47.6022163414294</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>5.83</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.35359019199817415</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>3.91</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="22" seq="12">
+          <nome>Coluna 1</nome>
+          <uglobal>8.03624704408748</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>945.0</ul>
+            <ang>90.0</ang>
+            <uv>945.0</uv>
+            <ulm>2010.0</ulm>
+            <ulv>2010.0</ulv>
+            <ntrec>10</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.1</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>42.3</tmona>
+            <tmonf>62.2057056071426</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.19888</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="GAS"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.178</eda>
+            <espt>0.77216</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="23" seq="13">
+          <nome>Coluna 2</nome>
+          <uglobal>20.2407603217409</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>120.0</ul>
+            <ang>87.66074712900105</ang>
+            <uv>119.9</uv>
+            <ulm>2130.0</ulm>
+            <ulv>2129.9</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.1</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>47.2</tmona>
+            <tmonf>63.3907794877463</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.19888</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="GAS"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.178</eda>
+            <espt>0.77216</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="26" seq="14">
+          <nome>Coluna 3</nome>
+          <uglobal>19.9762226532541</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>119.9</ul>
+            <ang>80.62929711946677</ang>
+            <uv>118.3</uv>
+            <ulm>2249.9</ulm>
+            <ulv>2248.2000000000003</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.1</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>52.0</tmona>
+            <tmonf>64.6531830699622</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.19888</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="GAS"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.178</eda>
+            <espt>0.77216</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="27" seq="15">
+          <nome>Coluna 4</nome>
+          <uglobal>19.7925476997961</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>149.5</ul>
+            <ang>68.71283469092498</ang>
+            <uv>139.3</uv>
+            <ulm>2399.4</ulm>
+            <ulv>2387.5000000000005</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.1</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>57.6</tmona>
+            <tmonf>65.3445217456803</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.19888</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="GAS"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.178</eda>
+            <espt>0.77216</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="28" seq="16">
+          <nome>Coluna 5</nome>
+          <uglobal>19.8913752762451</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>149.5</ul>
+            <ang>52.93890268192029</ang>
+            <uv>119.3</uv>
+            <ulm>2548.9</ulm>
+            <ulv>2506.8000000000006</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.1</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>62.5</tmona>
+            <tmonf>65.7706348052785</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.19888</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="GAS"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.178</eda>
+            <espt>0.77216</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="30" seq="17">
+          <nome>Coluna 6</nome>
+          <uglobal>18.5815181369437</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>149.5</ul>
+            <ang>37.06176362244961</ang>
+            <uv>90.1</uv>
+            <ulm>2698.4</ulm>
+            <ulv>2596.9000000000005</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.1</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>66.1</tmona>
+            <tmonf>65.9800750205068</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.19888</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.178</eda>
+            <espt>0.77216</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="31" seq="18">
+          <nome>Coluna 7</nome>
+          <uglobal>18.0740935088154</uglobal>
+          <corr tipo="MUKHERJEE_BRILL"/>
+          <medidas>
+            <ul>119.8</ul>
+            <ang>22.83924386468946</ang>
+            <uv>46.5</uv>
+            <ulm>2818.2000000000003</ulm>
+            <ulv>2643.4000000000005</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.1</fcorrp>
+            <fcorrt>1.04</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>68.0</tmona>
+            <tmonf>66.0</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.19888</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.178</eda>
+            <espt>0.77216</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+      </producao>
+      <!-- Unidades de Injeção -->
+      <injecao>
+        <temp_jusante>
+          <tsupa>4.0</tsupa>
+          <tsupf>22.9784326727637</tsupf>
+        </temp_jusante>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="0" seq="0">
+          <nome>Riser 10_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>136.8</ul>
+            <ang>-82.40543011049202</ang>
+            <ntrec>4</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>25.0</tmona>
+            <tmonf>25.0</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>2.5</dti>
+            <eda>0.254</eda>
+            <espt>3.28</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4709096548635989</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>4.17</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="1" seq="1">
+          <nome>Riser 9_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>137.1</ul>
+            <ang>-81.51676898050809</ang>
+            <ntrec>3</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>22.0</tmona>
+            <tmonf>25.7172807710091</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>2.5</dti>
+            <eda>0.6096</eda>
+            <espt>3.28</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4709096548635989</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>4.17</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="2" seq="2">
+          <nome>Riser 8_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>137.6</ul>
+            <ang>-80.219279385665</ang>
+            <ntrec>2</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>15.0</tmona>
+            <tmonf>25.7495829483247</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>2.5</dti>
+            <eda>0.6096</eda>
+            <espt>3.28</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4709096548635989</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>4.17</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="3" seq="3">
+          <nome>Riser 7_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>138.4</ul>
+            <ang>-78.45527681890542</ang>
+            <ntrec>2</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>12.0</tmona>
+            <tmonf>25.2230806070503</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>2.5</dti>
+            <eda>0.6096</eda>
+            <espt>3.28</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4709096548635989</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>4.17</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="4" seq="4">
+          <nome>Riser 6_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>139.8</ul>
+            <ang>-75.92002064751435</ang>
+            <ntrec>1</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>7.0</tmona>
+            <tmonf>24.3106216051157</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>2.5</dti>
+            <eda>0.6096</eda>
+            <espt>3.28</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4709096548635989</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>4.17</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="5" seq="5">
+          <nome>Riser 5_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>142.6</ul>
+            <ang>-71.97315757343897</ang>
+            <ntrec>1</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>6.0</tmona>
+            <tmonf>23.1708161756917</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>2.5</dti>
+            <eda>0.6096</eda>
+            <espt>3.28</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4709096548635989</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>4.17</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="6" seq="6">
+          <nome>Riser 4_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>150.6</ul>
+            <ang>-64.21048549072637</ang>
+            <ntrec>1</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>5.0</tmona>
+            <tmonf>22.0279341540059</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>2.5</dti>
+            <eda>0.6096</eda>
+            <espt>3.28</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4709096548635989</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>4.17</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="7" seq="7">
+          <nome>Riser 3_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>232.9</ul>
+            <ang>-35.607128661967856</ang>
+            <ntrec>1</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>5.0</tmona>
+            <tmonf>20.8859186488355</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>2.5</dti>
+            <eda>0.6096</eda>
+            <espt>3.28</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4709096548635989</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>4.17</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="8" seq="8">
+          <nome>Riser 2_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>311.0</ul>
+            <ang>-0.5527009786812833</ang>
+            <ntrec>1</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>18.8199056155084</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>2.5</dti>
+            <eda>0.6096</eda>
+            <espt>3.28</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.4709096548635989</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>4.17</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="9" seq="9">
+          <nome>Riser 1_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>998.0</ul>
+            <ang>-0.5167024100603789</ang>
+            <ntrec>1</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>15.3728019705659</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>4.0</dti>
+            <eda>0.4064</eda>
+            <espt>3.005</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.6086840492146929</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>8.23</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="10" seq="10">
+          <nome>Riser 0_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>808.0</ul>
+            <ang>1.418357223708753</ang>
+            <ntrec>5</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>6.66110186005214</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>4.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.005</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.6086840492146929</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>8.23</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="11" seq="11">
+          <nome>Flow 4_inj</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>537.0</ul>
+            <ang>1.0670221883628905</ang>
+            <ntrec>10</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>4.74723690827626</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>4.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.005</espt>
+            <espi_cp>0.0</espi_cp>
+            <xkt>0.6086840492146929</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>8.23</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+      </injecao>
+    </sistema_producao>
+    <!-- Gás Lift -->
+    <gas_lift tipo_injecao="PRESSURE" convergir_vazao="FALSE">
+      <prev>114.81</prev>
+      <qginj>120000.0</qginj>
+      <ivgl tipo="STANDARD" tipo_orificio="TC_MODIFICADO" tipo_venturi="MODELO_RIGOROSO"/>
+      <alfa>0.29</alfa>
+      <sgig>0.75</sgig>
+      <valvula_instalada id="0" seq="0" operacao="QGI" pressao="PCAL" nova="TRUE" ativo="TRUE" joule_thomson="TRUE">
+        <vgl_inst tipo="VENTURI">
+          <tualp>0</tualp>
+          <fabricante>Personalizado</fabricante>
+          <orificio>5/16</orificio>
+          <diam_orificio>0.3125</diam_orificio>
+          <diam_externo>1.5</diam_externo>
+          <fator_r></fator_r>
+        </vgl_inst>
+        <profm>2200.0</profm>
+        <angInj>0.0</angInj>
+        <tcal></tcal>
+        <pcal></pcal>
+        <pnc></pnc>
+        <pno></pno>
+        <rgli></rgli>
+        <rglt></rglt>
+        <qgi_valv>120000.0</qgi_valv>
+        <rigfole></rigfole>
+        <fator_qginj>0.66</fator_qginj>
+      </valvula_instalada>
+      <valvula_instalada id="1" seq="1" operacao="DESEMPENHO" pressao="PCAL" nova="TRUE" ativo="TRUE" joule_thomson="TRUE">
+        <vgl_inst tipo="ORIFICIO">
+          <tualp>0</tualp>
+          <fabricante>PDG</fabricante>
+          <orificio>CEGA</orificio>
+          <diam_orificio></diam_orificio>
+          <diam_externo>1.0</diam_externo>
+          <fator_r></fator_r>
+        </vgl_inst>
+        <profm>2640.0</profm>
+        <angInj>0.0</angInj>
+        <tcal></tcal>
+        <pcal></pcal>
+        <pnc></pnc>
+        <pno></pno>
+        <rgli></rgli>
+        <rglt></rglt>
+        <qgi_valv></qgi_valv>
+        <rigfole></rigfole>
+        <fator_qginj></fator_qginj>
+      </valvula_instalada>
+    </gas_lift>
+    <!-- Conjuntos BCS -->
+    <conjuntos_bcs>
+      <dimensionamento calcula="VAZAO_TDH">
+        <ql></ql>
+        <fg></fg>
+        <freq_motor></freq_motor>
+      </dimensionamento>
+    </conjuntos_bcs>
+    <dados_medicoes>
+      <pdg_vertical>
+      </pdg_vertical>
+      <pdg_medido>
+      </pdg_medido>
+      <tpt_vertical>
+      </tpt_vertical>
+      <tpt_medido>
+      </tpt_medido>
+    </dados_medicoes>
+    <envelope_hidratos nome="Sem inibidor">
+      <temp_hidrato>
+        <valor_hid>4.0</valor_hid>
+        <valor_hid>6.0</valor_hid>
+        <valor_hid>8.0</valor_hid>
+        <valor_hid>10.0</valor_hid>
+        <valor_hid>12.0</valor_hid>
+        <valor_hid>14.0</valor_hid>
+        <valor_hid>16.0</valor_hid>
+        <valor_hid>18.0</valor_hid>
+        <valor_hid>20.0</valor_hid>
+        <valor_hid>22.0</valor_hid>
+        <valor_hid>24.0</valor_hid>
+        <valor_hid>26.0</valor_hid>
+        <valor_hid>28.0</valor_hid>
+        <valor_hid>30.0</valor_hid>
+        <valor_hid>32.0</valor_hid>
+        <valor_hid>34.0</valor_hid>
+        <valor_hid>36.0</valor_hid>
+        <valor_hid>38.0</valor_hid>
+        <valor_hid>40.0</valor_hid>
+        <valor_hid>42.0</valor_hid>
+        <valor_hid>44.0</valor_hid>
+        <valor_hid>46.0</valor_hid>
+        <valor_hid>48.0</valor_hid>
+        <valor_hid>50.0</valor_hid>
+        <valor_hid>52.0</valor_hid>
+        <valor_hid>54.0</valor_hid>
+        <valor_hid>56.0</valor_hid>
+        <valor_hid>58.0</valor_hid>
+        <valor_hid>60.0</valor_hid>
+        <valor_hid>62.0</valor_hid>
+        <valor_hid>64.0</valor_hid>
+        <valor_hid>66.0</valor_hid>
+        <valor_hid>68.0</valor_hid>
+        <valor_hid>70.0</valor_hid>
+      </temp_hidrato>
+      <pressao_hidrato concentracao="0.0" exibir="TRUE">
+        <valor_hid>9.52414942921385</valor_hid>
+        <valor_hid>12.267186042124475</valor_hid>
+        <valor_hid>15.76481265263877</valor_hid>
+        <valor_hid>20.261761151871436</valor_hid>
+        <valor_hid>26.135326538624298</valor_hid>
+        <valor_hid>33.925958405775674</valor_hid>
+        <valor_hid>44.520809858616346</valor_hid>
+        <valor_hid>59.17413183910918</valor_hid>
+        <valor_hid>80.04772271876736</valor_hid>
+        <valor_hid>116.77790071023233</valor_hid>
+        <valor_hid>176.22735592684555</valor_hid>
+        <valor_hid>259.10988971769154</valor_hid>
+        <valor_hid>365.2011645159152</valor_hid>
+        <valor_hid>494.062702349936</valor_hid>
+        <valor_hid>644.9297160600205</valor_hid>
+        <valor_hid>816.6295320012441</valor_hid>
+        <valor_hid>1007.5306042328419</valor_hid>
+        <valor_hid>1215.6240918152478</valor_hid>
+        <valor_hid>1438.6666190799099</valor_hid>
+        <valor_hid>1674.3026415748498</valor_hid>
+        <valor_hid>1920.2887836315153</valor_hid>
+        <valor_hid>2174.6060071482107</valor_hid>
+        <valor_hid>2435.5513860492624</valor_hid>
+        <valor_hid>2701.76869777141</valor_hid>
+        <valor_hid>2972.2484232638058</valor_hid>
+        <valor_hid>3246.327746988013</valor_hid>
+        <valor_hid>3523.5987824588415</valor_hid>
+        <valor_hid>3804.0105438656424</valor_hid>
+        <valor_hid>4087.7669744510104</valor_hid>
+        <valor_hid>4375.520692591252</valor_hid>
+        <valor_hid>4668.444371931292</valor_hid>
+        <valor_hid>4968.597839221345</valor_hid>
+        <valor_hid>5279.682664314521</valor_hid>
+        <valor_hid>5608.877649350186</valor_hid>
+      </pressao_hidrato>
+      <pressao_hidrato exibir="FALSE">
+      </pressao_hidrato>
+      <pressao_hidrato exibir="FALSE">
+      </pressao_hidrato>
+      <pressao_hidrato exibir="FALSE">
+      </pressao_hidrato>
+      <pressao_hidrato exibir="FALSE">
+      </pressao_hidrato>
+    </envelope_hidratos>
+  </entrada>
+  <unidades>
+    <unidade_var nome="pwh" unidade_vis="bar abs" unidade_ref="kgf/cm2"/>
+    <unidade_var nome="eda" unidade_vis="in" unidade_ref="mm"/>
+    <unidade_var nome="pressao" unidade_vis="bar" unidade_ref="kgf/cm2"/>
+    <unidade_var nome="espt" unidade_vis="mm" unidade_ref="cm"/>
+  </unidades>
+</marlim>
+<!-- ##FIM_ENTRADA## -->
+<!-- ##INICIO_SAIDA##
+#RESULT=TODOS
+#RGLIT= 9.1123813737254707E+001
+#QLSC= 1.3168895712157803E+003
+#QGSC=0.0
+#QOSC= 1.3089882337884856E+003
+#QGIT= 1.1999999999999999E+005
+#QGT= 2.3689264927731175E+005
+#PWF= 1.8302425469506423E+002
+#PTUB= 1.6170000000000002E+001
+#TWF= 6.6000000000000000E+001
+#PWH= 7.7527614083222133E+001
+#TWH= 4.7602216341429418E+001
+#PRIN=TRUE
+#OKVGLC=FALSE
+#DISP=FALSE
+#IP= 2.8300000000000000E+002
+**Fluidos**
+#SGPG= 7.4111805413375864E-001
+#PINJ1= 0.0000000000000000E+000
+**Valvulas**
+#VV=0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;2;0;0;
+#IOPN=3;0;0;0;0;0;0;0;0;0;
+#PCAL= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PSC= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PSOC= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PSO= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PNC= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PNOC= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PNO= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#QGI1= 1.2000000000000000E+005; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#ABE= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+**Dimensionamento**
+#DPVOO= 0.0000000000000000E+000
+#PNOO= 0.0000000000000000E+000
+#TCAL_M= 0.0000000000000000E+000
+#PD= 0.0000000000000000E+000
+#QLD= 0.0000000000000000E+000
+#QGD= 0.0000000000000000E+000
+#CODM=0;0;0;0;0;0;0;0;0;0;
+#PROFME= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PROFVE= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PCAL_M= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PNC_M= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PNO_M= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#OkDIMGLC=FALSE
+#IDPO=0
+#NMAND=0
+**Pontos da curva IPR**
+#IPR_PRESSAO=187.73;168.957;150.184;131.411;112.638;93.865;75.092;56.319;37.546;18.773;0;
+#IPR_VAZAO=0.00;5076.64;9681.03;13813.17;17473.07;20660.73;23376.14;25619.30;27390.22;28688.90;29515.33;
+**Sistema de Producao**
+**Unidades**
+#NUN=21
+#SAIDAXORIG=0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;14;15;16;17;17;18;
+#NAT=2;2;2;2;2;2;2;2;2;2;2;2;5;5;5;5;5;5;5;5;5;
+#NTREC=4;3;2;2;1;1;1;1;1;1;5;10;10;2;2;1;2;2;2;1;2;
+#NANU=0;0;0;0;0;0;0;0;0;0;0;0;1;1;1;1;1;1;2;2;2;
+#CORR=13;13;13;13;13;13;13;13;13;13;13;13;13;13;13;13;13;13;13;13;13;
+#PV= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 1.2727164459854384E+002; 1.4496234003802476E+002; 1.4694277545689346E+002; 1.4806353049314450E+002; 1.4885398802213726E+002; 1.5105467869941165E+002; 1.5289951754349309E+002; 1.5373688010437579E+002; 1.5427008099635799E+002; 1.5497023979801187E+002;
+#PTUBD= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#UL= 1.3680000000000001E+002; 1.3709999999999999E+002; 1.3759999999999999E+002; 1.3840000000000001E+002; 1.3980000000000001E+002; 1.4259999999999999E+002; 1.5059999999999999E+002; 2.3290000000000001E+002; 3.1100000000000000E+002; 9.9800000000000000E+002; 8.0800000000000000E+002; 5.3700000000000000E+002; 9.4500000000000000E+002; 1.2000000000000000E+002; 7.0000000000000000E+001; 4.9900000000000091E+001; 1.4950000000000000E+002; 1.4950000000000000E+002; 9.1099999999999909E+001; 5.8400000000000091E+001; 1.1980000000000000E+002;
+#ANG= 8.2405430110492020E+001; 8.1516768980508090E+001; 8.0219279385665004E+001; 7.8455276818905418E+001; 7.5920020647514349E+001; 7.1973157573438968E+001; 6.4210485490726370E+001; 3.5607128661967856E+001; 5.5270097868128332E-001; 5.1670241006037887E-001;-1.4183572237087529E+000;-1.0670221883628905E+000; 9.0000000000000000E+001; 8.7660747129001052E+001; 8.0629297119466770E+001; 8.0629297119466770E+001; 6.8712834690924979E+001; 5.2938902681920290E+001; 3.7061763622449611E+001; 3.7061763622449611E+001; 2.2839243864689461E+001;
+#TMONA= 2.2000000000000000E+001; 1.5000000000000000E+001; 1.2000000000000000E+001; 7.0000000000000000E+000; 6.0000000000000000E+000; 5.0000000000000000E+000; 5.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.2299999999999997E+001; 4.7200000000000003E+001; 5.0002335279399503E+001; 5.2000000000000000E+001; 5.7600000000000001E+001; 6.2500000000000000E+001; 6.4693712374581935E+001; 6.6099999999999994E+001; 6.8000000000000000E+001;
+#TMONF= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 6.6000000000000000E+001;
+#FCORRP= 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1399999999999999E+000; 1.1000000000000001E+000; 1.1000000000000001E+000; 1.1000000000000001E+000; 1.1000000000000001E+000; 1.1000000000000001E+000; 1.1000000000000001E+000; 1.1000000000000001E+000; 1.1000000000000001E+000; 1.1000000000000001E+000;
+#FCORRT= 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000; 1.0400000000000000E+000;
+#DTI= 6.0000000000000000E+000; 6.0000000000000000E+000; 6.0000000000000000E+000; 6.0000000000000000E+000; 6.0000000000000000E+000; 6.0000000000000000E+000; 6.0000000000000000E+000; 6.0000000000000000E+000; 6.0000000000000000E+000; 6.0000000000000000E+000; 6.0000000000000000E+000; 6.0000000000000000E+000; 4.8920000000000003E+000; 4.8920000000000003E+000; 4.8920000000000003E+000; 4.8920000000000003E+000; 4.8920000000000003E+000; 4.8920000000000003E+000; 4.8920000000000003E+000; 4.8920000000000003E+000; 4.8920000000000003E+000;
+#DRI= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 8.6809999999999992E+000; 8.6809999999999992E+000; 8.6809999999999992E+000; 8.6809999999999992E+000; 8.6809999999999992E+000; 8.6809999999999992E+000; 8.6809999999999992E+000; 8.6809999999999992E+000; 8.6809999999999992E+000;
+#ESPT= 4.3300000000000001E+000; 4.3300000000000001E+000; 4.3300000000000001E+000; 4.3300000000000001E+000; 4.3300000000000001E+000; 4.3300000000000001E+000; 4.3300000000000001E+000; 4.3300000000000001E+000; 4.3300000000000001E+000; 5.8300000000000001E+000; 5.8300000000000001E+000; 5.8300000000000001E+000; 7.7215999999999996E-001; 7.7215999999999996E-001; 7.7215999999999996E-001; 7.7215999999999996E-001; 7.7215999999999996E-001; 7.7215999999999996E-001; 7.7215999999999996E-001; 7.7215999999999996E-001; 7.7215999999999996E-001;
+#ESPR= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 1.1988799999999999E+000; 1.1988799999999999E+000; 1.1988799999999999E+000; 1.1988799999999999E+000; 1.1988799999999999E+000; 1.1988799999999999E+000; 1.1988799999999999E+000; 1.1988799999999999E+000; 1.1988799999999999E+000;
+#ESPI= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#ESPC= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 3.0000000000000000E+000; 3.0000000000000000E+000; 3.0000000000000000E+000; 3.0000000000000000E+000; 3.0000000000000000E+000; 3.0000000000000000E+000; 3.0000000000000000E+000; 3.0000000000000000E+000; 3.0000000000000000E+000;
+#EDA= 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 1.7799999999999999E-001; 1.7799999999999999E-001; 1.7799999999999999E-001; 1.7799999999999999E-001; 1.7799999999999999E-001; 1.7799999999999999E-001; 1.7799999999999999E-001; 1.7799999999999999E-001; 1.7799999999999999E-001;
+#ALFFOR= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 9.9999999999999995E-007; 9.9999999999999995E-007; 9.9999999999999995E-007; 9.9999999999999995E-007; 9.9999999999999995E-007; 9.9999999999999995E-007; 9.9999999999999995E-007; 9.9999999999999995E-007; 9.9999999999999995E-007;
+#XKT= 4.4399779688526148E-001; 4.4400000000000001E-001; 4.4400000000000001E-001; 4.4400000000000001E-001; 4.4400000000000001E-001; 4.4400000000000001E-001; 4.4400000000000001E-001; 4.4400000000000001E-001; 4.4399779688526148E-001; 3.5359019199817415E-001; 3.5359019199817415E-001; 3.5359019199817415E-001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001;
+#XKR= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001; 5.8000000000000000E+001;
+#XKI= 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000;
+#XKC= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000; 1.2100000000000000E+000;
+#XKS= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#XKF= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 1.0000000000000000E+001; 1.0000000000000000E+001; 1.0000000000000000E+001; 1.0000000000000000E+001; 1.0000000000000000E+001; 1.0000000000000000E+001; 1.0000000000000000E+001; 1.0000000000000000E+001; 1.0000000000000000E+001;
+#ENER= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#QLC= 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00;
+#PJUSC= 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00;
+#ANULARXK= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 4.7869454380656942E-002; 5.0384680147246730E-002; 5.0626148384445499E-002; 5.0820635043559832E-002; 5.0843616038700377E-002; 5.1057904358895657E-002; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#ANULARCP= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 3.2937540008102778E+003; 3.0489825212564510E+003; 3.0319567099636433E+003; 3.0188881200400160E+003; 3.0173806105369890E+003; 3.0036854084899983E+003; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#ANULARVISD= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 1.6236059267457848E-002; 1.5943558738340920E-002; 1.5933511661995591E-002; 1.5927197409816237E-002; 1.5926552419275253E-002; 1.5921533381699254E-002; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#ANULARRHO= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 1.2911864123061110E+002; 1.1421581173525922E+002; 1.1301677219304750E+002; 1.1207498223475075E+002; 1.1196506903353595E+002; 1.1095374299007439E+002; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+**Sistema de Injecao**
+**Unidades**
+#NUN_INJ=12
+#NAT_INJ=2;2;2;2;2;2;2;2;2;2;2;2;
+#NTREC_INJ=4;3;2;2;1;1;1;1;1;1;5;10;
+#CORR_INJ=4;4;4;4;4;4;4;4;4;4;4;4;
+#DTI_INJ= 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 2.5000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000;
+#ESPT_INJ= 3.2799999999999998E+000; 3.2799999999999998E+000; 3.2799999999999998E+000; 3.2799999999999998E+000; 3.2799999999999998E+000; 3.2799999999999998E+000; 3.2799999999999998E+000; 3.2799999999999998E+000; 3.2799999999999998E+000; 3.0049999999999999E+000; 3.0049999999999999E+000; 3.0049999999999999E+000;
+#ESPI_INJ= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#EDA_INJ= 2.5400000000000000E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 6.0960000000000003E-001; 4.0639999999999998E-001; 6.0960000000000003E-001; 6.0960000000000003E-001;
+**Trechos por Unidades**
+#P= 1.6169999968962639E+001; 1.7723507309055027E+001; 1.9253439330355722E+001; 2.0770015179823339E+001;
+#P= 2.2280883559854001E+001; 2.4298472204747512E+001; 2.6324599946092921E+001;
+#P= 2.8365881128208805E+001; 3.1471073741397287E+001;
+#P= 3.4630677755687699E+001; 3.7859179814518846E+001;
+#P= 4.1153033125234046E+001;
+#P= 4.7967520530836495E+001;
+#P= 5.5095677810154328E+001;
+#P= 6.2582542932763829E+001;
+#P= 7.0787975152970247E+001;
+#P= 7.1852038339312912E+001;
+#P= 7.5175052525794584E+001; 7.5434820423500369E+001; 7.5694418827029352E+001; 7.5953905759498596E+001; 7.6213338668080667E+001;
+#P= 7.6472774448420481E+001; 7.6578465287846910E+001; 7.6684103663839508E+001; 7.6789692031235006E+001; 7.6895232832828867E+001; 7.7000728499549908E+001; 7.7106181450631681E+001; 7.7211594093780477E+001; 7.7316968825340169E+001; 7.7422308030453792E+001;
+#P= 7.7527614083222133E+001; 8.2807360453404982E+001; 8.8165145516501283E+001; 9.3598771203390044E+001; 9.9105680961309375E+001; 1.0468219999708512E+002; 1.1032487671646223E+002; 1.1603043122363157E+002; 1.2179565646316560E+002; 1.2761749328167022E+002;
+#P= 1.3349307926672412E+002; 1.3724759933176645E+002;
+#P= 1.4102192161198366E+002; 1.4320931647839811E+002;
+#P= 1.4540622748135033E+002;
+#P= 1.4946294144760409E+002; 1.5524276570753423E+002;
+#P= 1.6105740762545926E+002; 1.6608958526658745E+002;
+#P= 1.7114732088619158E+002; 1.7350670550471077E+002;
+#P= 1.7587098458004317E+002;
+#P= 1.7890919523767352E+002; 1.8096511496830834E+002; 1.8302425469506423E+002;
+#T= 1.6494886367746936E+001; 1.7016822736188690E+001; 1.7527352474704088E+001; 1.8029166531282744E+001;
+#T= 1.8524416948539479E+001; 1.9184155011330738E+001; 1.9852688493440990E+001;
+#T= 2.0541719793139464E+001; 2.1584486562329506E+001;
+#T= 2.2628488772982184E+001; 2.3686699447595430E+001;
+#T= 2.4766576812304223E+001;
+#T= 2.6952028839791229E+001;
+#T= 2.9150815351830545E+001;
+#T= 3.1400129332755878E+001;
+#T= 3.4161990389870510E+001;
+#T= 3.6197809894034393E+001;
+#T= 4.0833534585946289E+001; 4.1585589004430865E+001; 4.2352758356869856E+001; 4.3135316923535349E+001; 4.3933542317006626E+001;
+#T= 4.4747715450798268E+001; 4.5024877522372179E+001; 4.5303852885181165E+001; 4.5584652155446577E+001; 4.5867285988291307E+001; 4.6151765077559617E+001; 4.6438100155631417E+001; 4.6726301993230976E+001; 4.7016381399229992E+001; 4.7308349220445059E+001;
+#T= 4.7602216341429418E+001; 4.9473200030199017E+001; 5.1254412767357920E+001; 5.2945090805403552E+001; 5.4544457056076268E+001; 5.6052601937593771E+001; 5.7469154773096840E+001; 5.8793652104698189E+001; 6.0025539768989688E+001; 6.1163992748198801E+001;
+#T= 6.2205705607142647E+001; 6.2817388838197488E+001;
+#T= 6.3390779487746258E+001; 6.3705696750808272E+001;
+#T= 6.4008145858667689E+001;
+#T= 6.4653183069962168E+001; 6.5029163224653843E+001;
+#T= 6.5344521745680325E+001; 6.5582948586850677E+001;
+#T= 6.5770634805278476E+001; 6.5853218382336166E+001;
+#T= 6.5919237046748890E+001;
+#T= 6.5980075020506774E+001; 6.5999468335728949E+001; 6.6000000000000000E+001;
+#TA= 2.5000000000000000E+001; 2.4250000000000000E+001; 2.3500000000000000E+001; 2.2750000000000000E+001;
+#TA= 2.2000000000000000E+001; 1.9666666666666668E+001; 1.7333333333333332E+001;
+#TA= 1.5000000000000000E+001; 1.3500000000000000E+001;
+#TA= 1.2000000000000000E+001; 9.5000000000000000E+000;
+#TA= 7.0000000000000000E+000;
+#TA= 6.0000000000000000E+000;
+#TA= 5.0000000000000000E+000;
+#TA= 5.0000000000000000E+000;
+#TA= 4.0000000000000000E+000;
+#TA= 4.0000000000000000E+000;
+#TA= 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000;
+#TA= 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000;
+#TA= 4.0000000000000000E+000; 7.8300000000000001E+000; 1.1660000000000000E+001; 1.5489999999999998E+001; 1.9320000000000000E+001; 2.3149999999999999E+001; 2.6979999999999997E+001; 3.0809999999999995E+001; 3.4640000000000001E+001; 3.8469999999999999E+001;
+#TA= 4.2299999999999997E+001; 4.4750000000000000E+001;
+#TA= 4.7200000000000003E+001; 4.8601167639699753E+001;
+#TA= 5.0002335279399503E+001;
+#TA= 5.2000000000000000E+001; 5.4799999999999997E+001;
+#TA= 5.7600000000000001E+001; 6.0049999999999997E+001;
+#TA= 6.2500000000000000E+001; 6.3596856187290967E+001;
+#TA= 6.4693712374581935E+001;
+#TA= 6.6099999999999994E+001; 6.7049999999999997E+001; 6.8000000000000000E+001;
+#U= 1.2215995242768980E+001; 1.2219638333826047E+001; 1.2223599819218224E+001; 1.2227573518476046E+001;
+#U= 1.2231041918607671E+001; 1.2234825874834494E+001; 1.2238359366168632E+001;
+#U= 1.2242060888739173E+001; 1.2249427243733406E+001;
+#U= 1.2256212889195806E+001; 1.2262060353108392E+001;
+#U= 1.2267920445610612E+001;
+#U= 1.2281947021144385E+001;
+#U= 1.2293428552589640E+001;
+#U= 1.2304374781968816E+001;
+#U= 1.2318382908300928E+001;
+#U= 1.2539969855092377E+001;
+#U= 8.0169323728404596E+000; 8.0234028823282095E+000; 8.0251769561606192E+000; 8.0269351928265849E+000; 8.0286772488703306E+000;
+#U= 8.0304027968794003E+000; 8.0311996166903921E+000; 8.0317682822041547E+000; 8.0323350105983966E+000; 8.0328997917282390E+000; 8.0334626156574718E+000; 8.0340234726581947E+000; 8.0345823532104532E+000; 8.0351392480018387E+000; 8.0356941479270567E+000;
+#U= 8.0362470440874834E+000; 2.1269058507893224E+001; 2.1187611936418946E+001; 2.1102151465240976E+001; 2.1010890104826622E+001; 2.0912193210252227E+001; 2.0805035986295291E+001; 2.0687467509552562E+001; 2.0557041326084708E+001; 2.0410069678911420E+001;
+#U= 2.0240760321740879E+001; 2.0114236528364636E+001;
+#U= 1.9976222653254080E+001; 1.9888354481316277E+001;
+#U= 1.9792547699796124E+001;
+#U= 1.9891375276245110E+001; 1.8939719510279318E+001;
+#U= 1.8581518136943711E+001; 1.8809399453168776E+001;
+#U= 1.8074093508815356E+001; 2.1942677753514896E+001;
+#U= 2.1310214775585422E+001;
+#U= 1.4373846196167708E+001; 2.1262476505904715E+001; 2.1864991744867265E+001;
+#VELL= 8.65539059874078895633E-0001; 8.67364661614851741305E-0001; 8.69198130402331459231E-0001; 8.71020668895860808684E-0001;
+#VELL= 8.72762813918561264630E-0001; 8.75065093343007704984E-0001; 8.77348011979825225350E-0001;
+#VELL= 8.79626536237668085836E-0001; 8.83129027704716569483E-0001;
+#VELL= 8.86656258667287128727E-0001; 8.90236391419837916664E-0001;
+#VELL= 8.93927197874946066107E-0001;
+#VELL= 9.01480398433357970592E-0001;
+#VELL= 9.08678126605434659507E-0001;
+#VELL= 9.15638327127200547643E-0001;
+#VELL= 9.23783082345266797484E-0001;
+#VELL= 9.25300320486192195426E-0001;
+#VELL= 9.29530923822976015431E-0001; 9.29965739512581263083E-0001; 9.30404247606368199521E-0001; 9.30846590670380124178E-0001; 9.31292912543717645957E-0001;
+#VELL= 9.31743358378871423364E-0001; 9.31911863674600741080E-0001; 9.32080769438065482983E-0001; 9.32250081368612600811E-0001; 9.32419805178137039872E-0001; 9.32589946591307516826E-0001; 9.32760511345786747818E-0001; 9.32931505192448157237E-0001; 9.33102933895589067262E-0001; 9.33274803233138202068E-0001;
+#VELL= 1.40416881516834253887E+0000; 1.41223555589229305123E+0000; 1.42097537896003669143E+0000; 1.43026148372080577718E+0000; 1.43945388985553277624E+0000; 1.44802228634563556612E+0000; 1.45628289746620402591E+0000; 1.46414790940008659775E+0000; 1.47176876164249219770E+0000; 1.47912551966983813465E+0000;
+#VELL= 1.48603174742677277248E+0000; 1.49014310981595590776E+0000;
+#VELL= 1.49401889723292292012E+0000; 1.49614087935116028231E+0000;
+#VELL= 1.49532005748813537382E+0000;
+#VELL= 1.49843589629323399061E+0000; 1.50233351998914322679E+0000;
+#VELL= 1.50745875881057852087E+0000; 1.51257923122916317028E+0000;
+#VELL= 1.51788205034749839933E+0000; 1.52041521095476093138E+0000;
+#VELL= 1.52299208131418746038E+0000;
+#VELL= 1.52636359251924217805E+0000; 1.52868549731245735254E+0000; 1.53104600909308399815E+0000;
+#VELG= 7.87234909841389067509E+0000; 7.14813106601345014035E+0000; 6.54410111150863449707E+0000; 6.03033966432348282746E+0000;
+#VELG= 5.58780244199530947910E+0000; 5.08129072527566549421E+0000; 4.64675419410888719931E+0000;
+#VELG= 4.27433177574764303856E+0000; 3.79918321174113178388E+0000;
+#VELG= 3.40308911667828441509E+0000; 3.06703323037205645256E+0000;
+#VELG= 2.77873969832030507515E+0000;
+#VELG= 2.31024906053572086210E+0000;
+#VELG= 1.95115532540337111413E+0000;
+#VELG= 1.66831519619692812814E+0000;
+#VELG= 1.43199981455175194892E+0000;
+#VELG= 1.42228512042890281673E+0000;
+#VELG= 1.37805855290043675931E+0000; 1.37839366515623161003E+0000; 1.37886508485107118951E+0000; 1.37947166836025179534E+0000; 1.38021231568370855735E+0000;
+#VELG= 1.38108596769119848350E+0000; 1.38094347021124115994E+0000; 1.38081863896675574284E+0000; 1.38071140151802235392E+0000; 1.38062168636713857451E+0000; 1.38054942293919325846E+0000; 1.38049454156377982483E+0000; 1.38045697345683034954E+0000; 1.38043665070278642867E+0000; 1.38043350623706322859E+0000;
+#VELG= 2.07658393740769984604E+0000; 1.91576050217290778834E+0000; 1.77076691458661987391E+0000; 1.63988152693718955465E+0000; 1.52324887239764324110E+0000; 1.42045713368392389955E+0000; 1.32868526975566937621E+0000; 1.24669761067405115605E+0000; 1.17285507369775352296E+0000; 1.10618378082554150339E+0000;
+#VELG= 1.04612198015379988649E+0000; 1.01123893661699229259E+0000;
+#VELG= 9.78643182299562118206E-0001; 9.60826330117602005383E-0001;
+#VELG= 2.04790724195780918744E-0001;
+#VELG= 1.92838074336692222224E-0001; 1.78061833131708620662E-0001;
+#VELG= 1.61788314084362553570E-0001; 1.47314553842226246297E-0001;
+#VELG= 1.33328699715638625096E-0001; 1.26997812522675304731E-0001;
+#VELG= 1.20742208718180972934E-0001;
+#VELG= 1.12823851839585111677E-0001; 1.07525106816406804941E-0001; 1.02259718557820455983E-0001;
+#VE= 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00;
+#VE= 0.000000000E+00;
+#VE= 0.000000000E+00;
+#VE= 0.000000000E+00;
+#VE= 0.000000000E+00;
+#VE= 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00;
+#VE= 0.000000000E+00;
+#VE= 0.000000000E+00; 0.000000000E+00; 0.000000000E+00;
+#RS= 1.40614901265132141621E+0001; 1.51672432404888909239E+0001; 1.62476586313221896384E+0001; 1.72930506860965332184E+0001;
+#RS= 1.82623102768210593457E+0001; 1.95081381489113321673E+0001; 2.07057566513106735984E+0001;
+#RS= 2.18652974210397887788E+0001; 2.36014430718959669128E+0001;
+#RS= 2.52963579588509011875E+0001; 2.69673036260748209703E+0001;
+#RS= 2.86461110080698046036E+0001;
+#RS= 3.19599687398411252438E+0001;
+#RS= 3.49548274956635990837E+0001;
+#RS= 3.77183587604849887426E+0001;
+#RS= 4.08133996491575449690E+0001;
+#RS= 4.10484531513421121995E+0001;
+#RS= 4.19238275688435871359E+0001; 4.19539808477643739286E+0001; 4.19824875842203896516E+0001; 4.20093530828895031018E+0001; 4.20345823990805216343E+0001;
+#RS= 4.20581803645167372763E+0001; 4.20728894539484397329E+0001; 4.20873807911108624574E+0001; 4.21016547006406924962E+0001; 4.21157115025962258091E+0001; 4.21295515126071908989E+0001; 4.21431750420233322309E+0001; 4.21565823980623254480E+0001; 4.21697738839561638256E+0001; 4.21827497990969980321E+0001;
+#RS= 4.21955104391817356450E+0001; 4.41328226563896248678E+0001; 4.62402187906920764428E+0001; 4.84739699601591397943E+0001; 5.06554109406155409594E+0001; 5.26480928000197470062E+0001; 5.45448628420448994973E+0001; 5.63282720075179350085E+0001; 5.80421403396095868729E+0001; 5.96847812652495790763E+0001;
+#RS= 6.12135567401661236930E+0001; 6.21171155631132099924E+0001;
+#RS= 6.29641308103693709448E+0001; 6.34255303046097648548E+0001;
+#RS= 6.42063125248532611603E+0001;
+#RS= 6.50222846307663171553E+0001; 6.60381436768008487359E+0001;
+#RS= 6.74011127030920729475E+0001; 6.87675754265499014142E+0001;
+#RS= 7.01830297102115548066E+0001; 7.08566207402767649567E+0001;
+#RS= 7.15424870621408722504E+0001;
+#RS= 7.24403775766063760047E+0001; 7.30599631423004315101E+0001; 7.36908266214295370675E+0001;
+#BO= 1.0361036721813346E+000; 1.0383014931432375E+000; 1.0405087846353254E+000; 1.0427029139052930E+000;
+#BO= 1.0448002447507354E+000; 1.0475718930055196E+000; 1.0503202027358844E+000;
+#BO= 1.0530631776314343E+000; 1.0572795909101067E+000;
+#BO= 1.0615257623901055E+000; 1.0658355833115676E+000;
+#BO= 1.0702785976831792E+000;
+#BO= 1.0793711063942983E+000;
+#BO= 1.0880354935721963E+000;
+#BO= 1.0964137063026711E+000;
+#BO= 1.1062171314747327E+000;
+#BO= 1.1080400210199757E+000;
+#BO= 1.1131245429498704E+000; 1.1136464137703546E+000; 1.1141726726446104E+000; 1.1147034892290348E+000; 1.1152390346435712E+000;
+#BO= 1.1157794815181603E+000; 1.1159817180554468E+000; 1.1161844292746379E+000; 1.1163876219529572E+000; 1.1165913028817795E+000; 1.1167954788668968E+000; 1.1170001567287708E+000; 1.1172053433027869E+000; 1.1174110454394990E+000; 1.1176172700048717E+000;
+#BO= 1.1178240238805146E+000; 1.1242773162909074E+000; 1.1312694731551818E+000; 1.1386990232157188E+000; 1.1460537443186058E+000; 1.1529091902435056E+000; 1.1595184838077452E+000; 1.1658113543240523E+000; 1.1719090293573522E+000; 1.1777955683334287E+000;
+#BO= 1.1833217694496303E+000; 1.1866116649062126E+000;
+#BO= 1.1897131182930936E+000; 1.1914111808140202E+000;
+#BO= 1.1907527437481151E+000;
+#BO= 1.1932468676739123E+000; 1.1963669712278309E+000;
+#BO= 1.2004698620855287E+000; 1.2045689612710251E+000;
+#BO= 1.2088141820880220E+000; 1.2108421336518094E+000;
+#BO= 1.2129051259602603E+000;
+#BO= 1.2156043599377870E+000; 1.2174633416183649E+000; 1.2193532871335777E+000;
+#VISCL= 2.0036290078096194E+001; 1.8618759392675244E+001; 1.7371360692464616E+001; 1.6272448631172498E+001;
+#VISCL= 1.5322275909032369E+001; 1.4202324467982811E+001; 1.3216660859481321E+001;
+#VISCL= 1.2334221693384572E+001; 1.1162250433596293E+001;
+#VISCL= 1.0160201180285922E+001; 9.2876910563037907E+000;
+#VISCL= 8.5137380597601418E+000;
+#VISCL= 7.2312688109267391E+000;
+#VISCL= 6.2625851766070149E+000;
+#VISCL= 5.4966106859664627E+000;
+#VISCL= 4.7639499691243872E+000;
+#VISCL= 4.4903769652067860E+000;
+#VISCL= 3.9299125378881601E+000; 3.8577563377334068E+000; 3.7865783032750344E+000; 3.7163765745054480E+000; 3.6471490611226374E+000;
+#VISCL= 3.5788934347108246E+000; 3.5557112001479600E+000; 3.5326505907298937E+000; 3.5097112994232673E+000; 3.4868930183272537E+000; 3.4641954386310170E+000; 3.4416182505730109E+000; 3.4191611434020359E+000; 3.3968238053400626E+000; 3.3746059235467665E+000;
+#VISCL= 3.3525071840857552E+000; 3.1139436660993760E+000; 2.8979084220346505E+000; 2.7039274049484425E+000; 2.5361539617744677E+000; 2.3949410008835232E+000; 2.2726467700202209E+000; 2.1668558763356591E+000; 2.0739233339059218E+000; 1.9921668975055717E+000;
+#VISCL= 1.9212527147506226E+000; 1.8813816753411159E+000;
+#VISCL= 1.8452239459997744E+000; 1.8259310144520582E+000;
+#VISCL= 1.7908176149821224E+000;
+#VISCL= 1.7655941089359248E+000; 1.7349167355629840E+000;
+#VISCL= 1.7000728683007691E+000; 1.6683597393902114E+000;
+#VISCL= 1.6381178336725086E+000; 1.6242576416889227E+000;
+#VISCL= 1.6108105921202740E+000;
+#VISCL= 1.5941414287333786E+000; 1.5833707208168877E+000; 1.5730059493268311E+000;
+#VISCG= 1.0575201030801482E-002; 1.0630287457486906E-002; 1.0685540130568371E-002; 1.0741247895164048E-002;
+#VISCG= 1.0797654707140928E-002; 1.0874559242595274E-002; 1.0954375326957283E-002;
+#VISCG= 1.1036839968304494E-002; 1.1166014644086160E-002;
+#VISCG= 1.1301361992517696E-002; 1.1444012768087874E-002;
+#VISCG= 1.1594334056367551E-002;
+#VISCG= 1.1919242054472428E-002;
+#VISCG= 1.2278890020554923E-002;
+#VISCG= 1.2679151025700931E-002;
+#VISCG= 1.3148891367945814E-002;
+#VISCG= 1.3234460909541531E-002;
+#VISCG= 1.3474382010614055E-002; 1.3498477031968719E-002; 1.3522808080275268E-002; 1.3547388607683212E-002; 1.3572232254570403E-002;
+#VISCG= 1.3597352845318959E-002; 1.3606793845267208E-002; 1.3616260467571480E-002; 1.3625753246222554E-002; 1.3635272717630174E-002; 1.3644819420600788E-002; 1.3654393896314591E-002; 1.3663996688301813E-002; 1.3673628342418314E-002; 1.3683289406820476E-002;
+#VISCG= 1.3692980431939393E-002; 1.3986189072442787E-002; 1.4287863508660691E-002; 1.4598058490497390E-002; 1.4916757459457268E-002; 1.5243828353199821E-002; 1.5579090246350985E-002; 1.5922327722991167E-002; 1.6273302722133863E-002; 1.6631784039266760E-002;
+#VISCG= 1.6998106792258067E-002; 1.7233889603340879E-002;
+#VISCG= 1.7472511936295801E-002; 1.7611501575195001E-002;
+#VISCG= 1.7585372240593852E-002;
+#VISCG= 1.7840420187578615E-002; 1.8208084645375933E-002;
+#VISCG= 1.8582947429480925E-002; 1.8910710579059149E-002;
+#VISCG= 1.9243720701426287E-002; 1.9399792284650528E-002;
+#VISCG= 1.9557135458095631E-002;
+#VISCG= 1.9760736873854615E-002; 1.9899714109980416E-002; 2.0039984483266476E-002;
+#HOLD= 2.4400088101730694E-001; 2.5739228861476177E-001; 2.7002765873072188E-001; 2.8205413601192847E-001;
+#HOLD= 2.9379687160021717E-001; 3.0844241206377887E-001; 3.2248744006423552E-001;
+#HOLD= 3.3617251908715312E-001; 3.5516847549206848E-001;
+#HOLD= 3.7375117666410412E-001; 3.9084821360592376E-001;
+#HOLD= 4.0817745127408345E-001;
+#HOLD= 4.4056224761875407E-001;
+#HOLD= 4.7281221622063313E-001;
+#HOLD= 5.1299775797652314E-001;
+#HOLD= 5.0473755981140678E-001;
+#HOLD= 5.0546248680445027E-001;
+#HOLD= 5.6245133937818115E-001; 5.6218106172180959E-001; 5.6190784714171815E-001; 5.6163165814644445E-001; 5.6135245679964818E-001;
+#HOLD= 5.6398789820341355E-001; 5.6393494805054778E-001; 5.6388142105222649E-001; 5.6382731663861430E-001; 5.6377263424328949E-001; 5.6371737330428340E-001; 5.6366153326510460E-001; 5.6360511357575038E-001; 5.6354811369370383E-001; 5.6349053308491825E-001;
+#HOLD= 4.9125256473074691E-001; 5.0429726654561380E-001; 5.1694315440337335E-001; 5.2918323409187140E-001; 5.4077996087091906E-001; 5.5151025238999785E-001; 5.6158811670467679E-001; 5.7101917909201771E-001; 5.7989773130287248E-001; 5.8825112307614069E-001;
+#HOLD= 5.9613366291279080E-001; 6.0079123791569844E-001;
+#HOLD= 6.0634137603334815E-001; 6.0893807356698559E-001;
+#HOLD= 8.7954271780281235E-001;
+#HOLD= 8.8598058168844851E-001; 8.9403575009832670E-001;
+#HOLD= 9.0307707186583441E-001; 9.1125061424584430E-001;
+#HOLD= 9.1925397790043428E-001; 9.2291076329201138E-001;
+#HOLD= 9.2654396184933074E-001;
+#HOLD= 9.3117086625580126E-001; 9.3428406676678755E-001; 9.3739095086325630E-001;
+#IREG=4;4;4;4;
+#IREG=4;4;4;
+#IREG=4;4;
+#IREG=4;4;
+#IREG=4;
+#IREG=4;
+#IREG=4;
+#IREG=4;
+#IREG=4;
+#IREG=4;
+#IREG=4;4;4;4;4;
+#IREG=4;4;4;4;4;4;4;4;4;4;
+#IREG=4;4;4;4;4;4;4;4;4;4;
+#IREG=4;4;
+#IREG=4;4;
+#IREG=3;
+#IREG=3;3;
+#IREG=3;3;
+#IREG=3;3;
+#IREG=3;
+#IREG=3;3;3;
+#FG= 9.0094413613510184E+001; 8.9178901828552341E+001; 8.8275151156878522E+001; 8.7379000271826882E+001;
+#FG= 8.6490921779334215E+001; 8.5308716940521151E+001; 8.4117817171941439E+001;
+#FG= 8.2932990858848555E+001; 8.1139040231771588E+001;
+#FG= 7.9330795161802342E+001; 7.7503772133253605E+001;
+#FG= 7.5659997948601827E+001;
+#FG= 7.1931620955311686E+001;
+#FG= 6.8226187228939480E+001;
+#FG= 6.4564442863922849E+001;
+#FG= 6.0786578272469342E+001;
+#FG= 6.0585020491287942E+001;
+#FG= 5.9718531688624552E+001; 5.9713130562265881E+001; 5.9710015868254473E+001; 5.9709161842449078E+001; 5.9710542672755359E+001;
+#FG= 5.9714132475046135E+001; 5.9707299889401646E+001; 5.9700764933788861E+001; 5.9694526334907195E+001; 5.9688582821088332E+001; 5.9682933122157891E+001; 5.9677575969300101E+001; 5.9672510094925336E+001; 5.9667734232540766E+001; 5.9663247116623722E+001;
+#FG= 5.9659047482498082E+001; 5.7564987119806709E+001; 5.5479633119719949E+001; 5.3413848190274663E+001; 5.1414164519129542E+001; 4.9519516290247125E+001; 4.7709172600026186E+001; 4.5989253221627905E+001; 4.4348653975844513E+001; 4.2787289730230036E+001;
+#FG= 4.1313525666285301E+001; 4.0427208552929841E+001;
+#FG= 3.9578525120771758E+001; 3.9106192643301441E+001;
+#FG= 1.2045728219718765E+001;
+#FG= 1.1401941831155149E+001; 1.0596424990167330E+001;
+#FG= 9.6922928134165591E+000; 8.8749385754155696E+000;
+#FG= 8.0746022099565717E+000; 7.7089236707988622E+000;
+#FG= 7.3456038150669256E+000;
+#FG= 6.8829133744198749E+000; 6.5715933233212454E+000; 6.2609049136743700E+000;
+#FO= 9.8482466122611054E+000; 1.0758587976461527E+001; 1.1657257884304100E+001; 1.2548391730273012E+001;
+#FO= 1.3431512857728709E+001; 1.4607146599504270E+001; 1.5791456848591622E+001;
+#FO= 1.6969760369136893E+001; 1.8753902841057922E+001;
+#FO= 2.0552336781304888E+001; 2.2369524781256793E+001;
+#FO= 2.4203461649042296E+001;
+#FO= 2.7912196706051496E+001;
+#FO= 3.1598357266635730E+001;
+#FO= 3.5241301753369598E+001;
+#FO= 3.9000241781268116E+001;
+#FO= 3.9200916735949242E+001;
+#FO= 4.0063362137039519E+001; 4.0068776250511597E+001; 4.0071915068303390E+001; 4.0072804170725945E+001; 4.0071469184199984E+001;
+#FO= 4.0067935805161028E+001; 4.0074747531213603E+001; 4.0081263061257815E+001; 4.0087483659626344E+001; 4.0093410589007291E+001; 4.0099045110581628E+001; 4.0104388484157631E+001; 4.0109441968302434E+001; 4.0114206820470407E+001; 4.0118684297129001E+001;
+#FO= 4.0122875653881401E+001; 4.2206800652197593E+001; 4.4282286517750386E+001; 4.6338516956069249E+001; 4.8329098039673738E+001; 5.0215194681341480E+001; 5.2017470393383022E+001; 5.3729809302588741E+001; 5.5363276003567087E+001; 5.6917942864153716E+001;
+#FO= 5.8385442229034958E+001; 5.9268013749877966E+001;
+#FO= 6.0113120054472766E+001; 6.0583463651322809E+001;
+#FO= 8.7505662538606032E+001;
+#FO= 8.8147119746903542E+001; 8.8949749804701668E+001;
+#FO= 8.9850898879534583E+001; 9.0665728917588467E+001;
+#FO= 9.1463712896395677E+001; 9.1828357807515886E+001;
+#FO= 9.2190677039300454E+001;
+#FO= 9.2652132215764965E+001; 9.2962646381658374E+001; 9.3272551323276119E+001;
+#FW= 5.7339774228713065E-002; 6.2510194986136192E-002; 6.7590958817381627E-002; 7.2607997900107593E-002;
+#FW= 7.7565362937073820E-002; 8.4136459974576944E-002; 9.0725979466932644E-002;
+#FW= 9.7248772014558782E-002; 1.0705692717049436E-001;
+#FW= 1.1686805689277142E-001; 1.2670308548960485E-001;
+#FW= 1.3654040235588438E-001;
+#FW= 1.5618233863680847E-001;
+#FW= 1.7545550442478924E-001;
+#FW= 1.9425538270756337E-001;
+#FW= 2.1317994626254838E-001;
+#FW= 2.1406277276280958E-001;
+#FW= 2.1810617433592688E-001; 2.1809318722252621E-001; 2.1806906344213040E-001; 2.1803398682498082E-001; 2.1798814304465836E-001;
+#FW= 2.1793171979283521E-001; 2.1795257938476489E-001; 2.1797200495331548E-001; 2.1799000546645414E-001; 2.1800658990438404E-001; 2.1802176726048941E-001; 2.1803554654226537E-001; 2.1804793677223025E-001; 2.1805894698882261E-001; 2.1806858624728248E-001;
+#FW= 2.1807686362051754E-001; 2.2821222799570862E-001; 2.3808036252966255E-001; 2.4763485365609431E-001; 2.5673744119673081E-001; 2.6528902841139979E-001; 2.7335700659078876E-001; 2.8093747578336753E-001; 2.8807002058840681E-001; 2.9476740561624332E-001;
+#FW= 3.0103210467973862E-001; 3.0477769719219322E-001;
+#FW= 3.0835482475547710E-001; 3.1034370537574907E-001;
+#FW= 4.4860924167519478E-001;
+#FW= 4.5093842194131784E-001; 4.5382520513099611E-001;
+#FW= 4.5680830704886183E-001; 4.5933250699596168E-001;
+#FW= 4.6168489364775489E-001; 4.6271852168525290E-001;
+#FW= 4.6371914563262268E-001;
+#FW= 4.6495440981517466E-001; 4.6576029502037902E-001; 4.6654376304949607E-001;
+#FRGR= 1.97104043975967359773E-0002; 1.98869131941152570322E-0002; 1.76009383644207164002E-0002; 1.57578399083205696651E-0002;
+#FRGR= 1.57578399083205696651E-0002; 1.29713340655767752433E-0002; 1.15539465465498038105E-0002;
+#FRGR= 1.15539465465498038105E-0002; 9.37709795823283693598E-0003;
+#FRGR= 9.37709795823283693598E-0003; 7.19655273005939175502E-0003;
+#FRGR= 7.19655273005939175502E-0003;
+#FRGR= 5.80149515499379743484E-0003;
+#FRGR= 4.77050240613971330690E-0003;
+#FRGR= 4.04181547644683135168E-0003;
+#FRGR= 3.55472492742273648339E-0003;
+#FRGR= 2.92086850484091486907E-0003;
+#FRGR= 2.89541228280659584916E-0003; 3.04615998713509878394E-0003; 3.04337075872750062585E-0003; 3.04092494183201873576E-0003; 3.03881869749096807020E-0003;
+#FRGR= 3.03881869749096807020E-0003; 3.05032949032587883478E-0003; 3.04903985830860749635E-0003; 3.04779391580799403463E-0003; 3.04659143307199721145E-0003; 3.04543218367808654263E-0003; 3.04431594447458075849E-0003; 3.04324249551732461637E-0003; 3.04221162001214455482E-0003; 3.04122310425354982130E-0003;
+#FRGR= 3.04122310425354982130E-0003; 5.58868965178695521867E-0003; 5.22769097026999841242E-0003; 4.91119794431097110820E-0003; 4.63388938676963118128E-0003; 4.39357933486599443436E-0003; 4.18674766371463711683E-0003; 4.00662050217006335918E-0003; 3.84944247341005088169E-0003; 3.71114602059642915106E-0003;
+#FRGR= 3.71114602059642915106E-0003; 3.48686982490904180464E-0003;
+#FRGR= 3.48686982490904180464E-0003; 3.37562336742348420117E-0003;
+#FRGR= 3.37562336742348420117E-0003;
+#FRGR= 2.18613664207610376431E-0003; 2.16740213925178246859E-0003;
+#FRGR= 2.16740213925178246859E-0003; 2.13742218456462029466E-0003;
+#FRGR= 2.13742218456462029466E-0003; 2.11503618099910391377E-0003;
+#FRGR= 2.11503618099910391377E-0003;
+#FRGR= 2.10650429011265897120E-0003; 2.09832383657197550149E-0003; 2.09410743615647274433E-0003;
+#ELGR= 2.57615771771480429796E-0002; 2.59922748783333027661E-0002; 2.73206546307236040461E-0002; 2.85817931133123087189E-0002;
+#ELGR= 2.85817931133123087189E-0002; 3.08892558571192119742E-0002; 3.23580691449719412123E-0002;
+#ELGR= 3.23580691449719412123E-0002; 3.49342689436927419313E-0002;
+#ELGR= 3.49342689436927419313E-0002; 3.84818870566418707499E-0002;
+#ELGR= 3.84818870566418707499E-0002;
+#ELGR= 4.19232362129016493110E-0002;
+#ELGR= 4.42324336140998658243E-0002;
+#ELGR= 4.47929285556473242803E-0002;
+#ELGR= 3.12315427417946728587E-0002;
+#ELGR= 5.12391512048007714008E-0004;
+#ELGR= 4.79165466361549534962E-0004;-1.43780351606988774289E-0003;-1.43642267404464902311E-0003;-1.43502260487270295885E-0003;-1.43360318832972943033E-0003;
+#ELGR=-1.43360318832972943033E-0003;-1.08157877103058413236E-0003;-1.08131103078707520800E-0003;-1.08104105966799630115E-0003;-1.08076885524278108069E-0003;-1.08049441509915568312E-0003;-1.08021773684597631529E-0003;-1.07993881811395471112E-0003;-1.07965765655800896279E-0003;-1.07937424985782872047E-0003;
+#ELGR=-1.07937424985782872047E-0003; 4.94288177085487799287E-0002; 5.06393656303612612789E-0002; 5.17855969296703852058E-0002; 5.28723353298627613568E-0002; 5.38908155883551658567E-0002; 5.48336606936258097057E-0002; 5.57145583246595601488E-0002; 5.65370524312237434479E-0002; 5.73069168971329545653E-0002;
+#ELGR= 5.73069168971329545653E-0002; 5.87471462739103014158E-0002;
+#ELGR= 5.87471462739103014158E-0002; 5.89256907636814429024E-0002;
+#ELGR= 5.89256907636814429024E-0002;
+#ELGR= 7.89059595437144363703E-0002; 7.46851523409503926452E-0002;
+#ELGR= 7.46851523409503926452E-0002; 6.48299070079802415407E-0002;
+#ELGR= 6.48299070079802415407E-0002; 4.95733503352568812685E-0002;
+#ELGR= 4.95733503352568812685E-0002;
+#ELGR= 4.98509511160487399215E-0002; 3.21696777723889445044E-0002; 3.22287541446331413003E-0002;
+#DPDL= 4.26652193558759269508E-0004; 4.30472909952900102552E-0004; 3.39057221939190174789E-0004; 2.74461724796870875366E-0004;
+#DPDL= 2.74461724796870875366E-0004; 1.90834940411571884827E-0004; 1.54592050394065645427E-0004;
+#DPDL= 1.54592050394065645427E-0004; 1.06416011182168851629E-0004;
+#DPDL= 1.06416011182168851629E-0004; 6.64405425085439914547E-0005;
+#DPDL= 6.64405425085439914547E-0005;
+#DPDL= 4.46771019027285606391E-0005;
+#DPDL= 3.08934210555359615930E-0005;
+#DPDL= 2.16130624255089063993E-0005;
+#DPDL= 1.13142243981848617344E-0005;
+#DPDL= 7.66380978265113651956E-0007;
+#DPDL= 7.34903566929589932759E-0007; 3.48651312187892474359E-0007; 3.47067802011548086456E-0007; 3.45623795751292741206E-0007; 3.44316122265525856184E-0007;
+#DPDL= 3.44316122265525856184E-0007; 4.21511537932797970076E-0007; 4.20580909067467235344E-0007; 4.19670817849213518009E-0007; 4.18781054871008211924E-0007; 4.17911414675212286204E-0007; 4.17061695671893109297E-0007; 4.16231700058286794906E-0007; 4.15421233740771543424E-0007; 4.14630106258021429685E-0007;
+#DPDL= 4.14630106258021429685E-0007; 2.33772839254332131061E-0005; 2.00932920320801700945E-0005; 1.73690443574720772765E-0005; 1.50960243518856870508E-0005; 1.32044154649638417742E-0005; 1.16310193877657987051E-0005; 1.03058503508805419385E-0005; 9.18405169170498618432E-0006; 8.22528118291028423459E-0006;
+#DPDL= 8.22528118291028423459E-0006; 6.69779005024634114259E-0006;
+#DPDL= 6.69779005024634114259E-0006; 5.88545177443647878705E-0006;
+#DPDL= 5.88545177443647878705E-0006;
+#DPDL= 1.42937593073661218143E-0006; 1.24119714439207093111E-0006;
+#DPDL= 1.24119714439207093111E-0006; 8.42491974850565393067E-0007;
+#DPDL= 8.42491974850565393067E-0007; 5.04481071935817920035E-0007;
+#DPDL= 5.04481071935817920035E-0007;
+#DPDL= 4.46972348728046659436E-0007; 2.70811856662574843572E-0007; 2.55586127397124446787E-0007;
+#RE= 6.1989667918748193E+004; 6.1194684639145176E+004; 6.0654714345729531E+004; 6.0267713690358112E+004;
+#RE= 5.9900177106722520E+004; 5.9558973020938800E+004; 5.9332102794717124E+004;
+#RE= 5.9283413624740468E+004; 5.9464260585230266E+004;
+#RE= 5.9787519085953973E+004; 6.0274022456444094E+004;
+#RE= 6.0938273219509065E+004;
+#RE= 6.2552129288825687E+004;
+#RE= 6.4085097747619890E+004;
+#RE= 6.5563148766645289E+004;
+#RE= 6.9374716150733002E+004;
+#RE= 7.3249556338278795E+004;
+#RE= 8.0813236566001840E+004; 8.2317165029245924E+004; 8.3860877536670378E+004; 8.5445429358514186E+004; 8.7071901967280122E+004;
+#RE= 8.8675965096336629E+004; 8.9240478439378421E+004; 8.9809893020954783E+004; 9.0384250843282905E+004; 9.0963594240905528E+004; 9.1547965882351171E+004; 9.2137408771788454E+004; 9.2731966250672849E+004; 9.3331681999386696E+004; 9.3936600038871038E+004;
+#RE= 1.1837244978656636E+005; 1.2154434039006056E+005; 1.2489619783187869E+005; 1.2834238977839169E+005; 1.3162355085399252E+005; 1.3456828601600649E+005; 1.3731104940900317E+005; 1.3983338731097800E+005; 1.4219265072981932E+005; 1.4438366742003709E+005;
+#RE= 1.4633607273218996E+005; 1.4745355351771705E+005;
+#RE= 1.4840181295382732E+005; 1.4893117183701132E+005;
+#RE= 9.7366412465229252E+004;
+#RE= 9.8044149036931383E+004; 9.8884386699694456E+004;
+#RE= 9.9907845622805762E+004; 1.0090075808748578E+005;
+#RE= 1.0187616068495208E+005; 1.0234189389370060E+005;
+#RE= 1.0279519153876865E+005;
+#RE= 1.0335872944875305E+005; 1.0371840577385598E+005; 1.0405923407759141E+005;
+#REM= 6.1989667918748193E+004; 6.1194684639145176E+004; 6.0654714345729531E+004; 6.0267713690358112E+004;
+#REM= 5.9900177106722520E+004; 5.9558973020938800E+004; 5.9332102794717124E+004;
+#REM= 5.9283413624740468E+004; 5.9464260585230266E+004;
+#REM= 5.9787519085953973E+004; 6.0274022456444094E+004;
+#REM= 6.0938273219509065E+004;
+#REM= 6.2552129288825687E+004;
+#REM= 6.4085097747619890E+004;
+#REM= 6.5563148766645289E+004;
+#REM= 6.9374716150733002E+004;
+#REM= 7.3249556338278795E+004;
+#REM= 8.0813236566001840E+004; 8.2317165029245924E+004; 8.3860877536670378E+004; 8.5445429358514186E+004; 8.7071901967280122E+004;
+#REM= 8.8675965096336629E+004; 8.9240478439378421E+004; 8.9809893020954783E+004; 9.0384250843282905E+004; 9.0963594240905528E+004; 9.1547965882351171E+004; 9.2137408771788454E+004; 9.2731966250672849E+004; 9.3331681999386696E+004; 9.3936600038871038E+004;
+#REM= 1.1837244978656636E+005; 1.2154434039006056E+005; 1.2489619783187869E+005; 1.2834238977839169E+005; 1.3162355085399252E+005; 1.3456828601600649E+005; 1.3731104940900317E+005; 1.3983338731097800E+005; 1.4219265072981932E+005; 1.4438366742003709E+005;
+#REM= 1.4633607273218996E+005; 1.4745355351771705E+005;
+#REM= 1.4840181295382732E+005; 1.4893117183701132E+005;
+#REM= 9.7366412465229252E+004;
+#REM= 9.8044149036931383E+004; 9.8884386699694456E+004;
+#REM= 9.9907845622805762E+004; 1.0090075808748578E+005;
+#REM= 1.0187616068495208E+005; 1.0234189389370060E+005;
+#REM= 1.0279519153876865E+005;
+#REM= 1.0335872944875305E+005; 1.0371840577385598E+005; 1.0405923407759141E+005;
+#DENL= 8.84925574711705718978E+0002; 8.84017877479319984846E+0002; 8.83082776902170668243E+0002; 8.82131309968113821562E+0002;
+#DENL= 8.81198710506571674550E+0002; 8.79940466783614083313E+0002; 8.78665602811833013674E+0002;
+#DENL= 8.77371089701985364562E+0002; 8.75371628987163800328E+0002;
+#DENL= 8.73328594886271126096E+0002; 8.71229710836584618106E+0002;
+#DENL= 8.69046656427596928729E+0002;
+#DENL= 8.64533043847189481779E+0002;
+#DENL= 8.60166531390059162843E+0002;
+#DENL= 8.55900495057199909632E+0002;
+#DENL= 8.50876811823333470575E+0002;
+#DENL= 8.49672780199188559747E+0002;
+#DENL= 8.46514492277207095283E+0002; 8.46143073965792258118E+0002; 8.45767313418006736081E+0002; 8.45387096074450226202E+0002; 8.45002306578813578153E+0002;
+#DENL= 8.44612828778526316287E+0002; 8.44471980645035370849E+0002; 8.44330644733791904843E+0002; 8.44188816594268626958E+0002; 8.44046491768883002937E+0002; 8.43903665792978133764E+0002; 8.43760334194812853581E+0002; 8.43616492495551371533E+0002; 8.43472136209258719686E+0002; 8.43327260842900183313E+0002;
+#DENL= 8.43181861896344715834E+0002; 8.39919191808711708580E+0002; 8.36432781308973807399E+0002; 8.32770861374088408380E+0002; 8.29169001101189693081E+0002; 8.25821030754300891952E+0002; 8.22611705552338102976E+0002; 8.19572313840613775049E+0002; 8.16647357620357071284E+0002; 8.13843296992090793063E+0002;
+#DENL= 8.11226120641248256815E+0002; 8.09674639216148405996E+0002;
+#DENL= 8.08216264281045516427E+0002; 8.07419242082978731223E+0002;
+#DENL= 8.07855451261067440571E+0002;
+#DENL= 8.06784763410193491273E+0002; 8.05448096311941054037E+0002;
+#DENL= 8.03721012022323425428E+0002; 8.02010705589702297513E+0002;
+#DENL= 8.00251886472830770425E+0002; 7.99414130206522793864E+0002;
+#DENL= 7.98565254501306869717E+0002;
+#DENL= 7.97459313306850861913E+0002; 7.96701398979633659547E+0002; 7.95933950269239151198E+0002;
+#DENG= 1.59521259519121356204E+0001; 1.74524621932529124257E+0001; 1.89398747897084199290E+0001; 2.04240154824410553736E+0001;
+#DENG= 2.19121719840967799017E+0001; 2.39138388621022245396E+0001; 2.59585141477850154367E+0001;
+#DENG= 2.80182886958395874332E+0001; 3.11783486356515883494E+0001;
+#DENG= 3.44322718969780016476E+0001; 3.77948172368934544318E+0001;
+#DENG= 4.12611198993613310648E+0001;
+#DENG= 4.85483419665344425459E+0001;
+#DENG= 5.63275719181216258276E+0001;
+#DENG= 6.46299074511284775274E+0001;
+#DENG= 7.36681312375537847500E+0001;
+#DENG= 7.40469381645357144772E+0001;
+#DENG= 7.59452172261095135794E+0001; 7.59103058270426069853E+0001; 7.58688101138671615528E+0001; 7.58208090873523416348E+0001; 7.57663830393342455222E+0001;
+#DENG= 7.57056135645984655813E+0001; 7.57054138251781717425E+0001; 7.57043642313092740997E+0001; 7.57024683868394165573E+0001; 7.56997299120650315660E+0001; 7.56961524437966159079E+0001; 7.56917396354150146115E+0001; 7.56864951569190261768E+0001; 7.56804226949638310304E+0001; 7.56735259528912533739E+0001;
+#DENG= 7.56658086507511451410E+0001; 8.08724952331380893683E+0001; 8.61466798131567083122E+0001; 9.14797737137750514649E+0001; 9.68623955425535332689E+0001; 1.02283144096767650497E+0002; 1.07731096252151151024E+0002; 1.13195844445572273491E+0002; 1.18667695270271899365E+0002; 1.24138223211898931574E+0002;
+#DENG= 1.29610419850391450788E+0002; 1.33069434904006810377E+0002;
+#DENG= 1.36521368759652105010E+0002; 1.38509051668338593416E+0002;
+#DENG= 1.36958236655596876707E+0002;
+#DENG= 1.40713841397785889953E+0002; 1.46008620246883904920E+0002;
+#DENG= 1.51271475869596620456E+0002; 1.55758539494661003025E+0002;
+#DENG= 1.60222533112201263136E+0002; 1.62277069229793092855E+0002;
+#DENG= 1.64330911447199056644E+0002;
+#DENG= 1.66962690645479727714E+0002; 1.68745351129474003574E+0002; 1.70533797595912752915E+0002;
+#DENW= 1.03062376511576999927E+0003; 1.03061953775798306088E+0003; 1.03061408751021017538E+0003; 1.03060766937717872160E+0003;
+#DENW= 1.03060044554897103142E+0003; 1.03058817183706544629E+0003; 1.03057087609594971589E+0003;
+#DENW= 1.03054605224785246187E+0003; 1.03050336639084952828E+0003;
+#DENW= 1.03045594125092466686E+0003; 1.03040115214006036426E+0003;
+#DENW= 1.03033625154758792730E+0003;
+#DENW= 1.03018453906838876832E+0003;
+#DENW= 1.02998906375058296225E+0003;
+#DENW= 1.02976023588514548346E+0003;
+#DENW= 1.02935431901802445565E+0003;
+#DENW= 1.02868146764194774656E+0003;
+#DENW= 1.02710916846629603738E+0003; 1.02682270206676523694E+0003; 1.02652647671745825964E+0003; 1.02622017488165086974E+0003; 1.02590346893337920331E+0003;
+#DENW= 1.02557602091620750639E+0003; 1.02546473836762529552E+0003; 1.02535219729620125417E+0003; 1.02523838437467068363E+0003; 1.02512328614014912342E+0003; 1.02500688899316431191E+0003; 1.02488917919668621348E+0003; 1.02477014287516136948E+0003; 1.02464976601354907138E+0003; 1.02452803445636015134E+0003;
+#DENW= 1.02440493390669702478E+0003; 1.02390233712666055632E+0003; 1.02341994692006515005E+0003; 1.02296121529980993081E+0003; 1.02252943473711110312E+0003; 1.02212725203375092514E+0003; 1.02175738157399449180E+0003; 1.02142243249654399523E+0003; 1.02112490335045636614E+0003; 1.02086728285261147481E+0003;
+#DENW= 1.02065324133949724772E+0003; 1.02054036669061092618E+0003;
+#DENW= 1.02044581228913807230E+0003; 1.02039897607763482601E+0003;
+#DENW= 1.02014238518273651646E+0003;
+#DENW= 1.02020681544777479000E+0003; 1.02032233610805276297E+0003;
+#DENW= 1.02046981908290190949E+0003; 1.02061396787675029230E+0003;
+#DENW= 1.02078544151846763288E+0003; 1.02086744869653806950E+0003;
+#DENW= 1.02095849226711122321E+0003;
+#DENW= 1.02108822031948431774E+0003; 1.02118775648481189156E+0003; 1.02129767826812684245E+0003;
+#TTI= 1.6938031371077457E+001; 1.7511565976067804E+001; 1.7933311471758220E+001; 1.8347996068141178E+001;
+#TTI= 1.8757784260643909E+001; 1.9216183911543496E+001; 1.9687016234738113E+001;
+#TTI= 2.0181564323092303E+001; 2.1193952486495437E+001;
+#TTI= 2.2121930814383997E+001; 2.3019172704944655E+001;
+#TTI= 2.3941554390985289E+001;
+#TTI= 2.6003313160626359E+001;
+#TTI= 2.8080442728678037E+001;
+#TTI= 3.0252517231025170E+001;
+#TTI= 3.2886545533452853E+001;
+#TTI= 3.5383907109687961E+001;
+#TTI= 4.0255582377995154E+001; 4.1019702238442292E+001; 4.1780994205601658E+001; 4.2557653519923107E+001; 4.3349958169969817E+001;
+#TTI= 4.4158189474841848E+001; 4.4434336114585349E+001; 4.4711293707596489E+001; 4.4990072967407009E+001; 4.5270684564499156E+001; 4.5553139208718505E+001; 4.5837447649124528E+001; 4.6123620673837465E+001; 4.6411669109881359E+001; 4.6701603823023532E+001;
+#TTI= 4.6993435717610453E+001; 4.7634466604522068E+001; 4.9537093088590524E+001; 5.1348560771447332E+001; 5.3067051435001495E+001; 5.4692516189912183E+001; 5.6225881547200039E+001; 5.7667130654291213E+001; 5.9016324262389041E+001; 6.0272950154140162E+001;
+#TTI= 6.1433908988822928E+001; 6.2122316757754554E+001;
+#TTI= 6.2773556290621727E+001; 6.3133000324825034E+001;
+#TTI= 6.3480106185035439E+001;
+#TTI= 6.4318306968646112E+001; 6.4435258336283653E+001;
+#TTI= 6.4896528553196831E+001; 6.5444948719955676E+001;
+#TTI= 6.5691494568370942E+001; 6.5786905747422395E+001;
+#TTI= 6.5882598507993819E+001;
+#TTI= 6.5987512377714992E+001; 6.6030400577356474E+001; 6.6058902916469805E+001;
+#Pinj= 1.1481000000000000E+002; 1.1523249930068545E+002; 1.1565643451881031E+002; 1.1608197029214730E+002;
+#Pinj= 1.1650926700112136E+002; 1.1704668314353638E+002; 1.1758825274818145E+002;
+#Pinj= 1.1813475369364562E+002; 1.1896437928609693E+002;
+#Pinj= 1.1980789423206321E+002; 1.2066530689725815E+002;
+#Pinj= 1.2153945522139917E+002;
+#Pinj= 1.2333861049284580E+002;
+#Pinj= 1.2520608915755747E+002;
+#Pinj= 1.2712954572452340E+002;
+#Pinj= 1.2892156003704335E+002;
+#Pinj= 1.2815955610736793E+002;
+#Pinj= 1.2815863276042899E+002; 1.2804432142411164E+002; 1.2792972675797074E+002; 1.2781491314322234E+002; 1.2769993288411234E+002;
+#Pinj= 1.2758482832246241E+002; 1.2755352914630400E+002; 1.2752222430511156E+002; 1.2749091438947346E+002; 1.2745959994926611E+002; 1.2742828149634357E+002; 1.2739695950695445E+002; 1.2736563442430464E+002; 1.2733430666077484E+002; 1.2730297659994338E+002; 1.2727164459854384E+002;
+#TAinj= 2.5000000000000000E+001; 2.4250000000000000E+001; 2.3500000000000000E+001; 2.2750000000000000E+001;
+#TAinj= 2.2000000000000000E+001; 1.9666666666666668E+001; 1.7333333333333332E+001;
+#TAinj= 1.5000000000000000E+001; 1.3500000000000000E+001;
+#TAinj= 1.2000000000000000E+001; 9.5000000000000000E+000;
+#TAinj= 7.0000000000000000E+000;
+#TAinj= 6.0000000000000000E+000;
+#TAinj= 5.0000000000000000E+000;
+#TAinj= 5.0000000000000000E+000;
+#TAinj= 4.0000000000000000E+000;
+#TAinj= 4.0000000000000000E+000;
+#TAinj= 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000;
+#TAinj= 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000; 4.0000000000000000E+000;
+#Tinj= 2.5000000000000000E+001; 2.5221756117185290E+001; 2.5414643984236967E+001; 2.5579533193958657E+001;
+#Tinj= 2.5717280771009055E+001; 2.5821857090570347E+001; 2.5831194069721089E+001;
+#Tinj= 2.5749582948324711E+001; 2.5521537946904676E+001;
+#Tinj= 2.5223080607050257E+001; 2.4824989562602028E+001;
+#Tinj= 2.4310621605115660E+001;
+#Tinj= 2.3170816175691652E+001;
+#Tinj= 2.2027934154005909E+001;
+#Tinj= 2.0885918648835457E+001;
+#Tinj= 1.8819905615508443E+001;
+#Tinj= 1.5372801970565938E+001;
+#Tinj= 6.6611018600521383E+000; 6.0861488080070467E+000; 5.6297182890405546E+000; 5.2667450016091566E+000; 4.9776890819278048E+000;
+#Tinj= 4.7472369082762560E+000; 4.6838801131434664E+000; 4.6250947403905389E+000; 4.5705466348293520E+000; 4.5199266055987142E+000; 4.4729482665525593E+000; 4.4293459584257970E+000; 4.3888755461269584E+000; 4.3513098182790415E+000; 4.3164383042177015E+000; 2.2978432672763677E+001;
+#PInjProd= 1.1481000000000000E+002; 1.1523249930068545E+002; 1.1565643451881031E+002; 1.1608197029214730E+002;
+#PInjProd= 1.1650926700112136E+002; 1.1704668314353638E+002; 1.1758825274818145E+002;
+#PInjProd= 1.1813475369364562E+002; 1.1896437928609693E+002;
+#PInjProd= 1.1980789423206321E+002; 1.2066530689725815E+002;
+#PInjProd= 1.2153945522139917E+002;
+#PInjProd= 1.2333861049284580E+002;
+#PInjProd= 1.2520608915755747E+002;
+#PInjProd= 1.2712954572452340E+002;
+#PInjProd= 1.2892156003704335E+002;
+#PInjProd= 1.2815955610736793E+002;
+#PInjProd= 1.2815863276042899E+002; 1.2804432142411164E+002; 1.2792972675797074E+002; 1.2781491314322234E+002; 1.2769993288411234E+002;
+#PInjProd= 1.2758482832246241E+002; 1.2755352914630400E+002; 1.2752222430511156E+002; 1.2749091438947346E+002; 1.2745959994926611E+002; 1.2742828149634357E+002; 1.2739695950695445E+002; 1.2736563442430464E+002; 1.2733430666077484E+002; 1.2730297659994338E+002;
+#PInjProd= 1.2727164459854384E+002; 1.2904071414249194E+002; 1.3080978368644003E+002; 1.3257885323038812E+002; 1.3434792277433621E+002; 1.3611699231828430E+002; 1.3788606186223240E+002; 1.3965513140618049E+002; 1.4142420095012858E+002; 1.4319327049407667E+002;
+#PInjProd= 1.4496234003802476E+002; 1.4595255774745911E+002;
+#PInjProd= 1.4694277545689346E+002; 1.4750315297501896E+002;
+#PInjProd= 1.4806353049314447E+002;
+#PInjProd= 1.4885398802213723E+002; 1.4995433336077443E+002;
+#PInjProd= 1.5105467869941162E+002; 1.5197709812145234E+002;
+#PInjProd= 1.5289951754349306E+002; 1.5331819882393441E+002;
+#PInjProd= 1.5373688010437576E+002;
+#PInjProd= 1.5427008099635796E+002; 1.5462016039718492E+002; 1.5497023979801185E+002;
+#TInjProd= 2.5000000000000000E+001; 2.5221756117185290E+001; 2.5414643984236967E+001; 2.5579533193958657E+001;
+#TInjProd= 2.5717280771009055E+001; 2.5821857090570347E+001; 2.5831194069721089E+001;
+#TInjProd= 2.5749582948324711E+001; 2.5521537946904676E+001;
+#TInjProd= 2.5223080607050257E+001; 2.4824989562602028E+001;
+#TInjProd= 2.4310621605115660E+001;
+#TInjProd= 2.3170816175691652E+001;
+#TInjProd= 2.2027934154005909E+001;
+#TInjProd= 2.0885918648835457E+001;
+#TInjProd= 1.8819905615508443E+001;
+#TInjProd= 1.5372801970565938E+001;
+#TInjProd= 6.6611018600521383E+000; 6.0861488080070467E+000; 5.6297182890405546E+000; 5.2667450016091566E+000; 4.9776890819278048E+000;
+#TInjProd= 4.7472369082762560E+000; 4.6838801131434664E+000; 4.6250947403905389E+000; 4.5705466348293520E+000; 4.5199266055987142E+000; 4.4729482665525593E+000; 4.4293459584257970E+000; 4.3888755461269584E+000; 4.3513098182790415E+000; 4.3164383042177015E+000;
+#TInjProd= 2.2978432672763677E+001; 4.3765734477040283E+001; 4.5784802327922591E+001; 4.7726987943033237E+001; 4.9590820488815339E+001; 5.1376641795069474E+001; 5.3085680137192988E+001; 5.4718322334905302E+001; 5.6275130501902275E+001; 5.7756366838275511E+001;
+#TInjProd= 5.9160550504601538E+001; 6.0019111933270480E+001;
+#TInjProd= 6.0843020989231739E+001; 6.1305668089520935E+001;
+#TInjProd= 6.1759544022934413E+001;
+#TInjProd= 6.2717114958541728E+001; 6.3124732147304854E+001;
+#TInjProd= 6.3853282041606647E+001; 6.4633681261971816E+001;
+#TInjProd= 6.5174286226273864E+001; 6.5594469341124778E+001;
+#TInjProd= 6.5786198940977300E+001;
+#TInjProd= 6.5988211984856008E+001; 6.6120981271537616E+001; 6.6232226741234356E+001;
+**Curvas Desempenho**
+#NPP=1
+#PREVP= 0.0000000000000000E+000;
+#QLSCP= 0.0000000000000000E+000;
+#PSCP= 0.000000000E+00;
+#QGIP= 0.0000000000000000E+000;
+#RGLIP= 0.0000000000000000E+000;
+**Curvas Superficie**
+#QDISP= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#PMDISP= 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00; 0.000000000E+00;
+#PDISP= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#TDISP= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+#RGLID= 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000; 0.0000000000000000E+000;
+##FIM_SAIDA## -->

@@ -1,0 +1,2756 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE marlim SYSTEM "marlim-v22.dtd">
+
+<!-- ##INICIO_ENTRADA## -->
+<!-- Arquivo gravado em: Tue Apr 28 10:01:45 BRT 2020 -->
+<marlim>
+  <entrada>
+    <!-- Identificação da Simulação -->
+    <identificacao modulo="MC" versao="1.1">
+      <responsavel>Anna</responsavel>
+      <titulo></titulo>
+      <data>
+        <ano>2012</ano>
+        <mes>09</mes>
+        <dia>18</dia>
+      </data>
+      <comentario>Objetivo: GIOp</comentario>
+    </identificacao>
+    <!-- Opções de Cálculo -->
+    <opcoes_calculo contorno="VAZAO_EQUILIBRIO" subsistema="TRUE">
+      <jusante tipo="UNIDADE" seq="0" ul="10.2">0.0</jusante>
+      <montante tipo="PROF" seq="42" ul="44.70000000000073">10357.5</montante>
+      <ptub>16.65</ptub>
+      <pmon></pmon>
+      <qlsc>1712.34375</qlsc>
+      <qgsc>144000.0</qgsc>
+      <tabela_simulacao>
+      </tabela_simulacao>
+      <vazao_fluido tipo="INTERVALO">
+        <lim_inf>10.0</lim_inf>
+        <lim_sup>3000.0</lim_sup>
+      </vazao_fluido>
+      <intervalo_pressao>
+        <lim_inf_pressao>10.0</lim_inf_pressao>
+        <lim_sup_pressao>700.0</lim_sup_pressao>
+      </intervalo_pressao>
+      <graficos superf="FALSE" sensib="FALSE" calcula_ipr="FALSE" calcula_tpr="FALSE" localizacao="MONTANTE">
+        <sensibilidade>
+          <faixa></faixa>
+          <incr></incr>
+        </sensibilidade>
+      </graficos>
+    </opcoes_calculo>
+    <analise_sensibilidade selecao_valores="COMBINACAO">
+      <as_var nome="vento" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Entre suporte e montante do choke</param_sisprod_rotulo>
+        </parametros>
+        <valor>0.5</valor>
+        <valor>1.0</valor>
+        <valor>1.5</valor>
+      </as_var>
+      <as_var nome="qgi_valv" ativo="TRUE" grupo="GAS_LIFT" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_valvula>
+            <profm>2201.28</profm>
+          </param_valvula>
+        </parametros>
+        <valor>0.0</valor>
+        <valor>24000.0</valor>
+        <valor>48000.0</valor>
+        <valor>72000.0</valor>
+        <valor>96000.0</valor>
+        <valor>120000.0</valor>
+        <valor>144000.0</valor>
+        <valor>168000.0</valor>
+        <valor>192000.0</valor>
+        <valor>216000.0</valor>
+        <valor>240000.0</valor>
+        <valor>270000.0</valor>
+      </as_var>
+      <as_var nome="eda" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="TIPO">
+          <param_sisprod_tipo nome="LINHA_MARITIMA"/>
+          <param_sisprod_tipo nome="LINHA_AEREA"/>
+        </parametros>
+        <valor>0.1</valor>
+        <valor>0.15</valor>
+        <valor>0.18</valor>
+      </as_var>
+      <as_var nome="xkf" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Tubos telados</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 18</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 17</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 16</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 15</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 14</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 13</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 12</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 11</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 10</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 9</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 8</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 7</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 6</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 5</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 4</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 3</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 2</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 1</param_sisprod_rotulo>
+        </parametros>
+      </as_var>
+      <as_var nome="xkf" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Tubos telados</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 18</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 17</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 16</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 15</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 14</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 13</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 12</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 11</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 10</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 9</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 8</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 7</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 6</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 5</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 4</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 3</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 2</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 1</param_sisprod_rotulo>
+        </parametros>
+      </as_var>
+      <as_var nome="vmar" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="TIPO">
+          <param_sisprod_tipo nome="LINHA_MARITIMA"/>
+        </parametros>
+        <valor>0.8</valor>
+        <valor>1.0</valor>
+        <valor>1.2</valor>
+        <valor>1.5</valor>
+      </as_var>
+      <as_var nome="correl_esc" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="TIPO">
+          <param_sisprod_tipo nome="LINHA_MARITIMA"/>
+          <param_sisprod_tipo nome="LINHA_AEREA"/>
+        </parametros>
+        <correlacao>BEGGS_BRILL_PALMER</correlacao>
+        <correlacao>MUKHERJEE_BRILL</correlacao>
+        <correlacao>BEGGS_BRILL</correlacao>
+        <correlacao>DUKLER_EATON_FLANIGAN</correlacao>
+        <correlacao>DUKLER</correlacao>
+        <correlacao>DUKLER_MINAMI_I</correlacao>
+        <correlacao>DUKLER_MINAMI_II</correlacao>
+      </as_var>
+      <as_var nome="xkt" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Riser 7</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 6</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 5</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 4</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 3</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 2</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Riser 1</param_sisprod_rotulo>
+        </parametros>
+        <valor>0.492</valor>
+        <valor>0.5469999999999999</valor>
+        <valor>0.6019999999999999</valor>
+      </as_var>
+      <as_var nome="xkt" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Flow 26 + 27 +28</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 25</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 24</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 23</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 22</param_sisprod_rotulo>
+        </parametros>
+        <valor>0.293</valor>
+        <valor>0.32599999999999996</valor>
+        <valor>0.359</valor>
+      </as_var>
+      <as_var nome="xkt" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Flow 19 + 20 + 21</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 18</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 17</param_sisprod_rotulo>
+        </parametros>
+        <valor>0.291</valor>
+        <valor>0.32299999999999995</valor>
+        <valor>0.355</valor>
+      </as_var>
+      <as_var nome="xkt" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Flow 16</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 12 + 13 + 14 + 15</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 11</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 10</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 7 + 8 + 9</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 6</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Flow 5</param_sisprod_rotulo>
+        </parametros>
+        <valor>0.293</valor>
+        <valor>0.32599999999999996</valor>
+        <valor>0.359</valor>
+      </as_var>
+      <as_var nome="xkt" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Flow 1 + 2 + 3 + 4</param_sisprod_rotulo>
+        </parametros>
+        <valor>0.66</valor>
+        <valor>0.7330000000000001</valor>
+        <valor>0.806</valor>
+      </as_var>
+      <as_var nome="fcorrp" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="TIPO">
+          <param_sisprod_tipo nome="POCO"/>
+          <param_sisprod_tipo nome="LINHA_MARITIMA"/>
+        </parametros>
+        <valor>1.0</valor>
+        <valor>1.0</valor>
+        <valor>1.0</valor>
+        <valor>1.0</valor>
+        <valor>1.0</valor>
+        <valor>1.0</valor>
+        <valor>1.0</valor>
+      </as_var>
+      <as_var nome="fcorrp" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="TIPO">
+          <param_sisprod_tipo nome="LINHA_MARITIMA"/>
+        </parametros>
+        <valor>0.94</valor>
+        <valor>0.96</valor>
+        <valor>0.98</valor>
+        <valor>1.0</valor>
+        <valor>1.05</valor>
+        <valor>1.1</valor>
+        <valor>1.15</valor>
+        <valor>1.2</valor>
+        <valor>1.25</valor>
+      </as_var>
+      <as_var nome="pr" ativo="FALSE" grupo="RESERVATORIO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_reservatorio>Reservat?rio_mls21</param_reservatorio>
+        </parametros>
+        <valor>250.0</valor>
+        <valor>275.0</valor>
+        <valor>300.0</valor>
+        <valor>325.0</valor>
+        <valor>350.0</valor>
+      </as_var>
+      <as_var nome="xkf" ativo="FALSE" grupo="SISTEMA_PRODUCAO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_sisprod_rotulo>Tubos telados</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 18</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 17</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 16</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 15</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 14</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 13</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 12</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 11</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 10</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 9</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 8</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 7</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 6</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 5</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 4</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 3</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 2</param_sisprod_rotulo>
+          <param_sisprod_rotulo>Coluna 1</param_sisprod_rotulo>
+        </parametros>
+      </as_var>
+      <as_var nome="bsw" ativo="FALSE" grupo="RESERVATORIO" tipo="COMBINACAO">
+        <parametros tipo="ROTULO">
+          <param_reservatorio>Reservat?rio_mls21</param_reservatorio>
+        </parametros>
+        <valor>60.0</valor>
+        <valor>70.0</valor>
+        <valor>78.0</valor>
+        <valor>95.0</valor>
+      </as_var>
+      <as_var nome="ptub" ativo="TRUE" grupo="CONDICOES_CONTORNO" tipo="COMBINACAO">
+        <valor>8.5</valor>
+        <valor>12.5</valor>
+        <valor>16.65</valor>
+        <valor>20.0</valor>
+        <valor>25.0</valor>
+        <valor>30.0</valor>
+        <valor>35.0</valor>
+        <valor>40.0</valor>
+      </as_var>
+    </analise_sensibilidade>
+    <simulador_reo controle="AUTOMATICO" espec_ponto="FALSE">
+      <reo_nqginj>4</reo_nqginj>
+      <reo_rgli></reo_rgli>
+      <reo_qgi></reo_qgi>
+      <reo_pressao_max></reo_pressao_max>
+    </simulador_reo>
+    <simulador_gap tipo="SURGENTE" modo_valv="RGLI" pdg_ativo="TRUE" vsup_ativo="TRUE">
+      <ponto_pdg></ponto_pdg>
+      <vsup></vsup>
+      <trecho_maritmo>
+      </trecho_maritmo>
+      <variavel_gap nome="pwh">
+      </variavel_gap>
+      <variavel_gap nome="qgi_valv">
+      </variavel_gap>
+      <variavel_gap nome="rgli">
+      </variavel_gap>
+      <variavel_gap nome="bsw">
+      </variavel_gap>
+      <variavel_gap nome="rgof">
+      </variavel_gap>
+      <variavel_gap nome="ql">
+      </variavel_gap>
+      <variavel_gap nome="freq_motor">
+      </variavel_gap>
+    </simulador_gap>
+    <lgpi tipo="RGLI_C" usar_limites="TRUE">
+      <rgli_constante></rgli_constante>
+      <rgli_economica></rgli_economica>
+      <q_gas></q_gas>
+      <q_liq></q_liq>
+      <prof_lim></prof_lim>
+      <pressao_lim></pressao_lim>
+      <vazao_lim></vazao_lim>
+      <prev></prev>
+      <ptub></ptub>
+    </lgpi>
+    <!-- Fluidos -->
+    <fluidos>
+      <!-- Fluido -->
+      <fluido id="0" iemul="EMULSAO" tipo="OLEO">
+        <nome>Fluido_mls21</nome>
+        <tiac>18.54</tiac>
+        <api>23.1</api>
+        <dom>0.9152652005174644</dom>
+        <sgw>1.03</sgw>
+        <sgfog>0.766198</sgfog>
+        <yco2>0.0057</yco2>
+        <pvt tipo="ANALISE">
+          <!-- Análise PVT -->
+          <analise_pvt id="6">
+            <campo>Marlim Sul</campo>
+            <poco>1-RJS-460</poco>
+            <teste>Amostra de superf?cie</teste>
+            <data>
+              <ano>1992</ano>
+              <mes>06</mes>
+              <dia>05</dia>
+            </data>
+            <zona>CAMPOS\CARAPEBUS-EOCENICO</zona>
+            <observacao>Bloco 2: RJS-460, MLS-21, MLS-33</observacao>
+            <api>22.79</api>
+            <tan>79.7</tan>
+            <sgw>1.03</sgw>
+            <sgpg>0.747</sgpg>
+            <correlacoes>
+              <razao_solubilidade>
+                <icode tipo="LASATER"/>
+              </razao_solubilidade>
+              <jcode tipo="VAZQUEZ_BEGGS"/>
+              <viscosidade>
+                <lcode tipo="GLASO"/>
+                <oleo_vivo subsat="VAZQUEZ_BEGGS" sat="BEGGS_ROBINSON"/>
+              </viscosidade>
+            </correlacoes>
+            <pb>232.0</pb>
+            <pontos_pvt>
+              <ponto_pvt>
+                <pp>360.0</pp>
+                <rs>94.65</rs>
+                <bo>1.26</bo>
+                <vo>2.49</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>330.0</pp>
+                <rs>94.65</rs>
+                <bo>1.264</bo>
+                <vo>2.4</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>300.0</pp>
+                <rs>94.65</rs>
+                <bo>1.268</bo>
+                <vo>2.3</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>280.0</pp>
+                <rs>94.65</rs>
+                <bo>1.271</bo>
+                <vo>2.23</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>260.0</pp>
+                <rs>94.65</rs>
+                <bo>1.274</bo>
+                <vo>2.17</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>250.0</pp>
+                <rs>94.65</rs>
+                <bo>1.275</bo>
+                <vo>2.13</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>240.0</pp>
+                <rs>94.65</rs>
+                <bo>1.277</bo>
+                <vo>2.1</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>232.0</pp>
+                <rs>94.65</rs>
+                <bo>1.278</bo>
+                <vo>2.08</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>200.0</pp>
+                <rs>82.73</rs>
+                <bo>1.253</bo>
+                <vo>2.34</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>170.0</pp>
+                <rs>72.26</rs>
+                <bo>1.232</bo>
+                <vo>2.6</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>140.0</pp>
+                <rs>61.54</rs>
+                <bo>1.209</bo>
+                <vo>2.88</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>110.0</pp>
+                <rs>50.77</rs>
+                <bo>1.186</bo>
+                <vo>3.28</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>80.0</pp>
+                <rs>39.92</rs>
+                <bo>1.164</bo>
+                <vo>3.76</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>50.0</pp>
+                <rs>28.86</rs>
+                <bo>1.14</bo>
+                <vo>4.48</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>25.0</pp>
+                <rs>18.97</rs>
+                <bo>1.119</bo>
+                <vo>5.32</vo>
+              </ponto_pvt>
+              <ponto_pvt>
+                <pp>0.0</pp>
+                <rs>1.0E-6</rs>
+                <bo>1.048</bo>
+                <vo>9.18</vo>
+              </ponto_pvt>
+            </pontos_pvt>
+          </analise_pvt>
+          <correlacoes>
+            <razao_solubilidade>
+              <icode tipo="LASATER"/>
+            </razao_solubilidade>
+            <jcode tipo="VAZQUEZ_BEGGS"/>
+            <viscosidade>
+              <lcode tipo="GLASO"/>
+              <oleo_vivo subsat="VAZQUEZ_BEGGS" sat="BEGGS_ROBINSON"/>
+            </viscosidade>
+          </correlacoes>
+        </pvt>
+        <emulsao tipo="EXPONENCIAL">
+          <fwre>0.75</fwre>
+          <coef_a>2.4968403748352648</coef_a>
+          <coef_b>3.67803252248824</coef_b>
+          <emulsao_exponencial>
+            <te>60.0</te>
+            <linha_emulsao>
+              <fw>43.7</fw>
+              <mi>127.9</mi>
+              <ni>136.72578783817266</ni>
+              <n>8.037509904661873</n>
+            </linha_emulsao>
+            <linha_emulsao>
+              <fw>69.7</fw>
+              <mi>717.0</mi>
+              <ni>742.8055070736038</ni>
+              <n>43.666280624455965</n>
+            </linha_emulsao>
+          </emulsao_exponencial>
+        </emulsao>
+      </fluido>
+      <fluido_composicional id="1" iemul="NENHUM" tabela="" usuario="" calculo="ANALITICO">
+        <nome>Fluido 1</nome>
+        <emulsao tipo="OLEO_VIVO">
+          <fwre>0.8</fwre>
+          <coef_a></coef_a>
+          <coef_b></coef_b>
+          <emulsao_exponencial>
+            <te></te>
+            <linha_emulsao>
+              <fw></fw>
+              <mi></mi>
+              <ni></ni>
+              <n></n>
+            </linha_emulsao>
+            <linha_emulsao>
+              <fw></fw>
+              <mi></mi>
+              <ni></ni>
+              <n></n>
+            </linha_emulsao>
+          </emulsao_exponencial>
+        </emulsao>
+      </fluido_composicional>
+    </fluidos>
+    <!-- Sistema de Produção -->
+    <sistema_producao termico="TRUE" uglobal="FALSE">
+      <dmrcp>911.0</dmrcp>
+      <tempo>365.0</tempo>
+      <caracteristicas geometria="OFF_SHORE">
+        <equip_jus tipo="PLATAFORMA_SS"/>
+        <acessorio tipo="ANM" exibir="TRUE" no_producao="FALSE" seq="1">8072.0</acessorio>
+        <acessorio tipo="PDG" exibir="TRUE" no_producao="FALSE" seq="2">10007.0</acessorio>
+      </caracteristicas>
+      <!-- Unidades de Produção -->
+      <producao>
+        <temp_jusante>
+          <tsupa>25.0</tsupa>
+          <tsupf>40.0435905456543</tsupf>
+        </temp_jusante>
+        <!-- Fonte -->
+        <fonte id="0" id_fluido="0" modelo_fluido="BLACKOIL" bsw_pvtsim="FALSE" rgo_pvtsim="FALSE" tipo_fluido="OLEO" ativo="TRUE" tipo="RESERVATORIO" localizacao="DEFINIDA">
+          <nome>Reservat?rio_mls21</nome>
+          <prof_definida>3196.536</prof_definida>
+          <razao_fluido tipo="RGOF">
+            <rglf>9.697602</rglf>
+            <rgof>51.97</rgof>
+            <rgl>9.697602</rgl>
+            <rgo>51.97</rgo>
+            <rlg></rlg>
+            <rlgf></rlgf>
+            <bsw>81.34</bsw>
+          </razao_fluido>
+          <pr>293.9</pr>
+          <tmonf>79.7</tmonf>
+          <vazao_max>9539.444444444443</vazao_max>
+          <modelo ipr="VOGEL">
+            <linear/>
+            <vogel>
+              <psat>232.0</psat>
+              <coeficiente_vogel>0.2</coeficiente_vogel>
+            </vogel>
+            <fetkovich/>
+          </modelo>
+          <dados_ipr tipo="IP">
+            <ip>50.0</ip>
+            <dados_teste>
+              <pt></pt>
+              <qt></qt>
+            </dados_teste>
+            <nfet></nfet>
+          </dados_ipr>
+        </fonte>
+        <!-- Linha Aérea -->
+        <linha_aerea id="20" seq="0" injgas="QGI">
+          <nome>R1-152.50218R3-1-supMar</nome>
+          <uglobal>8.32010459899902</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>10.2</ul>
+            <ang>81.9704168536454</ang>
+            <uv>10.1</uv>
+            <ulm>10.2</ulm>
+            <ulv>10.1</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>25.3</tmona>
+            <tmonf>40.1088333129883</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.9751</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5311731754828289</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>7.95</tec>
+          <vento>2.0</vento>
+        </linha_aerea>
+        <!-- Linha Marítima -->
+        <linha_maritima id="19" seq="1" injgas="QGI">
+          <nome>R1-152.50218R3-2</nome>
+          <uglobal>8.3196382522583</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>563.0</ul>
+            <ang>81.98471502591335</ang>
+            <uv>557.5</uv>
+            <ulm>573.2</ulm>
+            <ulv>567.6</ulv>
+            <ntrec>6</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>7.7</tmona>
+            <tmonf>44.4616241455078</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.9751</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5311731754828289</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>7.95</tec>
+          <vmar>0.4</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="18" seq="2" injgas="QGI">
+          <nome>R1-152.50218R3-3</nome>
+          <uglobal>16.2925701141357</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>287.79999999999995</ul>
+            <ang>73.25757430792049</ang>
+            <uv>275.6</uv>
+            <ulm>861.0</ulm>
+            <ulv>843.2</ulv>
+            <ntrec>3</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.8</tmona>
+            <tmonf>46.9214744567871</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.9751</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5311731754828289</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>7.95</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="17" seq="3" injgas="QGI">
+          <nome>R2-152.50219R2-1</nome>
+          <uglobal>16.4373912811279</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>91.20000000000005</ul>
+            <ang>64.18690800025117</ang>
+            <uv>82.09999999999991</uv>
+            <ulm>952.2</ulm>
+            <ulv>925.3</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.6</tmona>
+            <tmonf>47.7204666137695</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.8989</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.547163625690172</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>8.32</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="16" seq="4" injgas="QGI">
+          <nome>R2-152.50219R2-2</nome>
+          <uglobal>17.1913356781006</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>51.09999999999991</ul>
+            <ang>57.090557096321234</ang>
+            <uv>42.90000000000009</uv>
+            <ulm>1003.3</ulm>
+            <ulv>968.2</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.3</tmona>
+            <tmonf>48.1588897705078</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.8989</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.547163625690172</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>8.32</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="15" seq="5" injgas="QGI">
+          <nome>R2-152.50219R2-3</nome>
+          <uglobal>17.1898307800293</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>54.0</ul>
+            <ang>50.22103887096224</ang>
+            <uv>41.5</uv>
+            <ulm>1057.3</ulm>
+            <ulv>1009.7</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>3.9</tmona>
+            <tmonf>48.6117057800293</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.8989</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.547163625690172</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>8.32</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="14" seq="6" injgas="QGI">
+          <nome>R2-152.50219R2-4</nome>
+          <uglobal>17.18825340271</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>32.0</ul>
+            <ang>42.6972971092214</ang>
+            <uv>21.700000000000045</uv>
+            <ulm>1089.3</ulm>
+            <ulv>1031.4</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>3.8</tmona>
+            <tmonf>48.8713111877441</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.8989</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.547163625690172</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>8.32</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="13" seq="7" injgas="QGI">
+          <nome>R2-152.50219R2-5</nome>
+          <uglobal>17.1876220703125</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>38.0</ul>
+            <ang>33.72884235517228</ang>
+            <uv>21.09999999999991</uv>
+            <ulm>1127.3</ulm>
+            <ulv>1052.5</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>3.6</tmona>
+            <tmonf>49.1646461486816</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.8989</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.547163625690172</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>8.32</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="12" seq="8" injgas="QGI">
+          <nome>R2-152.50219R2-6-tdp</nome>
+          <uglobal>17.1868686676025</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>85.0</ul>
+            <ang>14.09494318269483</ang>
+            <uv>20.700000000000045</uv>
+            <ulm>1212.3</ulm>
+            <ulv>1073.2</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>3.6</tmona>
+            <tmonf>49.7330169677734</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.8989</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.547163625690172</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>8.32</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="11" seq="9" injgas="QGI">
+          <nome>R2-152.50219R2-7</nome>
+          <uglobal>17.1834869384766</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>509.70000000000005</ul>
+            <ang>-1.1916402780921898</ang>
+            <uv>-10.600000000000136</uv>
+            <ulm>1722.0</ulm>
+            <ulv>1062.6</ulv>
+            <ntrec>6</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>3.6</tmona>
+            <tmonf>52.8042945861816</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.8989</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.547163625690172</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>8.32</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="10" seq="10" injgas="QGI">
+          <nome>F1-152.50417R0-1</nome>
+          <uglobal>17.1883220672607</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>766.0</ul>
+            <ang>-1.3240542640373072</ang>
+            <uv>-17.699999999999818</uv>
+            <ulm>2488.0</ulm>
+            <ulv>1044.9</ulv>
+            <ntrec>8</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>3.7</tmona>
+            <tmonf>54.4579620361328</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="3" seq="11" injgas="QGI">
+          <nome>F2-152.50417R0-1</nome>
+          <uglobal>6.01642417907715</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>766.0</ul>
+            <ang>-1.3839099132483657</ang>
+            <uv>-18.5</uv>
+            <ulm>3254.0</ulm>
+            <ulv>1026.4</ulv>
+            <ntrec>8</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>3.8</tmona>
+            <tmonf>56.1619606018066</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="9" seq="12" injgas="QGI">
+          <nome>F3-152.50417R0-1</nome>
+          <uglobal>6.01658344268799</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>716.0</ul>
+            <ang>-1.0963688325161107</ang>
+            <uv>-13.700000000000045</uv>
+            <ulm>3970.0</ulm>
+            <ulv>1012.7</ulv>
+            <ntrec>8</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>3.9</tmona>
+            <tmonf>57.8119087219238</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="8" seq="13" injgas="QGI">
+          <nome>F4-152.50417R0-1</nome>
+          <uglobal>6.0167236328125</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>767.0</ul>
+            <ang>-1.5240831198372884</ang>
+            <uv>-20.40000000000009</uv>
+            <ulm>4737.0</ulm>
+            <ulv>992.3</ulv>
+            <ntrec>8</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.1</tmona>
+            <tmonf>59.6181869506836</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="7" seq="14" injgas="QGI">
+          <nome>F5-152.50417R0-1</nome>
+          <uglobal>6.01690340042114</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>292.5</ul>
+            <ang>-0.8031466299128374</ang>
+            <uv>-4.099999999999909</uv>
+            <ulm>5029.5</ulm>
+            <ulv>988.2</ulv>
+            <ntrec>3</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.1</tmona>
+            <tmonf>60.3301849365234</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="6" seq="15" injgas="QGI">
+          <nome>F5-152.50417R0-2</nome>
+          <uglobal>6.0169415473938</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>297.0</ul>
+            <ang>-1.5435073471785865</ang>
+            <uv>-8.0</uv>
+            <ulm>5326.5</ulm>
+            <ulv>980.2</ulv>
+            <ntrec>3</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.2</tmona>
+            <tmonf>61.0528335571289</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="5" seq="16" injgas="QGI">
+          <nome>F5-152.50417R0-3</nome>
+          <uglobal>6.01702499389648</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>176.5</ul>
+            <ang>0.06492440994280263</ang>
+            <uv>0.1999999999999318</uv>
+            <ulm>5503.0</ulm>
+            <ulv>980.4</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.2</tmona>
+            <tmonf>61.498291015625</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="4" seq="17" injgas="QGI">
+          <nome>F6-152.50417R0-1</nome>
+          <uglobal>6.01682329177856</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>98.5</ul>
+            <ang>-0.11633668808638857</ang>
+            <uv>-0.1999999999999318</uv>
+            <ulm>5601.5</ulm>
+            <ulv>980.2</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.2</tmona>
+            <tmonf>61.7473564147949</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="27" seq="18" injgas="QGI">
+          <nome>F6-152.50417R0-2</nome>
+          <uglobal>6.01704692840576</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>140.0</ul>
+            <ang>-2.7020882549875807</ang>
+            <uv>-6.600000000000023</uv>
+            <ulm>5741.5</ulm>
+            <ulv>973.6</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.2</tmona>
+            <tmonf>62.0888633728027</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="0" seq="19" injgas="QGI">
+          <nome>F6-152.50417R0-3</nome>
+          <uglobal>6.01712083816528</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>250.0</ul>
+            <ang>-1.5127843388873932</ang>
+            <uv>-6.600000000000023</uv>
+            <ulm>5991.5</ulm>
+            <ulv>967.0</ulv>
+            <ntrec>3</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.3</tmona>
+            <tmonf>62.7147674560547</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="26" seq="20" injgas="QGI">
+          <nome>F6-152.50417R0-4</nome>
+          <uglobal>6.01715755462647</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>277.5</ul>
+            <ang>-0.5161851764299425</ang>
+            <uv>-2.5</uv>
+            <ulm>6269.0</ulm>
+            <ulv>964.5</ulv>
+            <ntrec>3</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.3</tmona>
+            <tmonf>63.4278755187988</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="25" seq="21" injgas="QGI">
+          <nome>F7-152.50417R0-1</nome>
+          <uglobal>6.01718759536743</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>407.60000000000036</ul>
+            <ang>-0.9277936003043838</ang>
+            <uv>-6.600000000000023</uv>
+            <ulm>6676.6</ulm>
+            <ulv>957.9</ulv>
+            <ntrec>5</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.4</tmona>
+            <tmonf>64.4831008911133</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="24" seq="22" injgas="QGI">
+          <nome>F7-152.50417R0-2</nome>
+          <uglobal>6.0172815322876</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>298.39999999999964</ul>
+            <ang>-1.6323056677441283</ang>
+            <uv>-8.5</uv>
+            <ulm>6975.0</ulm>
+            <ulv>949.4</ulv>
+            <ntrec>3</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.4</tmona>
+            <tmonf>65.2586288452148</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="23" seq="23" injgas="QGI">
+          <nome>F8-152.50417R0-1</nome>
+          <uglobal>6.01734447479248</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>706.0</ul>
+            <ang>-1.2336588437452891</ang>
+            <uv>-15.199999999999932</uv>
+            <ulm>7681.0</ulm>
+            <ulv>934.2</ulv>
+            <ntrec>8</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.6</tmona>
+            <tmonf>67.1413421630859</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>7.7597</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.32301551459490707</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="22" seq="24" injgas="QGI">
+          <nome>F9-Wsi152.1528R2-1</nome>
+          <uglobal>6.01748847961426</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>150.60000000000036</ul>
+            <ang>0.6087315529930207</ang>
+            <uv>1.599999999999909</uv>
+            <ulm>7831.6</ulm>
+            <ulv>935.8</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.5</tmona>
+            <tmonf>68.2471084594727</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.885</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.4983524336321454</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>7.6</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Linha Marítima -->
+        <linha_maritima id="21" seq="25" injgas="QGI">
+          <nome>F9-Wsi152.1528R2-2</nome>
+          <uglobal>15.724705696106</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>240.39999999999964</ul>
+            <ang>-1.3824782403716152</ang>
+            <uv>-5.7999999999999545</uv>
+            <ulm>8072.0</ulm>
+            <ulv>930.0</ulv>
+            <ntrec>3</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.6</tmona>
+            <tmonf>70.0309143066406</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.885</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.4983524336321454</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <qgi></qgi>
+          <rgli></rgli>
+          <rglt></rglt>
+          <tec>7.6</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="2" seq="26">
+          <nome>Col-1-1-1</nome>
+          <uglobal>15.725962638855</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>78.79999999999995</ul>
+            <ang>90.0</ang>
+            <uv>78.79999999999995</uv>
+            <ulm>989.8</ulm>
+            <ulv>989.8</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>24.5</tmona>
+            <tmonf>70.8360900878906</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="GAS"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>3.956</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>0.763</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="1" seq="27">
+          <nome>Col-1-2-1</nome>
+          <uglobal>28.0123500823975</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>740.6000000000001</ul>
+            <ang>90.0</ang>
+            <uv>740.6000000000001</uv>
+            <ulm>1730.4</ulm>
+            <ulv>1730.4</ulv>
+            <ntrec>8</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>46.0</tmona>
+            <tmonf>76.4526672363281</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="GAS"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>0.7722</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="28" seq="28">
+          <nome>Col-2-1-1</nome>
+          <uglobal>22.4317169189453</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>3.699999999999818</ul>
+            <ang>90.0</ang>
+            <uv>3.699999999999818</uv>
+            <ulm>1734.1</ulm>
+            <ulv>1734.1</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>46.1</tmona>
+            <tmonf>76.4749069213867</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="GAS"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>3.951</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>2.5429</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="29" seq="29">
+          <nome>Col-2-2-1</nome>
+          <uglobal>27.751501083374</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>497.5</ul>
+            <ang>87.7022636959693</ang>
+            <uv>497.0999999999999</uv>
+            <ulm>2231.6</ulm>
+            <ulv>2231.2</ulv>
+            <ntrec>5</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>60.5</tmona>
+            <tmonf>78.9524230957031</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="GAS"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>0.7722</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="30" seq="30">
+          <nome>Col-3-1-1</nome>
+          <uglobal>21.9063320159912</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>3.700000000000273</ul>
+            <ang>90.0</ang>
+            <uv>3.700000000000273</uv>
+            <ulm>2235.3</ulm>
+            <ulv>2234.9</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>60.7</tmona>
+            <tmonf>78.9613723754883</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="GAS"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>3.951</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>2.5429</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="31" seq="31">
+          <nome>Col-3-2-1</nome>
+          <uglobal>21.7795238494873</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>320.89999999999964</ul>
+            <ang>87.52230845428839</ang>
+            <uv>320.5999999999999</uv>
+            <ulm>2556.2</ulm>
+            <ulv>2555.5</ulv>
+            <ntrec>4</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>70.0</tmona>
+            <tmonf>79.6570587158203</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>0.7722</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="32" seq="32">
+          <nome>Col-3-2-2</nome>
+          <uglobal>26.9674129486084</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>115.0</ul>
+            <ang>77.10549705321912</ang>
+            <uv>112.09999999999991</uv>
+            <ulm>2671.2</ulm>
+            <ulv>2667.6</ulv>
+            <ntrec>2</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>73.2</tmona>
+            <tmonf>79.8010406494141</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>0.7722</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="33" seq="33">
+          <nome>Col-3-2-3</nome>
+          <uglobal>23.6778469085693</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>57.0</ul>
+            <ang>66.06906624395798</ang>
+            <uv>52.09999999999991</uv>
+            <ulm>2728.2</ulm>
+            <ulv>2719.7</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>74.7</tmona>
+            <tmonf>79.8522644042969</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>0.7722</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="34" seq="34">
+          <nome>Col-3-2-4</nome>
+          <uglobal>23.4878082275391</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>58.0</ul>
+            <ang>58.399694246638674</ang>
+            <uv>49.40000000000009</uv>
+            <ulm>2786.2</ulm>
+            <ulv>2769.1</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>76.2</tmona>
+            <tmonf>79.8918304443359</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>0.7722</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="35" seq="35">
+          <nome>Col-3-2-5</nome>
+          <uglobal>23.2637691497803</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>90.80000000000018</ul>
+            <ang>47.926919557251765</ang>
+            <uv>67.40000000000009</uv>
+            <ulm>2877.0</ulm>
+            <ulv>2836.5</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>78.1</tmona>
+            <tmonf>79.9289779663086</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>0.7722</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="36" seq="36">
+          <nome>Col-4-1-1</nome>
+          <uglobal>23.5670757293701</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>29.800000000000182</ul>
+            <ang>39.611891484348284</ang>
+            <uv>19.0</uv>
+            <ulm>2906.8</ulm>
+            <ulv>2855.5</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>78.7</tmona>
+            <tmonf>79.9154510498047</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>3.281</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>2.2014</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="37" seq="37">
+          <nome>Col-4-2-1</nome>
+          <uglobal>22.697359085083</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>52.399999999999636</ul>
+            <ang>33.73437825526722</ang>
+            <uv>29.09999999999991</uv>
+            <ulm>2959.2</ulm>
+            <ulv>2884.6</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>79.5</tmona>
+            <tmonf>79.9188766479492</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>1.4707</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="38" seq="38">
+          <nome>Col-4-2-2</nome>
+          <uglobal>22.9220085144043</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>29.0</ul>
+            <ang>27.298138884818087</ang>
+            <uv>13.300000000000182</uv>
+            <ulm>2988.2</ulm>
+            <ulv>2897.9</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>79.9</tmona>
+            <tmonf>79.9186630249023</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>1.4707</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="39" seq="39">
+          <nome>Col-4-2-3</nome>
+          <uglobal>20.581974029541</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>76.20000000000027</ul>
+            <ang>19.55099272363841</ang>
+            <uv>25.5</uv>
+            <ulm>3064.4</ulm>
+            <ulv>2923.4</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>80.7</tmona>
+            <tmonf>79.9123153686523</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>1.4707</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="40" seq="40">
+          <nome>Col-5-1-1</nome>
+          <uglobal>16.1746387481689</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>53.59999999999991</ul>
+            <ang>11.951846869295329</ang>
+            <uv>11.099999999999909</uv>
+            <ulm>3118.0</ulm>
+            <ulv>2934.5</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>81.0</tmona>
+            <tmonf>79.9047317504883</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>5.001</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>0.9008</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="41" seq="41">
+          <nome>tela-1-sapata</nome>
+          <uglobal>19.4279041290283</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>33.80000000000018</ul>
+            <ang>10.7422142772499</ang>
+            <uv>6.300000000000182</uv>
+            <ulm>3151.8</ulm>
+            <ulv>2940.8</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>81.2</tmona>
+            <tmonf>79.898193359375</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>8.681</dri>
+            <espr>1.1989</espr>
+            <espc>3.0</espc>
+            <xkr>58.0</xkr>
+            <xkc>1.21</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>2.093</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="42" seq="42">
+          <nome>tela-2</nome>
+          <uglobal>16.1750869750977</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>46.399999999999636</ul>
+            <ang>8.551996760847981</ang>
+            <uv>6.899999999999636</uv>
+            <ulm>3198.2</ulm>
+            <ulv>2947.7</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>81.4</tmona>
+            <tmonf>79.8823699951172</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>10.75</dri>
+            <espr>0.01</espr>
+            <espc>0.01</espc>
+            <xkr>10000.0</xkr>
+            <xkc>10000.0</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>2.093</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="43" seq="43">
+          <nome>tela-3</nome>
+          <uglobal>15.0454025268555</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>68.0</ul>
+            <ang>1.6011198673705735</ang>
+            <uv>1.900000000000091</uv>
+            <ulm>3266.2</ulm>
+            <ulv>2949.6</ulv>
+            <ntrec>1</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>81.4</tmona>
+            <tmonf>79.8562545776367</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>10.75</dri>
+            <espr>0.01</espr>
+            <espc>0.01</espc>
+            <xkr>10000.0</xkr>
+            <xkc>10000.0</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>2.093</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+        <!-- Poço com Coluna -->
+        <poco_com_coluna id="44" seq="44">
+          <nome>tela-4</nome>
+          <uglobal>17.436559677124</uglobal>
+          <corr tipo="BEGGS_BRILL_PALMER"/>
+          <medidas>
+            <ul>413.10000000000036</ul>
+            <ang>-1.5813479033762203</ang>
+            <uv>-11.400000000000091</uv>
+            <ulm>3679.3</ulm>
+            <ulv>2938.2</ulv>
+            <ntrec>5</ntrec>
+          </medidas>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.24</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>81.1</tmona>
+            <tmonf>79.7</tmonf>
+          </temp_montante>
+          <revestimento_poco_col>
+            <dri>10.75</dri>
+            <espr>0.01</espr>
+            <espc>0.01</espc>
+            <xkr>10000.0</xkr>
+            <xkc>10000.0</xkc>
+            <nanu tipo="AGUA"/>
+          </revestimento_poco_col>
+          <coluna_producao>
+            <dti>4.892</dti>
+            <eda>0.17779999999999999</eda>
+            <espt>2.093</espt>
+            <espi_cp></espi_cp>
+            <xkt>58.0</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <xkf>10.0</xkf>
+          <alffor>1.0E-6</alffor>
+          <ener></ener>
+        </poco_com_coluna>
+      </producao>
+      <!-- Unidades de Injeção -->
+      <injecao>
+        <temp_jusante>
+          <tsupa>4.0</tsupa>
+          <tsupf>34.2776985168457</tsupf>
+        </temp_jusante>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="0" seq="0">
+          <nome>Unidade_inj 23</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>134.905012108406</ul>
+            <ang>-82.58267291689386</ang>
+            <ntrec>10</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>25.0</tmona>
+            <tmonf>35.4000015258789</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.9751</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5311731754828289</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>7.95</tec>
+          <vmar>1.2</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="1" seq="1">
+          <nome>Unidade_inj 24</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>135.22731562903255</ul>
+            <ang>-81.59857176571887</ang>
+            <ntrec>10</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>23.0</tmona>
+            <tmonf>34.2487640380859</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.9751</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5311731754828289</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>7.95</tec>
+          <vmar>0.8</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="2" seq="2">
+          <nome>Unidade_inj 25</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>135.71187846744672</ul>
+            <ang>-80.31123241776153</ang>
+            <ntrec>10</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>14.0</tmona>
+            <tmonf>32.3481674194336</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.9751</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5311731754828289</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>7.95</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="3" seq="3">
+          <nome>Unidade_inj 26</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>136.49103192161883</ul>
+            <ang>-78.55321347633709</ang>
+            <ntrec>10</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>11.0</tmona>
+            <tmonf>29.7577495574951</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.9751</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5311731754828289</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>7.95</tec>
+          <vmar>0.4</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="4" seq="4">
+          <nome>Unidade_inj 27</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>157.9</ul>
+            <ang>-76.0033701510292</ang>
+            <ntrec>10</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>7.0</tmona>
+            <tmonf>26.9945335388184</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.9751</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5311731754828289</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>7.95</tec>
+          <vmar>0.4</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="5" seq="5">
+          <nome>Unidade_inj 28</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>158.7</ul>
+            <ang>-71.9503202732399</ang>
+            <ntrec>10</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>5.0</tmona>
+            <tmonf>23.7930641174316</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.9751</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5311731754828289</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>7.95</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="6" seq="6">
+          <nome>Unidade_inj 29</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>110.4</ul>
+            <ang>-64.36881356080964</ang>
+            <ntrec>10</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>5.0</tmona>
+            <tmonf>20.9724941253662</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.81762</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5377868633283722</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>8.32</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="7" seq="7">
+          <nome>Unidade_inj 30</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>209.8</ul>
+            <ang>-35.609599476262254</ang>
+            <ntrec>10</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>19.1310176849365</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>2.667762</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.39748731902028317</xkt>
+            <xki_cp></xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>8.32</tec>
+          <vmar>0.5</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="8" seq="8">
+          <nome>Unidade_inj 3</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>523.0</ul>
+            <ang>1.4243247714713487</ang>
+            <ntrec>4</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>15.8683910369873</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.6096</eda>
+            <espt>3.81762</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.5377868633283722</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>8.32</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima_inj>
+        <!-- Linha Marítima (Injeção) -->
+        <linha_maritima_inj id="9" seq="9">
+          <nome>Unidade_inj 31</nome>
+          <uglobal>0.0</uglobal>
+          <medidas_inj>
+            <ul>6162.0</ul>
+            <ang>1.3669715466131453</ang>
+            <ntrec>10</ntrec>
+          </medidas_inj>
+          <fatores_correcao>
+            <fcorrp>1.0</fcorrp>
+            <fcorrt>1.0</fcorrt>
+          </fatores_correcao>
+          <temp_montante>
+            <tmona>4.0</tmona>
+            <tmonf>9.70614433288574</tmonf>
+          </temp_montante>
+          <coluna_producao>
+            <dti>6.0</dti>
+            <eda>0.024</eda>
+            <espt>3.055</espt>
+            <espi_cp></espi_cp>
+            <xkt>0.15506473544546348</xkt>
+            <xki_cp>1.21</xki_cp>
+          </coluna_producao>
+          <ener></ener>
+          <tec>2.89</tec>
+          <vmar>0.6</vmar>
+        </linha_maritima_inj>
+      </injecao>
+    </sistema_producao>
+    <!-- Gás Lift -->
+    <gas_lift tipo_injecao="PRESSURE" convergir_vazao="FALSE">
+      <prev>173.3</prev>
+      <qginj>144000.0</qginj>
+      <ivgl tipo="STANDARD" tipo_orificio="TC_MODIFICADO" tipo_venturi="TC_MODIFICADO"/>
+      <alfa>0.29</alfa>
+      <sgig>0.75</sgig>
+      <valvula_instalada id="0" seq="0" operacao="DESEMPENHO" pressao="PCAL" nova="TRUE" ativo="FALSE" joule_thomson="TRUE">
+        <vgl_inst tipo="ORIFICIO">
+          <tualp>0</tualp>
+          <fabricante>CAMCO</fabricante>
+          <orificio>CEGA</orificio>
+          <diam_orificio></diam_orificio>
+          <diam_externo>1.5</diam_externo>
+          <fator_r></fator_r>
+        </vgl_inst>
+        <profm>1700.07</profm>
+        <angInj>0.0</angInj>
+        <tcal></tcal>
+        <pcal></pcal>
+        <pnc></pnc>
+        <pno></pno>
+        <rgli></rgli>
+        <rglt></rglt>
+        <qgi_valv></qgi_valv>
+        <rigfole></rigfole>
+        <fator_qginj></fator_qginj>
+      </valvula_instalada>
+      <valvula_instalada id="1" seq="1" operacao="QGI" pressao="PCAL" nova="TRUE" ativo="TRUE" joule_thomson="FALSE">
+        <vgl_inst tipo="ORIFICIO">
+          <tualp>0</tualp>
+          <fabricante>CAMCO</fabricante>
+          <orificio>5/16</orificio>
+          <diam_orificio>0.3125</diam_orificio>
+          <diam_externo>1.5</diam_externo>
+          <fator_r></fator_r>
+        </vgl_inst>
+        <profm>2201.28</profm>
+        <angInj>0.0</angInj>
+        <tcal></tcal>
+        <pcal></pcal>
+        <pnc></pnc>
+        <pno></pno>
+        <rgli></rgli>
+        <rglt></rglt>
+        <qgi_valv>144000.0</qgi_valv>
+        <rigfole></rigfole>
+        <fator_qginj></fator_qginj>
+      </valvula_instalada>
+      <valvula_instalada id="2" seq="2" operacao="DESEMPENHO" pressao="PCAL" nova="TRUE" ativo="TRUE" joule_thomson="TRUE">
+        <vgl_inst tipo="ORIFICIO">
+          <tualp>0</tualp>
+          <fabricante>PDG</fabricante>
+          <orificio>CEGA</orificio>
+          <diam_orificio></diam_orificio>
+          <diam_externo>1.5</diam_externo>
+          <fator_r></fator_r>
+        </vgl_inst>
+        <profm>2846.02</profm>
+        <angInj>0.0</angInj>
+        <tcal></tcal>
+        <pcal></pcal>
+        <pnc></pnc>
+        <pno></pno>
+        <rgli></rgli>
+        <rglt></rglt>
+        <qgi_valv></qgi_valv>
+        <rigfole></rigfole>
+        <fator_qginj></fator_qginj>
+      </valvula_instalada>
+    </gas_lift>
+    <!-- Conjuntos BCS -->
+    <conjuntos_bcs>
+      <dimensionamento calcula="VAZAO_TDH">
+        <ql></ql>
+        <fg></fg>
+        <freq_motor></freq_motor>
+      </dimensionamento>
+    </conjuntos_bcs>
+    <dados_medicoes>
+      <pdg_vertical>
+      </pdg_vertical>
+      <pdg_medido>
+      </pdg_medido>
+      <tpt_vertical>
+      </tpt_vertical>
+      <tpt_medido>
+      </tpt_medido>
+    </dados_medicoes>
+    <envelope_hidratos nome="Sem inibidor">
+      <temp_hidrato>
+        <valor_hid>4.0</valor_hid>
+        <valor_hid>6.0</valor_hid>
+        <valor_hid>8.0</valor_hid>
+        <valor_hid>10.0</valor_hid>
+        <valor_hid>12.0</valor_hid>
+        <valor_hid>14.0</valor_hid>
+        <valor_hid>16.0</valor_hid>
+        <valor_hid>18.0</valor_hid>
+        <valor_hid>20.0</valor_hid>
+        <valor_hid>22.0</valor_hid>
+        <valor_hid>24.0</valor_hid>
+        <valor_hid>26.0</valor_hid>
+        <valor_hid>28.0</valor_hid>
+        <valor_hid>30.0</valor_hid>
+        <valor_hid>32.0</valor_hid>
+        <valor_hid>34.0</valor_hid>
+        <valor_hid>36.0</valor_hid>
+        <valor_hid>38.0</valor_hid>
+        <valor_hid>40.0</valor_hid>
+        <valor_hid>42.0</valor_hid>
+        <valor_hid>44.0</valor_hid>
+        <valor_hid>46.0</valor_hid>
+        <valor_hid>48.0</valor_hid>
+        <valor_hid>50.0</valor_hid>
+        <valor_hid>52.0</valor_hid>
+        <valor_hid>54.0</valor_hid>
+        <valor_hid>56.0</valor_hid>
+        <valor_hid>58.0</valor_hid>
+        <valor_hid>60.0</valor_hid>
+        <valor_hid>62.0</valor_hid>
+        <valor_hid>64.0</valor_hid>
+        <valor_hid>66.0</valor_hid>
+        <valor_hid>68.0</valor_hid>
+        <valor_hid>70.0</valor_hid>
+      </temp_hidrato>
+      <pressao_hidrato concentracao="0.0" exibir="TRUE">
+        <valor_hid>8.718573620961287</valor_hid>
+        <valor_hid>11.206681180627431</valor_hid>
+        <valor_hid>14.388195765118567</valor_hid>
+        <valor_hid>18.456863454900503</valor_hid>
+        <valor_hid>23.718599113866613</valor_hid>
+        <valor_hid>30.6628665242463</valor_hid>
+        <valor_hid>40.05445284577302</valor_hid>
+        <valor_hid>53.341355100875425</valor_hid>
+        <valor_hid>73.43996165867038</valor_hid>
+        <valor_hid>105.73437412368138</valor_hid>
+        <valor_hid>156.52643869211198</valor_hid>
+        <valor_hid>229.31378197447648</valor_hid>
+        <valor_hid>324.76941667134037</valor_hid>
+        <valor_hid>442.6995967022377</valor_hid>
+        <valor_hid>582.5536753121606</valor_hid>
+        <valor_hid>743.403710747299</valor_hid>
+        <valor_hid>923.903677606522</valor_hid>
+        <valor_hid>1122.3404526520271</valor_hid>
+        <valor_hid>1336.7153921063766</valor_hid>
+        <valor_hid>1564.8565004359286</valor_hid>
+        <valor_hid>1804.6019792691693</valor_hid>
+        <valor_hid>2053.9327905044024</valor_hid>
+        <valor_hid>2311.095022255306</valor_hid>
+        <valor_hid>2574.5896916888028</valor_hid>
+        <valor_hid>2843.295110970617</valor_hid>
+        <valor_hid>3116.375112806106</valor_hid>
+        <valor_hid>3393.3096419266517</valor_hid>
+        <valor_hid>3673.874360765399</valor_hid>
+        <valor_hid>3958.1712409436454</valor_hid>
+        <valor_hid>4246.699943405751</valor_hid>
+        <valor_hid>4540.480184364691</valor_hid>
+        <valor_hid>4841.3882416523475</valor_hid>
+        <valor_hid>5152.768784447288</valor_hid>
+        <valor_hid>5481.086813539791</valor_hid>
+      </pressao_hidrato>
+      <pressao_hidrato exibir="FALSE">
+      </pressao_hidrato>
+      <pressao_hidrato exibir="FALSE">
+      </pressao_hidrato>
+      <pressao_hidrato exibir="FALSE">
+      </pressao_hidrato>
+      <pressao_hidrato exibir="FALSE">
+      </pressao_hidrato>
+    </envelope_hidratos>
+  </entrada>
+  <unidades>
+    <unidade_var nome="eda" unidade_vis="in" unidade_ref="mm"/>
+  </unidades>
+</marlim>
+<!-- ##FIM_ENTRADA## -->
