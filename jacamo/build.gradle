@@ -51,18 +51,6 @@ task run (type: JavaExec, dependsOn: 'classes') {
     group      ' JaCaMo'
     description 'runs the JaCaMo platform'
     doFirst {
-        delete '../as/a.as'
-        delete '../as/b.as'
-        delete '../as/c.as'
-        delete '../otm/OTM1.gln'
-        delete '../otm/OTM2.gln'
-        delete '../otm/OTM3.gln'
-        delete '../otm/OTM4.gln'
-        delete 'gln/TST2.gln'
-        delete 'gln/TST3.gln'
-        delete 'gln/TST4.gln'
-        delete 'gln/TST5.gln'
-        delete 'gln/TST6.gln'
         mkdir 'log'
     }
     main 'jacamo.infra.JaCaMoLauncher'
