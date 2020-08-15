@@ -1,13 +1,14 @@
-.gradle
+jacamo/.gradle/*
+jacamo/build/*
+jacamo/log/zk.log
+
 .settings
 .DS_Store
 .classpath
 .project
 
 bin
-build
 target
 marlim/*
-jacamo/log/zk.log
 
 e_r_r_o_r.txt
